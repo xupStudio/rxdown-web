@@ -2,302 +2,302 @@
   "meta": {
     "siteName": "RxDown",
     "home": {
-      "title": "RxDown — Medication Withdrawal Diary & Taper Planner",
-      "description": "RxDown helps you come off antidepressants, benzodiazepines, and sleeping pills gently: AI voice journaling, guideline-based reduction schedules, and a clinician-ready Doctor Report. iOS & Android."
+      "title": "RxDown — 減薬・断薬の記録日記＆漸減プランナー",
+      "description": "RxDownは抗うつ薬・ベンゾジアゼピン系薬・睡眠薬の減薬をやさしくサポート。AI音声日記、ガイドラインに基づく漸減スケジュール、医師にそのまま渡せるDoctor Report。iOS・Android対応。"
     },
     "calculator": {
-      "title": "Free Hyperbolic Taper Calculator — RxDown",
-      "description": "Build a gradual dose-reduction schedule using the hyperbolic method described in the Maudsley Deprescribing Guidelines. Free, no sign-up, with sources and methodology."
+      "title": "無料の双曲線漸減計算ツール — RxDown",
+      "description": "Maudsley Deprescribing Guidelinesで示された双曲線法を使い、ゆるやかな減薬スケジュールを作成。登録不要・無料、出典と方法論つき。"
     },
     "faq": {
-      "title": "Frequently Asked Questions — RxDown",
-      "description": "Answers about RxDown: supported medications, how the AI works, privacy, hyperbolic tapering, and what the Doctor Report contains."
+      "title": "よくある質問 — RxDown",
+      "description": "RxDownについての回答：対応するお薬、AIの仕組み、プライバシー、双曲線漸減、そしてDoctor Reportの内容。"
     },
     "privacy": {
-      "title": "Privacy Policy — RxDown",
-      "description": "RxDown is local-first: your health diary stays on your device. What data the app and this website do — and do not — collect."
+      "title": "プライバシーポリシー — RxDown",
+      "description": "RxDownはローカル優先設計。健康日記は端末内にとどまります。アプリとこのサイトが集めるもの・集めないもの。"
     },
     "terms": {
-      "title": "Terms of Service — RxDown",
-      "description": "Terms of service for the RxDown app and website."
+      "title": "利用規約 — RxDown",
+      "description": "RxDownアプリとウェブサイトの利用規約。"
     },
     "support": {
-      "title": "Support & Contact — RxDown",
-      "description": "Get help with RxDown: contact, data recovery, and common troubleshooting."
+      "title": "サポート・お問い合わせ — RxDown",
+      "description": "RxDownのヘルプ：お問い合わせ、データの復旧、よくあるトラブルシューティング。"
     }
   },
   "nav": {
-    "calculator": "Taper calculator",
-    "faq": "FAQ",
-    "support": "Support",
-    "privacy": "Privacy",
-    "terms": "Terms",
-    "getApp": "Get the app"
+    "calculator": "減薬計算ツール",
+    "faq": "よくある質問",
+    "support": "サポート",
+    "privacy": "プライバシー",
+    "terms": "利用規約",
+    "getApp": "アプリを入手"
   },
   "langBanner": {
-    "text": "This page is also available in your language.",
-    "cta": "Switch",
-    "dismiss": "Dismiss"
+    "text": "このページはあなたの言語でもご覧いただけます。",
+    "cta": "切り替える",
+    "dismiss": "閉じる"
   },
   "hero": {
-    "eyebrow": "Medication withdrawal, tracked gently",
-    "h1": "Come off your medication one gentle step at a time",
-    "lede": "RxDown is a diary for medication withdrawal. Speak for thirty seconds a day — the AI captures your dose, sleep, mood, and symptoms, spots patterns, and turns your experience into a report your doctor can actually use.",
-    "ctaAppStore": "Download on the App Store",
-    "ctaPlay": "Get it on Google Play",
-    "note": "Free to use. Built on the Maudsley Deprescribing Guidelines, the Ashton Manual, and Royal College of Psychiatrists guidance.",
-    "formerly": "RxTaper is now RxDown — same app, your data is untouched."
+    "eyebrow": "お薬の減薬を、やさしく記録",
+    "h1": "一歩ずつ、やさしくお薬を減らしていく",
+    "lede": "RxDownは減薬・断薬のための日記です。1日30秒話すだけで、AIが用量・睡眠・気分・症状を記録し、パターンを見つけ、あなたの経験を医師がそのまま使えるレポートに変えます。",
+    "ctaAppStore": "App Storeでダウンロード",
+    "ctaPlay": "Google Playで手に入れる",
+    "note": "無料で使えます。Maudsley Deprescribing Guidelines、Ashton Manual、英国王立精神医学会（Royal College of Psychiatrists）の指針に基づいています。",
+    "formerly": "RxTaperはRxDownになりました — 同じアプリで、データはそのまま引き継がれます。"
   },
-  "answerFirst": "RxDown is a medication-withdrawal diary app for iOS and Android. It helps adults who are working with a doctor to gradually reduce antidepressants, benzodiazepines, sleeping pills, opioids, or other long-term prescriptions — by logging dose, sleep, mood, and withdrawal symptoms in seconds a day, and turning that record into clear, clinician-ready data.",
+  "answerFirst": "RxDownはiOS・Android向けの減薬・断薬記録アプリです。医師と一緒に抗うつ薬・ベンゾジアゼピン系薬・睡眠薬・オピオイドなどの長期処方薬を少しずつ減らしていく大人の方のために、用量・睡眠・気分・離脱症状を1日数秒で記録し、その記録を医師がそのまま使える明快なデータに変えます。",
   "how": {
-    "heading": "How does RxDown work?",
+    "heading": "RxDownはどう使うの？",
     "steps": [
       {
-        "title": "Log in seconds — just talk",
-        "body": "Don't feel like typing on a foggy day? Speak. The AI (powered by Gemini) captures your dose, sleep, mood, and physical sensations, and you review every entry before it saves."
+        "title": "数秒で記録 — 話すだけ",
+        "body": "頭がぼんやりする日に入力するのは大変ですか？なら話すだけ。AI（Geminiを搭載）が用量・睡眠・気分・体の感覚を記録し、保存前にすべての内容をあなたが確認できます。"
       },
       {
-        "title": "See the patterns",
-        "body": "Dose curve, stability score, sleep pattern, and symptom timeline in one place — so you can see whether a reduction affects your sleep or mood days later."
+        "title": "パターンが見える",
+        "body": "用量カーブ、安定度スコア、睡眠パターン、症状の推移をひとつの画面に。減薬が数日後の睡眠や気分に影響していないかを確かめられます。"
       },
       {
-        "title": "Bring real data to your doctor",
-        "body": "Generate a clinician-ready Doctor Report in SBAR format with trend charts, plus clean CSV and PDF exports. Walk into your next appointment with evidence, not guesswork."
+        "title": "本物のデータを医師に",
+        "body": "トレンドグラフつきのSBAR形式のDoctor Reportを作成し、整ったCSV・PDFで書き出せます。次の診察には、あてずっぽうではなく根拠を持って臨めます。"
       }
     ]
   },
   "features": {
-    "heading": "What can RxDown do?",
+    "heading": "RxDownでできること",
     "cards": [
       {
         "icon": "🎙️",
-        "title": "AI voice journaling",
-        "body": "Thirty seconds of talking becomes a structured entry: dose, sleep hours, mood, symptoms, and notes — reviewed and editable before saving."
+        "title": "AI音声日記",
+        "body": "30秒話すだけで、用量・睡眠時間・気分・症状・メモが整った記録に。保存前に確認・編集できます。"
       },
       {
         "icon": "📉",
-        "title": "Receptor occupancy, made visible",
+        "title": "受容体占有率を、見える化",
         "isNew": true,
-        "body": "See why the last few milligrams matter most. RxDown plots estimated receptor occupancy alongside your dose curve, based on the hyperbolic model described by Horowitz & Taylor and the Maudsley Deprescribing Guidelines."
+        "body": "最後の数ミリグラムがなぜ最も重要なのか。RxDownはHorowitz & TaylorとMaudsley Deprescribing Guidelinesが示す双曲線モデルに基づき、推定受容体占有率を用量カーブと並べて描きます。"
       },
       {
         "icon": "📚",
-        "title": "Guideline-based schedules",
-        "body": "Reduction plans grounded in the Maudsley Deprescribing Guidelines, the Ashton Manual, and Royal College of Psychiatrists references — with hold and reinstate as first-class states, not failures."
+        "title": "ガイドラインに基づくスケジュール",
+        "body": "Maudsley Deprescribing Guidelines、Ashton Manual、英国王立精神医学会（Royal College of Psychiatrists）を根拠にした減薬プラン。一時停止（ホールド）と再開（前用量へ戻す）を、失敗ではなく正式な状態として扱います。"
       },
       {
         "icon": "💊",
-        "title": "Benzodiazepine & Z-drug education",
+        "title": "ベンゾジアゼピン系薬・Z薬の解説",
         "isNew": true,
-        "body": "Ashton-based guidance with diazepam-equivalence references, plus formulation tips for the tiny doses at the end of a reduction — liquids, compounded preparations, careful dispersion."
+        "body": "Ashtonに基づく解説とdiazepam換算の参考値に加え、減薬の終盤のごく少量に向けた製剤のヒント（液剤、調剤、ていねいな分散）まで。"
       },
       {
         "icon": "😴",
-        "title": "Automatic sleep import",
+        "title": "睡眠の自動取り込み",
         "isNew": true,
-        "body": "Connect Apple Health or Health Connect and your sleep lines up with your dose changes on one timeline — no manual entry."
+        "body": "Apple HealthまたはHealth Connectと連携すると、睡眠が用量の変化と同じタイムラインに並びます — 手入力は不要です。"
       },
       {
         "icon": "📄",
-        "title": "Doctor Report (SBAR)",
+        "title": "Doctor Report（SBAR）",
         "isNew": true,
-        "body": "A clinician-ready summary in SBAR format with trend charts and a plain-language AI narrative — plus CSV and PDF exports of your full history."
+        "body": "トレンドグラフとわかりやすい言葉のAIの解説つきで、SBAR形式で医師がそのまま読めるサマリー — さらに全履歴をCSV・PDFで書き出せます。"
       }
     ]
   },
   "evidence": {
-    "heading": "Why does gradual, hyperbolic tapering matter?",
-    "body1": "Withdrawal is common, not rare: in a systematic review, an average of 56% of people who stopped antidepressants experienced withdrawal symptoms, and nearly half of those described them as severe (Davies & Read, 2019, Addictive Behaviors).",
-    "body2": "Because the relationship between dose and receptor occupancy is hyperbolic, equal-size dose cuts hit harder and harder as the dose gets lower. Horowitz & Taylor (The Lancet Psychiatry, 2019) therefore recommend reducing by a proportion of the current dose — for example about 10% per step — so each step produces a similar change at the receptor level. This approach now anchors the Maudsley Deprescribing Guidelines (2024).",
-    "body3": "RxDown operationalizes this evidence for patients: proportional reduction schedules, occupancy curves you can actually see, and hold/reinstate states for when symptoms flare — always in partnership with your prescriber.",
+    "heading": "なぜゆるやかな双曲線漸減が大切なの？",
+    "body1": "離脱症状はまれではなく、よくあることです。あるシステマティックレビューでは、抗うつ薬をやめた人の平均56%が離脱症状を経験し、そのうち半数近くが重度だったと報告されています（Davies & Read, 2019, Addictive Behaviors）。",
+    "body2": "用量と受容体占有率の関係は双曲線を描くため、同じ幅で用量を減らしても、用量が低くなるほど影響は強くなります。そのためHorowitz & Taylor（The Lancet Psychiatry, 2019）は、現在の用量に対する一定の割合で減らすこと（例：1ステップあたり約10%）を推奨しています。こうすれば各ステップが受容体レベルで同程度の変化になるからです。この考え方は現在、Maudsley Deprescribing Guidelines（2024）の土台になっています。",
+    "body3": "RxDownはこのエビデンスを患者向けに実装します：割合による減薬スケジュール、実際に目で見える占有率カーブ、そして症状が強まったときのための一時停止（ホールド）／再開（前用量へ戻す）の状態 — つねに処方医と協力しながら。",
     "sources": ["Maudsley Deprescribing Guidelines (2024)", "The Ashton Manual", "Royal College of Psychiatrists", "Horowitz & Taylor, Lancet Psychiatry (2019)", "Davies & Read, Addictive Behaviors (2019)"]
   },
   "privacyPromise": {
-    "heading": "Your diary stays on your device",
-    "body": "RxDown has no account and cannot see your logs. Your medications, doses, journal, mood, and voice transcripts are stored locally on your phone. When you use an AI feature, only the content of that request is processed — and it is never used to train models. We never sell health data. This website sets no cookies and runs no ad trackers.",
-    "link": "Read the full privacy policy"
+    "heading": "日記は端末の中にとどまります",
+    "body": "RxDownにはアカウントがなく、あなたの記録を見ることはできません。お薬、用量、日記、気分、音声の書き起こしは、すべてお使いの端末内にローカル保存されます。AI機能を使うときも、そのリクエストの内容だけが処理され、モデルの学習に使われることは決してありません。健康データを販売することもありません。このウェブサイトはCookieを設定せず、広告トラッカーも動かしません。",
+    "link": "プライバシーポリシー全文を読む"
   },
   "faqTeaser": {
-    "heading": "Questions people ask",
-    "cta": "See all questions"
+    "heading": "みんながよく聞く質問",
+    "cta": "すべての質問を見る"
   },
   "finalCta": {
-    "heading": "Start your diary tonight",
-    "body": "Free to download, free to log every day. Bring your first week of real data to your next appointment.",
-    "formerly": "Looking for RxTaper? You're in the right place — RxDown is its new name."
+    "heading": "今夜から日記を始めよう",
+    "body": "ダウンロードも、毎日の記録もずっと無料。最初の1週間の本物のデータを、次の診察に持っていきましょう。",
+    "formerly": "RxTaperをお探しですか？ここで合っています — RxDownはその新しい名前です。"
   },
   "footer": {
-    "product": "Product",
-    "resources": "Resources",
-    "legal": "Legal",
-    "languages": "Languages",
-    "disclaimer": "RxDown is a data tracking and journaling tool for adults (18+). It does not provide medical advice, diagnosis, or treatment. Never stop taking medication or change your dose based solely on information from this app or website — medication reduction should always be supervised by a qualified healthcare professional.",
+    "product": "プロダクト",
+    "resources": "リソース",
+    "legal": "法的情報",
+    "languages": "言語",
+    "disclaimer": "RxDownは大人（18歳以上）向けのデータ記録・日記ツールです。医療助言、診断、治療を提供するものではありません。このアプリやウェブサイトの情報だけを根拠に、お薬をやめたり用量を変えたりしないでください — 減薬は必ず有資格の医療専門家の監督のもとで行ってください。",
     "copyright": "© 2026 XUPLABS. All rights reserved."
   },
   "calc": {
-    "h1": "Hyperbolic taper calculator",
-    "answerFirst": "A hyperbolic taper reduces your medication by a constant proportion of your current dose (for example 10% per step) instead of a fixed amount — so the absolute cuts get smaller as your dose gets lower, matching how dose relates to receptor occupancy. This free calculator builds an example schedule you can discuss with your prescriber.",
-    "labelStart": "Current daily dose",
-    "labelUnit": "Unit",
-    "labelPercent": "Reduction per step",
-    "labelInterval": "Days between steps",
-    "labelTarget": "Stop threshold",
-    "hintTarget": "Schedule ends when the dose reaches this fraction of your current dose. The final jump to zero should be planned with your prescriber.",
-    "generate": "Build schedule",
-    "colStep": "Step",
-    "colDay": "Day",
-    "colDose": "Dose",
-    "colReduction": "Cut from previous",
-    "chartTitle": "Your dose curve",
-    "summaryPrefix": "This schedule takes about",
-    "summaryWeeks": "weeks",
-    "summarySteps": "steps",
-    "disclaimer": "This calculator is an educational illustration, not a prescription. Real-world tapers need to account for your medication's available formulations, your history, and your symptoms — slow down, hold, or reinstate as your prescriber advises. Do not change your dose without medical supervision.",
-    "methodHeading": "How is this schedule calculated?",
-    "methodBody": "Each step multiplies the current dose by (1 − reduction%). This mirrors the proportional-reduction approach described by Horowitz & Taylor (Lancet Psychiatry, 2019) and the Maudsley Deprescribing Guidelines (2024): because receptor occupancy follows a hyperbolic curve, proportional cuts produce roughly even effects, while equal-milligram cuts become progressively harsher at low doses. Typical clinical practice ranges from 5–10% (cautious) to 25% (faster) per step, every 2–4 weeks, adjusted to symptoms.",
-    "appBridge": "Want this schedule to live in your pocket — with daily logging, symptom tracking, and a report your doctor can read? RxDown does exactly that.",
+    "h1": "双曲線漸減計算ツール",
+    "answerFirst": "双曲線漸減は、一定の量ではなく現在の用量に対する一定の割合（例：1ステップあたり10%）でお薬を減らす方法です。用量が低くなるほど実際の減量幅は小さくなり、用量と受容体占有率の関係に沿った形になります。この無料ツールは、処方医と相談できるスケジュール例を作成します。",
+    "labelStart": "現在の1日の用量",
+    "labelUnit": "単位",
+    "labelPercent": "1ステップの減薬率",
+    "labelInterval": "ステップの間隔（日数）",
+    "labelTarget": "終了のしきい値",
+    "hintTarget": "現在の用量に対してこの割合まで下がると、スケジュールが終わります。ゼロへの最後の一歩は処方医と一緒に計画してください。",
+    "generate": "スケジュールを作成",
+    "colStep": "ステップ",
+    "colDay": "日",
+    "colDose": "用量",
+    "colReduction": "前回からの減量",
+    "chartTitle": "あなたの用量カーブ",
+    "summaryPrefix": "このスケジュールにかかるのはおよそ",
+    "summaryWeeks": "週間",
+    "summarySteps": "ステップ",
+    "disclaimer": "この計算ツールは教育目的の例示であり、処方ではありません。実際の減薬では、お薬の入手できる製剤、あなたの経過、症状を考慮する必要があります — 処方医の助言に従って、ペースを緩める、一時停止する、前の用量に戻すなど調整してください。医療的な監督なしに用量を変えないでください。",
+    "methodHeading": "このスケジュールはどう計算されるの？",
+    "methodBody": "各ステップで、現在の用量に（1 − 減薬率）を掛けます。これはHorowitz & Taylor（Lancet Psychiatry, 2019）とMaudsley Deprescribing Guidelines（2024）が示す割合による減薬の考え方を反映しています：受容体占有率は双曲線を描くため、割合による減量はほぼ均等な効果になる一方、同じミリグラムずつの減量は低用量になるほど厳しくなります。一般的な臨床では、2〜4週間ごとに1ステップあたり5〜10%（慎重）から25%（速め）の範囲で、症状に合わせて調整します。",
+    "appBridge": "このスケジュールをポケットの中に — 毎日の記録、症状の追跡、そして医師が読めるレポートつきで持ち歩きたいですか？RxDownはまさにそれを実現します。",
     "faq": [
       {
-        "q": "Why do the steps get smaller and smaller?",
-        "a": "Because each cut is a percentage of the current dose. Evidence suggests the brain responds to proportional, not absolute, changes: at low doses, each milligram occupies far more receptor capacity, so fixed-size cuts hit hardest exactly when you're most vulnerable."
+        "q": "どうしてステップがだんだん小さくなるの？",
+        "a": "各減量が現在の用量に対する割合だからです。脳は絶対量ではなく割合の変化に反応すると考えられています：低用量では1ミリグラムがはるかに多くの受容体を占めるため、一定幅の減量は、あなたが最も影響を受けやすいまさにそのときに、最も強く効いてしまうのです。"
       },
       {
-        "q": "What reduction rate should I choose?",
-        "a": "That's a decision for you and your prescriber. The Maudsley Deprescribing Guidelines describe proportional reductions often in the 5–10% range per step for cautious tapers, with faster rates for people who tolerate reductions well. Symptoms — not the calendar — should set the pace."
+        "q": "減薬率はどれくらいに設定すればいい？",
+        "a": "それはあなたと処方医が決めることです。Maudsley Deprescribing Guidelinesは、慎重な減薬では1ステップあたり5〜10%程度の割合による減量を、減薬にうまく耐えられる人にはより速いペースを示しています。ペースを決めるのはカレンダーではなく症状です。"
       },
       {
-        "q": "How do I actually take a dose like 3.7 mg?",
-        "a": "Small doses usually need liquid formulations, compounded preparations, or careful tablet dispersion in water. Your pharmacist is the right person to ask — and RxDown's liquid-dose units can track whatever form you use."
+        "q": "3.7mgのような用量は、実際どうやって飲めばいい？",
+        "a": "少量の用量には通常、液剤、調剤、または錠剤を水にていねいに分散させる方法が必要です。相談すべき相手は薬剤師です — RxDownの液剤用量の単位なら、どんな形でも記録できます。"
       }
     ]
   },
   "faqPage": {
-    "h1": "Frequently asked questions",
+    "h1": "よくある質問",
     "items": [
       {
-        "q": "What is RxDown?",
-        "a": "RxDown is a medication-withdrawal diary app for iOS and Android. It helps adults working with a doctor to gradually reduce antidepressants, benzodiazepines, sleeping pills, opioids, and other long-term prescriptions — with AI voice journaling, guideline-based reduction schedules, symptom and sleep tracking, and a clinician-ready Doctor Report."
+        "q": "RxDownとは？",
+        "a": "RxDownはiOS・Android向けの減薬・断薬記録アプリです。医師と一緒に抗うつ薬・ベンゾジアゼピン系薬・睡眠薬・オピオイドなどの長期処方薬を少しずつ減らしていく大人の方を、AI音声日記、ガイドラインに基づく減薬スケジュール、症状・睡眠の記録、そして医師がそのまま使えるDoctor Reportでサポートします。"
       },
       {
-        "q": "Is RxDown free?",
-        "a": "Yes — downloading, daily logging, reminders, and reduction schedules are free forever. Optional Plus and Pro subscriptions unlock AI features: voice-to-entry journaling, AI symptom analysis, and AI schedule suggestions. A free lifetime trial quota lets you test every AI feature before paying."
+        "q": "RxDownは無料ですか？",
+        "a": "はい — ダウンロード、毎日の記録、リマインダー、減薬スケジュールはずっと無料です。任意のPlus・Proのサブスクリプションで、音声から記録へのAI日記、AI症状分析、AI減薬提案などのAI機能が使えます。無料の生涯トライアル枠があるので、支払う前にすべてのAI機能を試せます。"
       },
       {
-        "q": "Does RxDown give medical advice?",
-        "a": "No. RxDown is a tracking and education tool for adults aged 18 and over. It does not provide medical advice, diagnosis, or treatment, and its charts and AI insights are informational only. Any change to your medication should be made with a qualified healthcare professional."
+        "q": "RxDownは医療助言をしてくれますか？",
+        "a": "いいえ。RxDownは18歳以上の大人向けの記録・教育ツールです。医療助言、診断、治療を提供するものではなく、グラフやAIのインサイトはあくまで参考情報です。お薬に関する変更は、必ず有資格の医療専門家と一緒に行ってください。"
       },
       {
-        "q": "Which medications does RxDown support?",
-        "a": "Any long-term medication you're reducing with your doctor: antidepressants (SSRIs, SNRIs, and others), benzodiazepines, Z-drugs and sleeping pills, opioids, and more. Receptor-occupancy curves are available for common SSRI/SNRI antidepressants, and benzodiazepine education includes Ashton-based diazepam equivalences."
+        "q": "RxDownはどのお薬に対応していますか？",
+        "a": "医師と一緒に減らしているあらゆる長期のお薬に対応します：抗うつ薬（SSRI、SNRIなど）、ベンゾジアゼピン系薬、Z薬や睡眠薬、オピオイドなど。受容体占有率カーブは一般的なSSRI／SNRIの抗うつ薬で利用でき、ベンゾジアゼピン系薬の解説にはAshtonに基づくdiazepam換算が含まれます。"
       },
       {
-        "q": "What is hyperbolic tapering?",
-        "a": "Hyperbolic tapering reduces medication by a proportion of the current dose (for example 10% per step) rather than a fixed amount. Because receptor occupancy rises steeply at low doses, proportional cuts keep each step's effect roughly even — while equal-milligram cuts get harsher as the dose falls. The approach was described by Horowitz & Taylor (Lancet Psychiatry, 2019) and anchors the Maudsley Deprescribing Guidelines. Try our free taper calculator to see it in action."
+        "q": "双曲線漸減とは？",
+        "a": "双曲線漸減は、一定の量ではなく現在の用量に対する割合（例：1ステップあたり10%）でお薬を減らす方法です。受容体占有率は低用量で急に上がるため、割合による減量は各ステップの効果をほぼ均等に保ちます — 一方、同じミリグラムずつの減量は用量が下がるほど厳しくなります。この方法はHorowitz & Taylor（Lancet Psychiatry, 2019）が示し、Maudsley Deprescribing Guidelinesの土台になっています。無料の漸減計算ツールで実際に試してみてください。"
       },
       {
-        "q": "Why are the last few milligrams the hardest?",
-        "a": "Because the dose-to-occupancy curve is hyperbolic: going from 4 mg to 2 mg can release more receptor occupancy than going from 20 mg to 10 mg. RxDown plots this curve for your own plan so you can see why the end of a taper deserves the smallest, slowest steps."
+        "q": "どうして最後の数ミリグラムがいちばん難しいの？",
+        "a": "用量と占有率のカーブが双曲線だからです：4mgから2mgへ減らすほうが、20mgから10mgへ減らすよりも多くの受容体占有率を手放すことになり得ます。RxDownはあなた自身の計画についてこのカーブを描くので、減薬の終盤こそ最も小さく、最もゆっくりしたステップが必要な理由が見えてきます。"
       },
       {
-        "q": "How does the AI work, and does it see my data?",
-        "a": "When you record a voice or text entry, that entry — plus the plan context needed to understand it — is sent to Google's Gemini via Firebase AI Logic, processed, and returned immediately. It is not stored permanently on cloud servers and is not used to train models. Everything else lives only on your device. AI features are optional; you can log everything manually."
+        "q": "AIはどう動くの？私のデータを見るの？",
+        "a": "音声またはテキストで記録すると、その記録 — と、それを理解するために必要な計画のコンテキスト — がFirebase AI Logicを介してGoogleのGeminiに送られ、処理され、すぐに返されます。クラウドのサーバーに永続保存されることはなく、モデルの学習に使われることもありません。それ以外のすべては、あなたの端末の中だけに存在します。AI機能は任意で、すべて手動で記録することもできます。"
       },
       {
-        "q": "What is in the Doctor Report?",
-        "a": "A clinician-ready PDF in SBAR format (Situation, Background, Assessment, Recommendation) with your dose curve, stability and sleep trends, symptom timeline, plan history including holds and reinstatements, and a plain-language summary. CSV export is also available for spreadsheets or EHR import."
+        "q": "Doctor Reportには何が入っているの？",
+        "a": "SBAR形式（Situation、Background、Assessment、Recommendation）で医師がそのまま使えるPDFです。用量カーブ、安定度と睡眠の推移、症状の時系列、一時停止や再開を含む計画の履歴、そしてわかりやすい言葉のサマリーが入っています。スプレッドシートや電子カルテ（EHR）への取り込み用に、CSV書き出しも用意しています。"
       },
       {
-        "q": "Where is my data stored, and can I delete it?",
-        "a": "On your device, in a local database — RxDown has no account system and cannot see your diary. You can export everything (CSV/PDF) or delete all data permanently from within the app at any time. The optional backup feature shares an encrypted file wherever you choose."
+        "q": "データはどこに保存され、削除できますか？",
+        "a": "お使いの端末内のローカルデータベースに保存されます — RxDownにはアカウントの仕組みがなく、あなたの日記を見ることはできません。いつでもすべてを書き出す（CSV／PDF）ことも、アプリ内からすべてのデータを完全に削除することもできます。任意のバックアップ機能では、暗号化されたファイルをあなたが選んだ場所に共有できます。"
       },
       {
-        "q": "Was RxDown previously called RxTaper?",
-        "a": "Yes. RxTaper was renamed to RxDown in 2026. It is the same app from the same developer — your data, subscription, and history are unaffected."
+        "q": "RxDownは以前RxTaperという名前でしたか？",
+        "a": "はい。RxTaperは2026年にRxDownへ改名しました。同じ開発者による同じアプリで、あなたのデータ、サブスクリプション、履歴に影響はありません。"
       },
       {
-        "q": "Which languages and platforms are supported?",
-        "a": "RxDown runs on iOS and Android and is fully localized in nine languages: English, Traditional Chinese, Japanese, Korean, German, Spanish, French, Indonesian, and European Portuguese."
+        "q": "対応している言語とプラットフォームは？",
+        "a": "RxDownはiOSとAndroidで動作し、9言語に完全対応しています：英語、繁体字中国語、日本語、韓国語、ドイツ語、スペイン語、フランス語、インドネシア語、そしてヨーロッパポルトガル語。"
       }
     ]
   },
   "support": {
-    "h1": "Support & contact",
-    "answerFirst": "Fastest way to reach us: email. We read every message — feedback shapes the app.",
-    "emailLabel": "Email support",
-    "topicsHeading": "Before you write — quick answers",
+    "h1": "サポート・お問い合わせ",
+    "answerFirst": "いちばん早い連絡方法はメールです。いただいたメッセージはすべて読んでいます — フィードバックがアプリを形づくります。",
+    "emailLabel": "メールサポート",
+    "topicsHeading": "書く前に — すぐわかる答え",
     "topics": [
       {
-        "title": "The app won't start",
-        "body": "Reinstalling usually fixes startup problems, but export a backup first if you can. If the app fails before you can back up, email us — we have a recovery flow for database files."
+        "title": "アプリが起動しない",
+        "body": "起動の問題はたいてい再インストールで直りますが、できれば先にバックアップを書き出してください。バックアップの前にアプリが動かなくなった場合はメールをください — データベースファイルの復旧フローがあります。"
       },
       {
-        "title": "Restore a subscription",
-        "body": "Me tab → subscription page → Restore purchases. Make sure you're signed into the same App Store / Google account that bought the plan."
+        "title": "サブスクリプションを復元する",
+        "body": "「私」タブ → サブスクリプションページ → 購入を復元。プランを購入したものと同じApp Store／Googleアカウントにサインインしているか確認してください。"
       },
       {
-        "title": "Export or delete your data",
-        "body": "Me tab → Export for CSV/PDF. Deleting all data is permanent and also under the Me tab. We can't recover deleted data — it only ever existed on your device."
+        "title": "データを書き出す・削除する",
+        "body": "「私」タブ → 書き出しでCSV／PDFを作成できます。すべてのデータの削除は取り消せず、こちらも「私」タブにあります。削除したデータは復元できません — もともとあなたの端末の中だけに存在していたものです。"
       }
     ],
-    "responseNote": "Solo developer, real human replies — usually within 48 hours."
+    "responseNote": "個人開発者が、本物の人として返信します — 通常48時間以内。"
   },
   "privacyPage": {
-    "h1": "Privacy policy",
-    "updated": "Last updated: July 2026",
+    "h1": "プライバシーポリシー",
+    "updated": "最終更新：2026年7月",
     "sections": [
       {
-        "h2": "The short version",
-        "body": "Your health diary never leaves your device unless you explicitly export it. RxDown has no accounts, no health-data cloud sync, and no data sales. AI requests are processed transiently and never used for model training. This website sets no cookies and runs no ad trackers."
+        "h2": "短い要約",
+        "body": "あなたの健康日記は、あなたが明示的に書き出さない限り端末から出ることはありません。RxDownにはアカウントも、健康データのクラウド同期も、データ販売もありません。AIリクエストは一時的に処理され、モデルの学習に使われることは決してありません。このウェブサイトはCookieを設定せず、広告トラッカーも動かしません。"
       },
       {
-        "h2": "What the app stores, and where",
-        "body": "All health records — medications, doses, daily logs, mood, symptoms, journal text, and voice transcripts — are stored locally in the app's database on your device, protected by your device's own security (screen lock and OS storage protection). We, the developers, cannot access, view, or back up this data. You own it entirely."
+        "h2": "アプリが何を、どこに保存するか",
+        "body": "すべての健康記録 — お薬、用量、毎日の記録、気分、症状、日記のテキスト、音声の書き起こし — は、お使いの端末内のアプリのデータベースにローカル保存され、端末自身のセキュリティ（画面ロックとOSのストレージ保護）で守られます。開発者である私たちは、このデータにアクセス・閲覧・バックアップすることはできません。データは完全にあなたのものです。"
       },
       {
-        "h2": "AI features and third-party processing",
-        "body": "When you use AI Journal or Smart Analysis, the entry you chose to analyze (its text or audio) plus the plan and medical-history context it needs are sent to Google's Gemini via Firebase AI Logic, processed, and returned immediately. These requests are not permanently stored on cloud servers and are not used to train models. AI features are optional — everything can be logged manually."
+        "h2": "AI機能と第三者による処理",
+        "body": "AI日記やスマート分析を使うと、あなたが分析対象として選んだ記録（そのテキストまたは音声）と、それに必要な計画・病歴のコンテキストが、Firebase AI Logicを介してGoogleのGeminiに送られ、処理され、すぐに返されます。これらのリクエストはクラウドのサーバーに永続保存されず、モデルの学習にも使われません。AI機能は任意です — すべて手動で記録できます。"
       },
       {
-        "h2": "Anonymous usage analytics",
-        "body": "The app collects anonymous, aggregate usage events (for example: 'a log was created', 'the export screen was opened') to improve the product. These events never contain health information — no medication names, doses, moods, symptoms, or journal content. This website itself collects nothing and sets no cookies; your language preference is stored only in your own browser."
+        "h2": "匿名の利用状況分析",
+        "body": "アプリは製品改善のため、匿名かつ集計された利用イベント（例：「記録が作成された」「書き出し画面が開かれた」）を収集します。これらのイベントに健康情報が含まれることはありません — お薬の名前、用量、気分、症状、日記の内容は一切含みません。このウェブサイト自体は何も収集せず、Cookieも設定しません。言語設定はあなた自身のブラウザにのみ保存されます。"
       },
       {
-        "h2": "Your rights and controls",
-        "body": "Export everything as CSV or PDF at any time. Delete all data permanently from within the app — since data lives only on your device, deletion is immediate and total. No account means there is nothing to close and nothing held on our side."
+        "h2": "あなたの権利とコントロール",
+        "body": "いつでもすべてをCSVまたはPDFで書き出せます。アプリ内からすべてのデータを完全に削除できます — データはあなたの端末の中だけに存在するため、削除は即時かつ完全です。アカウントがないので、閉じるものも、こちら側に保持されるものもありません。"
       },
       {
-        "h2": "Changes to this policy",
-        "body": "Significant changes will be announced in the app. Questions? Email us — see the Support page."
+        "h2": "このポリシーの変更",
+        "body": "重要な変更はアプリ内でお知らせします。ご質問があれば、メールをください — サポートページをご覧ください。"
       }
     ]
   },
   "termsPage": {
-    "h1": "Terms of service",
-    "updated": "Last updated: July 2026",
+    "h1": "利用規約",
+    "updated": "最終更新：2026年7月",
     "sections": [
       {
-        "h2": "Acceptance",
-        "body": "By downloading or using the RxDown app or this website, you agree to these terms. If you do not agree, please discontinue use."
+        "h2": "同意",
+        "body": "RxDownアプリまたはこのウェブサイトをダウンロードまたは使用することで、本規約に同意したものとみなされます。同意されない場合は、使用を中止してください。"
       },
       {
-        "h2": "No medical advice",
-        "body": "RxDown is an informational tracking and journaling tool for adults aged 18 and over. It does not provide medical advice, diagnosis, or treatment. Decisions you make based on the app or this website — including its calculators, charts, and AI-generated insights — are at your own risk and should always involve a qualified healthcare professional."
+        "h2": "医療助言ではありません",
+        "body": "RxDownは18歳以上の大人向けの、情報の記録・日記ツールです。医療助言、診断、治療を提供するものではありません。計算ツール、グラフ、AIが生成したインサイトを含め、アプリやこのウェブサイトに基づいて行う判断はあなた自身の責任であり、つねに有資格の医療専門家に相談すべきものです。"
       },
       {
-        "h2": "AI accuracy",
-        "body": "The app uses artificial intelligence, which can produce erroneous, misleading, or fabricated output. You are responsible for verifying AI-generated content before relying on it."
+        "h2": "AIの正確性",
+        "body": "アプリは人工知能を使用しており、誤った、誤解を招く、または作り話の出力を生成することがあります。AIが生成した内容に頼る前に、その正確性を確認する責任はあなたにあります。"
       },
       {
-        "h2": "Limitation of liability",
-        "body": "To the maximum extent permitted by law, the RxDown team shall not be liable for any direct, indirect, incidental, or consequential damages — including deterioration of health or data loss — resulting from use of, or inability to use, the app or website."
+        "h2": "責任の制限",
+        "body": "法律が認める最大限の範囲で、RxDownチームは、アプリまたはウェブサイトの使用または使用不能から生じるいかなる直接的、間接的、付随的、または結果的な損害（健康の悪化やデータの消失を含みますが、これらに限りません）についても責任を負いません。"
       },
       {
-        "h2": "Subscriptions",
-        "body": "Optional subscriptions are billed through the App Store or Google Play under their respective terms. Prices are shown in-app before purchase; subscriptions renew automatically unless cancelled in your store account settings."
+        "h2": "サブスクリプション",
+        "body": "任意のサブスクリプションは、App StoreまたはGoogle Playを通じて、それぞれの規約に基づいて請求されます。価格は購入前にアプリ内に表示されます。サブスクリプションは、ストアアカウントの設定で解約しない限り自動更新されます。"
       },
       {
-        "h2": "License and termination",
-        "body": "We grant you a personal, non-transferable license to use the app. We reserve the right to terminate access for violations of these terms."
+        "h2": "ライセンスと終了",
+        "body": "私たちはあなたに、アプリを使用するための、個人的で譲渡不可のライセンスを付与します。本規約に違反した場合、アクセスを終了する権利を留保します。"
       }
     ]
   }

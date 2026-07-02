@@ -2,302 +2,302 @@
   "meta": {
     "siteName": "RxDown",
     "home": {
-      "title": "RxDown — Medication Withdrawal Diary & Taper Planner",
-      "description": "RxDown helps you come off antidepressants, benzodiazepines, and sleeping pills gently: AI voice journaling, guideline-based reduction schedules, and a clinician-ready Doctor Report. iOS & Android."
+      "title": "RxDown — 減藥日記與減量計畫工具",
+      "description": "RxDown 陪你溫和地停用抗憂鬱劑、苯二氮平與安眠藥：AI 語音日記、依指引設計的減量時程，以及可直接交給醫師的醫師報告。支援 iOS 與 Android。"
     },
     "calculator": {
-      "title": "Free Hyperbolic Taper Calculator — RxDown",
-      "description": "Build a gradual dose-reduction schedule using the hyperbolic method described in the Maudsley Deprescribing Guidelines. Free, no sign-up, with sources and methodology."
+      "title": "免費雙曲線減量計算機 — RxDown",
+      "description": "用 Maudsley Deprescribing Guidelines 描述的雙曲線方法，建立漸進式減量時程。免費、免註冊，附來源與方法說明。"
     },
     "faq": {
-      "title": "Frequently Asked Questions — RxDown",
-      "description": "Answers about RxDown: supported medications, how the AI works, privacy, hyperbolic tapering, and what the Doctor Report contains."
+      "title": "常見問題 — RxDown",
+      "description": "關於 RxDown 的解答：支援哪些藥物、AI 如何運作、隱私、雙曲線減量，以及醫師報告包含什麼內容。"
     },
     "privacy": {
-      "title": "Privacy Policy — RxDown",
-      "description": "RxDown is local-first: your health diary stays on your device. What data the app and this website do — and do not — collect."
+      "title": "隱私權政策 — RxDown",
+      "description": "RxDown 採本地優先：你的健康日記留在你的裝置上。看看 App 與本網站會收集、以及不會收集哪些資料。"
     },
     "terms": {
-      "title": "Terms of Service — RxDown",
-      "description": "Terms of service for the RxDown app and website."
+      "title": "服務條款 — RxDown",
+      "description": "RxDown App 與網站的服務條款。"
     },
     "support": {
-      "title": "Support & Contact — RxDown",
-      "description": "Get help with RxDown: contact, data recovery, and common troubleshooting."
+      "title": "支援與聯絡 — RxDown",
+      "description": "取得 RxDown 協助：聯絡方式、資料救援與常見問題排解。"
     }
   },
   "nav": {
-    "calculator": "Taper calculator",
-    "faq": "FAQ",
-    "support": "Support",
-    "privacy": "Privacy",
-    "terms": "Terms",
-    "getApp": "Get the app"
+    "calculator": "減量計算機",
+    "faq": "常見問題",
+    "support": "支援",
+    "privacy": "隱私",
+    "terms": "條款",
+    "getApp": "下載 App"
   },
   "langBanner": {
-    "text": "This page is also available in your language.",
-    "cta": "Switch",
-    "dismiss": "Dismiss"
+    "text": "本頁面也有你的語言版本。",
+    "cta": "切換",
+    "dismiss": "關閉"
   },
   "hero": {
-    "eyebrow": "Medication withdrawal, tracked gently",
-    "h1": "Come off your medication one gentle step at a time",
-    "lede": "RxDown is a diary for medication withdrawal. Speak for thirty seconds a day — the AI captures your dose, sleep, mood, and symptoms, spots patterns, and turns your experience into a report your doctor can actually use.",
-    "ctaAppStore": "Download on the App Store",
-    "ctaPlay": "Get it on Google Play",
-    "note": "Free to use. Built on the Maudsley Deprescribing Guidelines, the Ashton Manual, and Royal College of Psychiatrists guidance.",
-    "formerly": "RxTaper is now RxDown — same app, your data is untouched."
+    "eyebrow": "溫和地記錄減藥歷程",
+    "h1": "一次一小步，溫和地停下你的藥",
+    "lede": "RxDown 是一款減藥日記。每天花三十秒說幾句話——AI 就幫你記下劑量、睡眠、情緒與症狀，找出其中的變化規律，把你的經歷整理成醫師真正用得上的報告。",
+    "ctaAppStore": "在 App Store 下載",
+    "ctaPlay": "在 Google Play 取得",
+    "note": "免費使用。以 Maudsley Deprescribing Guidelines、Ashton Manual 與 Royal College of Psychiatrists 的建議為基礎。",
+    "formerly": "RxTaper 現在叫 RxDown——同一個 App，你的資料原封不動。"
   },
-  "answerFirst": "RxDown is a medication-withdrawal diary app for iOS and Android. It helps adults who are working with a doctor to gradually reduce antidepressants, benzodiazepines, sleeping pills, opioids, or other long-term prescriptions — by logging dose, sleep, mood, and withdrawal symptoms in seconds a day, and turning that record into clear, clinician-ready data.",
+  "answerFirst": "RxDown 是一款 iOS 與 Android 的減藥日記 App。它幫助正在醫師協助下、想逐步減少抗憂鬱劑、苯二氮平、安眠藥、鴉片類或其他長期處方藥的成年人——每天花幾秒記錄劑量、睡眠、情緒與戒斷症狀，並把這份紀錄整理成清楚、可直接交給醫師的資料。",
   "how": {
-    "heading": "How does RxDown work?",
+    "heading": "RxDown 怎麼運作？",
     "steps": [
       {
-        "title": "Log in seconds — just talk",
-        "body": "Don't feel like typing on a foggy day? Speak. The AI (powered by Gemini) captures your dose, sleep, mood, and physical sensations, and you review every entry before it saves."
+        "title": "幾秒就記好——用說的就行",
+        "body": "腦霧的日子不想打字？用說的就好。AI（由 Gemini 提供）幫你記下劑量、睡眠、情緒與身體感受，每一筆在儲存前都由你確認。"
       },
       {
-        "title": "See the patterns",
-        "body": "Dose curve, stability score, sleep pattern, and symptom timeline in one place — so you can see whether a reduction affects your sleep or mood days later."
+        "title": "看見變化的規律",
+        "body": "劑量曲線、穩定度分數、睡眠模式與症狀時間軸集中在一處——讓你看得出某次減量是不是幾天後才影響到你的睡眠或情緒。"
       },
       {
-        "title": "Bring real data to your doctor",
-        "body": "Generate a clinician-ready Doctor Report in SBAR format with trend charts, plus clean CSV and PDF exports. Walk into your next appointment with evidence, not guesswork."
+        "title": "帶著真實資料去看醫師",
+        "body": "產生一份 SBAR 格式、可直接交給醫師的醫師報告，附趨勢圖表，還有乾淨的 CSV 與 PDF 匯出。下次回診帶去的是證據，不是猜測。"
       }
     ]
   },
   "features": {
-    "heading": "What can RxDown do?",
+    "heading": "RxDown 能做什麼？",
     "cards": [
       {
         "icon": "🎙️",
-        "title": "AI voice journaling",
-        "body": "Thirty seconds of talking becomes a structured entry: dose, sleep hours, mood, symptoms, and notes — reviewed and editable before saving."
+        "title": "AI 語音日記",
+        "body": "三十秒的口述變成一筆結構化紀錄：劑量、睡眠時數、情緒、症狀與備註——儲存前都能檢視與編輯。"
       },
       {
         "icon": "📉",
-        "title": "Receptor occupancy, made visible",
+        "title": "看得見的受體佔據率",
         "isNew": true,
-        "body": "See why the last few milligrams matter most. RxDown plots estimated receptor occupancy alongside your dose curve, based on the hyperbolic model described by Horowitz & Taylor and the Maudsley Deprescribing Guidelines."
+        "body": "看懂為什麼最後幾毫克最關鍵。RxDown 依 Horowitz & Taylor 與 Maudsley Deprescribing Guidelines 描述的雙曲線模型，把估計的受體佔據率和你的劑量曲線畫在一起。"
       },
       {
         "icon": "📚",
-        "title": "Guideline-based schedules",
-        "body": "Reduction plans grounded in the Maudsley Deprescribing Guidelines, the Ashton Manual, and Royal College of Psychiatrists references — with hold and reinstate as first-class states, not failures."
+        "title": "依指引設計的時程",
+        "body": "減量計畫奠基於 Maudsley Deprescribing Guidelines、Ashton Manual 與 Royal College of Psychiatrists 的參考——把暫停與回到前一階視為正式的狀態，而不是失敗。"
       },
       {
         "icon": "💊",
-        "title": "Benzodiazepine & Z-drug education",
+        "title": "苯二氮平與 Z-drug 衛教",
         "isNew": true,
-        "body": "Ashton-based guidance with diazepam-equivalence references, plus formulation tips for the tiny doses at the end of a reduction — liquids, compounded preparations, careful dispersion."
+        "body": "以 Ashton 為基礎的說明，附 diazepam 等效參考，還有減到尾段那些微小劑量的劑型技巧——液劑、調劑製劑、仔細的稀釋分散。"
       },
       {
         "icon": "😴",
-        "title": "Automatic sleep import",
+        "title": "自動匯入睡眠",
         "isNew": true,
-        "body": "Connect Apple Health or Health Connect and your sleep lines up with your dose changes on one timeline — no manual entry."
+        "body": "連接 Apple Health 或 Health Connect，你的睡眠就會和劑量變化排在同一條時間軸上——不必手動輸入。"
       },
       {
         "icon": "📄",
-        "title": "Doctor Report (SBAR)",
+        "title": "醫師報告（SBAR）",
         "isNew": true,
-        "body": "A clinician-ready summary in SBAR format with trend charts and a plain-language AI narrative — plus CSV and PDF exports of your full history."
+        "body": "一份 SBAR 格式、可直接交給醫師的摘要，附趨勢圖表與白話的 AI 敘述——還能把完整歷程匯出成 CSV 與 PDF。"
       }
     ]
   },
   "evidence": {
-    "heading": "Why does gradual, hyperbolic tapering matter?",
-    "body1": "Withdrawal is common, not rare: in a systematic review, an average of 56% of people who stopped antidepressants experienced withdrawal symptoms, and nearly half of those described them as severe (Davies & Read, 2019, Addictive Behaviors).",
-    "body2": "Because the relationship between dose and receptor occupancy is hyperbolic, equal-size dose cuts hit harder and harder as the dose gets lower. Horowitz & Taylor (The Lancet Psychiatry, 2019) therefore recommend reducing by a proportion of the current dose — for example about 10% per step — so each step produces a similar change at the receptor level. This approach now anchors the Maudsley Deprescribing Guidelines (2024).",
-    "body3": "RxDown operationalizes this evidence for patients: proportional reduction schedules, occupancy curves you can actually see, and hold/reinstate states for when symptoms flare — always in partnership with your prescriber.",
+    "heading": "為什麼漸進的雙曲線減量很重要？",
+    "body1": "戒斷很常見，並不罕見：一篇系統性回顧發現，停用抗憂鬱劑的人平均有 56% 出現戒斷症狀，其中將近一半形容為嚴重（Davies & Read, 2019, Addictive Behaviors）。",
+    "body2": "因為劑量與受體佔據率的關係是雙曲線的，等量的劑量削減會隨著劑量降低而越來越吃力。因此 Horowitz & Taylor（The Lancet Psychiatry, 2019）建議按目前劑量的比例來減——例如每一步約 10%——讓每一步在受體層面產生相近的變化。這套做法如今也是 Maudsley Deprescribing Guidelines（2024）的核心。",
+    "body3": "RxDown 把這些實證落實給病人：按比例的減量時程、你真的看得見的佔據率曲線，以及症狀加劇時的暫停／回到前一階狀態——一切都與你的處方醫師攜手進行。",
     "sources": ["Maudsley Deprescribing Guidelines (2024)", "The Ashton Manual", "Royal College of Psychiatrists", "Horowitz & Taylor, Lancet Psychiatry (2019)", "Davies & Read, Addictive Behaviors (2019)"]
   },
   "privacyPromise": {
-    "heading": "Your diary stays on your device",
-    "body": "RxDown has no account and cannot see your logs. Your medications, doses, journal, mood, and voice transcripts are stored locally on your phone. When you use an AI feature, only the content of that request is processed — and it is never used to train models. We never sell health data. This website sets no cookies and runs no ad trackers.",
-    "link": "Read the full privacy policy"
+    "heading": "你的日記留在你的裝置上",
+    "body": "RxDown 沒有帳號，也看不到你的紀錄。你的藥物、劑量、日記、情緒與語音逐字稿都儲存在你手機的本地。使用 AI 功能時，只有該次請求的內容會被處理——而且絕不會用來訓練模型。我們絕不販售健康資料。本網站不設任何 cookie，也不跑廣告追蹤。",
+    "link": "閱讀完整隱私權政策"
   },
   "faqTeaser": {
-    "heading": "Questions people ask",
-    "cta": "See all questions"
+    "heading": "大家常問的問題",
+    "cta": "查看所有問題"
   },
   "finalCta": {
-    "heading": "Start your diary tonight",
-    "body": "Free to download, free to log every day. Bring your first week of real data to your next appointment.",
-    "formerly": "Looking for RxTaper? You're in the right place — RxDown is its new name."
+    "heading": "今晚就開始寫你的日記",
+    "body": "免費下載，每天免費記錄。把你第一週的真實資料帶到下次回診。",
+    "formerly": "在找 RxTaper 嗎？你來對地方了——RxDown 是它的新名字。"
   },
   "footer": {
-    "product": "Product",
-    "resources": "Resources",
-    "legal": "Legal",
-    "languages": "Languages",
-    "disclaimer": "RxDown is a data tracking and journaling tool for adults (18+). It does not provide medical advice, diagnosis, or treatment. Never stop taking medication or change your dose based solely on information from this app or website — medication reduction should always be supervised by a qualified healthcare professional.",
-    "copyright": "© 2026 XUPLABS. All rights reserved."
+    "product": "產品",
+    "resources": "資源",
+    "legal": "法律",
+    "languages": "語言",
+    "disclaimer": "RxDown 是給成年人（18 歲以上）的資料追蹤與日記工具，不提供醫療建議、診斷或治療。切勿僅憑本 App 或網站的資訊就停藥或改變劑量——減藥務必在合格醫療專業人員的監督下進行。",
+    "copyright": "© 2026 XUPLABS. 版權所有。"
   },
   "calc": {
-    "h1": "Hyperbolic taper calculator",
-    "answerFirst": "A hyperbolic taper reduces your medication by a constant proportion of your current dose (for example 10% per step) instead of a fixed amount — so the absolute cuts get smaller as your dose gets lower, matching how dose relates to receptor occupancy. This free calculator builds an example schedule you can discuss with your prescriber.",
-    "labelStart": "Current daily dose",
-    "labelUnit": "Unit",
-    "labelPercent": "Reduction per step",
-    "labelInterval": "Days between steps",
-    "labelTarget": "Stop threshold",
-    "hintTarget": "Schedule ends when the dose reaches this fraction of your current dose. The final jump to zero should be planned with your prescriber.",
-    "generate": "Build schedule",
-    "colStep": "Step",
-    "colDay": "Day",
-    "colDose": "Dose",
-    "colReduction": "Cut from previous",
-    "chartTitle": "Your dose curve",
-    "summaryPrefix": "This schedule takes about",
-    "summaryWeeks": "weeks",
-    "summarySteps": "steps",
-    "disclaimer": "This calculator is an educational illustration, not a prescription. Real-world tapers need to account for your medication's available formulations, your history, and your symptoms — slow down, hold, or reinstate as your prescriber advises. Do not change your dose without medical supervision.",
-    "methodHeading": "How is this schedule calculated?",
-    "methodBody": "Each step multiplies the current dose by (1 − reduction%). This mirrors the proportional-reduction approach described by Horowitz & Taylor (Lancet Psychiatry, 2019) and the Maudsley Deprescribing Guidelines (2024): because receptor occupancy follows a hyperbolic curve, proportional cuts produce roughly even effects, while equal-milligram cuts become progressively harsher at low doses. Typical clinical practice ranges from 5–10% (cautious) to 25% (faster) per step, every 2–4 weeks, adjusted to symptoms.",
-    "appBridge": "Want this schedule to live in your pocket — with daily logging, symptom tracking, and a report your doctor can read? RxDown does exactly that.",
+    "h1": "雙曲線減量計算機",
+    "answerFirst": "雙曲線減量是按你目前劑量的固定比例來減（例如每一步 10%），而不是固定的量——所以劑量越低，實際削減的絕對值越小，這正好對應劑量與受體佔據率之間的關係。這個免費計算機會建立一份範例時程，讓你能和你的處方醫師討論。",
+    "labelStart": "目前每日劑量",
+    "labelUnit": "單位",
+    "labelPercent": "每一步減幅",
+    "labelInterval": "每步間隔天數",
+    "labelTarget": "停藥門檻",
+    "hintTarget": "當劑量降到目前劑量的這個比例時，時程即結束。最後歸零的那一跳，請與你的處方醫師一起規劃。",
+    "generate": "建立時程",
+    "colStep": "步驟",
+    "colDay": "天",
+    "colDose": "劑量",
+    "colReduction": "較前一步減少",
+    "chartTitle": "你的劑量曲線",
+    "summaryPrefix": "這份時程大約需要",
+    "summaryWeeks": "週",
+    "summarySteps": "步",
+    "disclaimer": "此計算機是衛教示意，不是處方。真實的減量必須考量你的藥物有哪些劑型、你的病史與你的症狀——請依處方醫師的建議放慢、暫停或回到前一階。未經醫療監督請勿改變劑量。",
+    "methodHeading": "這份時程是怎麼算出來的？",
+    "methodBody": "每一步會把目前劑量乘以（1 − 減幅%）。這反映 Horowitz & Taylor（Lancet Psychiatry, 2019）與 Maudsley Deprescribing Guidelines（2024）描述的按比例減量做法：因為受體佔據率呈雙曲線，按比例削減會產生大致相近的效果，而等毫克的削減在低劑量時會越來越劇烈。臨床常見的做法從每步 5–10%（謹慎）到 25%（較快），每 2–4 週一次，並依症狀調整。",
+    "appBridge": "想把這份時程放進口袋裡——還能每天記錄、追蹤症狀，並產生醫師讀得懂的報告嗎？RxDown 正是為此而生。",
     "faq": [
       {
-        "q": "Why do the steps get smaller and smaller?",
-        "a": "Because each cut is a percentage of the current dose. Evidence suggests the brain responds to proportional, not absolute, changes: at low doses, each milligram occupies far more receptor capacity, so fixed-size cuts hit hardest exactly when you're most vulnerable."
+        "q": "為什麼步距會越來越小？",
+        "a": "因為每一步都是目前劑量的百分比。實證顯示大腦回應的是比例上的變化、而非絕對量：在低劑量時，每一毫克佔用的受體比例都大得多，所以固定大小的削減正好在你最脆弱的時候打得最重。"
       },
       {
-        "q": "What reduction rate should I choose?",
-        "a": "That's a decision for you and your prescriber. The Maudsley Deprescribing Guidelines describe proportional reductions often in the 5–10% range per step for cautious tapers, with faster rates for people who tolerate reductions well. Symptoms — not the calendar — should set the pace."
+        "q": "我該選多少減幅？",
+        "a": "這是你和你的處方醫師要一起決定的事。Maudsley Deprescribing Guidelines 描述謹慎減量時，按比例的減幅常落在每步 5–10%，對減量耐受良好的人則可以更快。決定步調的應該是症狀，而不是日曆。"
       },
       {
-        "q": "How do I actually take a dose like 3.7 mg?",
-        "a": "Small doses usually need liquid formulations, compounded preparations, or careful tablet dispersion in water. Your pharmacist is the right person to ask — and RxDown's liquid-dose units can track whatever form you use."
+        "q": "像 3.7 mg 這種劑量到底要怎麼吃？",
+        "a": "小劑量通常需要液劑、調劑製劑，或把藥錠小心地泡水分散。你的藥師是最該請教的人——而 RxDown 的液體劑量單位可以記錄你採用的任何劑型。"
       }
     ]
   },
   "faqPage": {
-    "h1": "Frequently asked questions",
+    "h1": "常見問題",
     "items": [
       {
-        "q": "What is RxDown?",
-        "a": "RxDown is a medication-withdrawal diary app for iOS and Android. It helps adults working with a doctor to gradually reduce antidepressants, benzodiazepines, sleeping pills, opioids, and other long-term prescriptions — with AI voice journaling, guideline-based reduction schedules, symptom and sleep tracking, and a clinician-ready Doctor Report."
+        "q": "RxDown 是什麼？",
+        "a": "RxDown 是一款 iOS 與 Android 的減藥日記 App。它幫助正在醫師協助下、想逐步減少抗憂鬱劑、苯二氮平、安眠藥、鴉片類與其他長期處方藥的成年人——提供 AI 語音日記、依指引設計的減量時程、症狀與睡眠追蹤，以及可直接交給醫師的醫師報告。"
       },
       {
-        "q": "Is RxDown free?",
-        "a": "Yes — downloading, daily logging, reminders, and reduction schedules are free forever. Optional Plus and Pro subscriptions unlock AI features: voice-to-entry journaling, AI symptom analysis, and AI schedule suggestions. A free lifetime trial quota lets you test every AI feature before paying."
+        "q": "RxDown 免費嗎？",
+        "a": "是的——下載、每天記錄、提醒與減量時程永遠免費。選購的 Plus 與 Pro 訂閱可解鎖 AI 功能：語音轉紀錄的日記、AI 症狀分析與 AI 時程建議。免費的終身試用額度讓你在付費前先試用每一項 AI 功能。"
       },
       {
-        "q": "Does RxDown give medical advice?",
-        "a": "No. RxDown is a tracking and education tool for adults aged 18 and over. It does not provide medical advice, diagnosis, or treatment, and its charts and AI insights are informational only. Any change to your medication should be made with a qualified healthcare professional."
+        "q": "RxDown 會提供醫療建議嗎？",
+        "a": "不會。RxDown 是給 18 歲以上成年人的追蹤與衛教工具，不提供醫療建議、診斷或治療，其圖表與 AI 洞察僅供參考。任何藥物調整都應與合格醫療專業人員一起進行。"
       },
       {
-        "q": "Which medications does RxDown support?",
-        "a": "Any long-term medication you're reducing with your doctor: antidepressants (SSRIs, SNRIs, and others), benzodiazepines, Z-drugs and sleeping pills, opioids, and more. Receptor-occupancy curves are available for common SSRI/SNRI antidepressants, and benzodiazepine education includes Ashton-based diazepam equivalences."
+        "q": "RxDown 支援哪些藥物？",
+        "a": "任何你正在醫師協助下減量的長期藥物：抗憂鬱劑（SSRI、SNRI 等）、苯二氮平、Z-drug 與安眠藥、鴉片類等等。常見的 SSRI／SNRI 抗憂鬱劑有受體佔據率曲線，苯二氮平衛教也包含以 Ashton 為基礎的 diazepam 等效換算。"
       },
       {
-        "q": "What is hyperbolic tapering?",
-        "a": "Hyperbolic tapering reduces medication by a proportion of the current dose (for example 10% per step) rather than a fixed amount. Because receptor occupancy rises steeply at low doses, proportional cuts keep each step's effect roughly even — while equal-milligram cuts get harsher as the dose falls. The approach was described by Horowitz & Taylor (Lancet Psychiatry, 2019) and anchors the Maudsley Deprescribing Guidelines. Try our free taper calculator to see it in action."
+        "q": "什麼是雙曲線減量？",
+        "a": "雙曲線減量是按目前劑量的比例來減（例如每一步 10%），而不是固定的量。因為受體佔據率在低劑量時陡升，按比例削減能讓每一步的效果大致相近——而等毫克的削減會隨劑量下降而越來越劇烈。這套做法由 Horowitz & Taylor（Lancet Psychiatry, 2019）提出，也是 Maudsley Deprescribing Guidelines 的核心。試試我們的免費減量計算機，親眼看看它怎麼運作。"
       },
       {
-        "q": "Why are the last few milligrams the hardest?",
-        "a": "Because the dose-to-occupancy curve is hyperbolic: going from 4 mg to 2 mg can release more receptor occupancy than going from 20 mg to 10 mg. RxDown plots this curve for your own plan so you can see why the end of a taper deserves the smallest, slowest steps."
+        "q": "為什麼最後幾毫克最難減？",
+        "a": "因為劑量對佔據率的曲線是雙曲線的：從 4 mg 減到 2 mg，釋放的受體佔據率可能比從 20 mg 減到 10 mg 還多。RxDown 會為你自己的計畫畫出這條曲線，讓你看懂為什麼減量的尾段值得用最小、最慢的步伐。"
       },
       {
-        "q": "How does the AI work, and does it see my data?",
-        "a": "When you record a voice or text entry, that entry — plus the plan context needed to understand it — is sent to Google's Gemini via Firebase AI Logic, processed, and returned immediately. It is not stored permanently on cloud servers and is not used to train models. Everything else lives only on your device. AI features are optional; you can log everything manually."
+        "q": "AI 怎麼運作，它會看到我的資料嗎？",
+        "a": "當你錄下一段語音或文字紀錄時，那筆紀錄——加上理解它所需的計畫脈絡——會透過 Firebase AI Logic 傳給 Google 的 Gemini，處理後立即回傳。它不會永久儲存在雲端伺服器，也不會用來訓練模型。其餘一切只留在你的裝置上。AI 功能是選用的；所有內容你都能手動記錄。"
       },
       {
-        "q": "What is in the Doctor Report?",
-        "a": "A clinician-ready PDF in SBAR format (Situation, Background, Assessment, Recommendation) with your dose curve, stability and sleep trends, symptom timeline, plan history including holds and reinstatements, and a plain-language summary. CSV export is also available for spreadsheets or EHR import."
+        "q": "醫師報告裡有什麼？",
+        "a": "一份 SBAR 格式（Situation 現況、Background 背景、Assessment 評估、Recommendation 建議）、可直接交給醫師的 PDF，內含你的劑量曲線、穩定度與睡眠趨勢、症狀時間軸、含暫停與回到前一階的計畫歷程，以及一段白話摘要。也可匯出 CSV，方便放進試算表或匯入 EHR。"
       },
       {
-        "q": "Where is my data stored, and can I delete it?",
-        "a": "On your device, in a local database — RxDown has no account system and cannot see your diary. You can export everything (CSV/PDF) or delete all data permanently from within the app at any time. The optional backup feature shares an encrypted file wherever you choose."
+        "q": "我的資料存在哪裡，可以刪除嗎？",
+        "a": "存在你的裝置上、一個本地資料庫裡——RxDown 沒有帳號系統，也看不到你的日記。你可以隨時把一切匯出（CSV／PDF），或在 App 內永久刪除所有資料。選用的備份功能會把一個加密檔案分享到你選擇的任何地方。"
       },
       {
-        "q": "Was RxDown previously called RxTaper?",
-        "a": "Yes. RxTaper was renamed to RxDown in 2026. It is the same app from the same developer — your data, subscription, and history are unaffected."
+        "q": "RxDown 以前叫 RxTaper 嗎？",
+        "a": "是的。RxTaper 在 2026 年更名為 RxDown。這是同一位開發者的同一個 App——你的資料、訂閱與歷程都不受影響。"
       },
       {
-        "q": "Which languages and platforms are supported?",
-        "a": "RxDown runs on iOS and Android and is fully localized in nine languages: English, Traditional Chinese, Japanese, Korean, German, Spanish, French, Indonesian, and European Portuguese."
+        "q": "支援哪些語言與平台？",
+        "a": "RxDown 在 iOS 與 Android 上執行，並完整在地化為九種語言：英文、繁體中文、日文、韓文、德文、西班牙文、法文、印尼文與歐洲葡萄牙文。"
       }
     ]
   },
   "support": {
-    "h1": "Support & contact",
-    "answerFirst": "Fastest way to reach us: email. We read every message — feedback shapes the app.",
-    "emailLabel": "Email support",
-    "topicsHeading": "Before you write — quick answers",
+    "h1": "支援與聯絡",
+    "answerFirst": "找我們最快的方式：寄信。我們每一封都會讀——你的回饋會形塑這個 App。",
+    "emailLabel": "電子郵件支援",
+    "topicsHeading": "動筆之前——快速解答",
     "topics": [
       {
-        "title": "The app won't start",
-        "body": "Reinstalling usually fixes startup problems, but export a backup first if you can. If the app fails before you can back up, email us — we have a recovery flow for database files."
+        "title": "App 打不開",
+        "body": "重新安裝通常能解決啟動問題，但如果可以，請先匯出一份備份。若 App 在你來得及備份前就掛了，寄信給我們——我們有針對資料庫檔案的救援流程。"
       },
       {
-        "title": "Restore a subscription",
-        "body": "Me tab → subscription page → Restore purchases. Make sure you're signed into the same App Store / Google account that bought the plan."
+        "title": "恢復訂閱",
+        "body": "「我」分頁 → 訂閱頁面 → 恢復購買。請確認你登入的是當初購買方案的同一個 App Store／Google 帳號。"
       },
       {
-        "title": "Export or delete your data",
-        "body": "Me tab → Export for CSV/PDF. Deleting all data is permanent and also under the Me tab. We can't recover deleted data — it only ever existed on your device."
+        "title": "匯出或刪除你的資料",
+        "body": "「我」分頁 → 匯出，可選 CSV／PDF。刪除所有資料是永久的，同樣在「我」分頁裡。我們無法救回已刪除的資料——它從頭到尾只存在你的裝置上。"
       }
     ],
-    "responseNote": "Solo developer, real human replies — usually within 48 hours."
+    "responseNote": "獨立開發者，真人親自回覆——通常在 48 小時內。"
   },
   "privacyPage": {
-    "h1": "Privacy policy",
-    "updated": "Last updated: July 2026",
+    "h1": "隱私權政策",
+    "updated": "最後更新：2026 年 7 月",
     "sections": [
       {
-        "h2": "The short version",
-        "body": "Your health diary never leaves your device unless you explicitly export it. RxDown has no accounts, no health-data cloud sync, and no data sales. AI requests are processed transiently and never used for model training. This website sets no cookies and runs no ad trackers."
+        "h2": "簡短版",
+        "body": "除非你主動匯出，你的健康日記絕不離開你的裝置。RxDown 沒有帳號、沒有健康資料雲端同步，也不販售資料。AI 請求只做暫時性處理，絕不用於模型訓練。本網站不設任何 cookie，也不跑廣告追蹤。"
       },
       {
-        "h2": "What the app stores, and where",
-        "body": "All health records — medications, doses, daily logs, mood, symptoms, journal text, and voice transcripts — are stored locally in the app's database on your device, protected by your device's own security (screen lock and OS storage protection). We, the developers, cannot access, view, or back up this data. You own it entirely."
+        "h2": "App 儲存什麼、存在哪裡",
+        "body": "所有健康紀錄——藥物、劑量、每日日誌、情緒、症狀、日記文字與語音逐字稿——都儲存在你裝置上 App 資料庫的本地，並受你裝置本身的安全機制（螢幕鎖與作業系統儲存保護）保護。我們，也就是開發者，無法存取、檢視或備份這些資料。它完全屬於你。"
       },
       {
-        "h2": "AI features and third-party processing",
-        "body": "When you use AI Journal or Smart Analysis, the entry you chose to analyze (its text or audio) plus the plan and medical-history context it needs are sent to Google's Gemini via Firebase AI Logic, processed, and returned immediately. These requests are not permanently stored on cloud servers and are not used to train models. AI features are optional — everything can be logged manually."
+        "h2": "AI 功能與第三方處理",
+        "body": "當你使用 AI 日記或智能分析時，你選擇要分析的那筆紀錄（其文字或音訊），加上它所需的計畫與病史脈絡，會透過 Firebase AI Logic 傳給 Google 的 Gemini，處理後立即回傳。這些請求不會永久儲存在雲端伺服器，也不會用來訓練模型。AI 功能是選用的——所有內容都能手動記錄。"
       },
       {
-        "h2": "Anonymous usage analytics",
-        "body": "The app collects anonymous, aggregate usage events (for example: 'a log was created', 'the export screen was opened') to improve the product. These events never contain health information — no medication names, doses, moods, symptoms, or journal content. This website itself collects nothing and sets no cookies; your language preference is stored only in your own browser."
+        "h2": "匿名使用分析",
+        "body": "App 會收集匿名、彙總的使用事件（例如：「建立了一筆紀錄」、「開啟了匯出畫面」）以改進產品。這些事件絕不包含健康資訊——沒有藥名、劑量、情緒、症狀或日記內容。本網站本身不收集任何東西，也不設 cookie；你的語言偏好只儲存在你自己的瀏覽器裡。"
       },
       {
-        "h2": "Your rights and controls",
-        "body": "Export everything as CSV or PDF at any time. Delete all data permanently from within the app — since data lives only on your device, deletion is immediate and total. No account means there is nothing to close and nothing held on our side."
+        "h2": "你的權利與控制",
+        "body": "隨時把一切匯出成 CSV 或 PDF。在 App 內永久刪除所有資料——因為資料只存在你的裝置上，刪除是即時且徹底的。沒有帳號，代表沒有東西要關閉，我們這邊也沒有留下任何資料。"
       },
       {
-        "h2": "Changes to this policy",
-        "body": "Significant changes will be announced in the app. Questions? Email us — see the Support page."
+        "h2": "本政策的變更",
+        "body": "重大變更會在 App 內公告。有問題嗎？寄信給我們——見支援頁面。"
       }
     ]
   },
   "termsPage": {
-    "h1": "Terms of service",
-    "updated": "Last updated: July 2026",
+    "h1": "服務條款",
+    "updated": "最後更新：2026 年 7 月",
     "sections": [
       {
-        "h2": "Acceptance",
-        "body": "By downloading or using the RxDown app or this website, you agree to these terms. If you do not agree, please discontinue use."
+        "h2": "接受條款",
+        "body": "下載或使用 RxDown App 或本網站，即代表你同意這些條款。若你不同意，請停止使用。"
       },
       {
-        "h2": "No medical advice",
-        "body": "RxDown is an informational tracking and journaling tool for adults aged 18 and over. It does not provide medical advice, diagnosis, or treatment. Decisions you make based on the app or this website — including its calculators, charts, and AI-generated insights — are at your own risk and should always involve a qualified healthcare professional."
+        "h2": "非醫療建議",
+        "body": "RxDown 是給 18 歲以上成年人的資訊性追蹤與日記工具，不提供醫療建議、診斷或治療。你根據本 App 或網站——包括其計算機、圖表與 AI 生成的洞察——所做的決定，風險由你自行承擔，並且應始終有合格醫療專業人員參與。"
       },
       {
-        "h2": "AI accuracy",
-        "body": "The app uses artificial intelligence, which can produce erroneous, misleading, or fabricated output. You are responsible for verifying AI-generated content before relying on it."
+        "h2": "AI 準確性",
+        "body": "本 App 使用人工智慧，可能產生錯誤、誤導或虛構的輸出。在依賴 AI 生成的內容之前，你有責任先加以核實。"
       },
       {
-        "h2": "Limitation of liability",
-        "body": "To the maximum extent permitted by law, the RxDown team shall not be liable for any direct, indirect, incidental, or consequential damages — including deterioration of health or data loss — resulting from use of, or inability to use, the app or website."
+        "h2": "責任限制",
+        "body": "在法律允許的最大範圍內，RxDown 團隊不對因使用或無法使用本 App 或網站而導致的任何直接、間接、附帶或後果性損害——包括健康惡化或資料遺失——負責。"
       },
       {
-        "h2": "Subscriptions",
-        "body": "Optional subscriptions are billed through the App Store or Google Play under their respective terms. Prices are shown in-app before purchase; subscriptions renew automatically unless cancelled in your store account settings."
+        "h2": "訂閱",
+        "body": "選用的訂閱透過 App Store 或 Google Play 依其各自條款計費。價格會在購買前於 App 內顯示；除非你在商店帳號設定中取消，訂閱會自動續訂。"
       },
       {
-        "h2": "License and termination",
-        "body": "We grant you a personal, non-transferable license to use the app. We reserve the right to terminate access for violations of these terms."
+        "h2": "授權與終止",
+        "body": "我們授予你個人、不可轉讓的授權以使用本 App。若違反這些條款，我們保留終止你使用權的權利。"
       }
     ]
   }

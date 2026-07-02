@@ -1,0 +1,166 @@
+---
+import '../styles/global.css';
+import {
+  LOCALES,
+  LOCALE_CODES,
+  STRINGS,
+  localePath,
+  APP_STORE_URL,
+  PLAY_STORE_URL,
+} from '../i18n/locales.js';
+
+const {
+  locale = 'en',
+  page = 'home',
+  path = '/',
+  jsonLd = [],
+  autoDetect = false,
+} = Astro.props;
+
+const t = STRINGS[locale];
+const meta = t.meta[page] ?? t.meta.home;
+const canonical = new URL(localePath(locale, path), Astro.site).href;
+const ogImage = new URL('/icon-512.png', Astro.site).href;
+
+const orgLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'XUPLABS',
+  url: 'https://rxdown.app/',
+  logo: 'https://rxdown.app/icon-512.png',
+  sameAs: [APP_STORE_URL, PLAY_STORE_URL],
+};
+const allLd = [orgLd, ...jsonLd];
+---
+
+<!doctype html>
+<html lang={LOCALES[locale].hreflang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{meta.title}</title>
+    <meta name="description" content={meta.description} />
+    <link rel="canonical" href={canonical} />
+    {LOCALE_CODES.map((l) => (
+      <link
+        rel="alternate"
+        hreflang={LOCALES[l].hreflang}
+        href={new URL(localePath(l, path), Astro.site).href}
+      />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={new URL(path, Astro.site).href} />
+
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/icon-180.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#faf5ee" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#14202e" media="(prefers-color-scheme: dark)" />
+    <meta name="apple-itunes-app" content="app-id=6757333483" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={meta.title} />
+    <meta property="og:description" content={meta.description} />
+    <meta property="og:site_name" content="RxDown" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:locale" content={LOCALES[locale].ogLocale} />
+    {LOCALE_CODES.filter((l) => l !== locale).map((l) => (
+      <meta property="og:locale:alternate" content={LOCALES[l].ogLocale} />
+    ))}
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script type="application/ld+json" set:html={JSON.stringify(allLd)} />
+
+    {autoDetect && (
+      <script is:inline>
+        (function () {
+          try {
+            if (location.pathname !== '/') return;
+            if (localStorage.getItem('rx-lang')) return;
+            var supported = ['zh', 'ja', 'ko', 'de', 'es', 'fr', 'id', 'pt'];
+            var pref = (navigator.languages || [navigator.language || 'en']).map(
+              function (l) { return l.toLowerCase().split('-')[0]; }
+            );
+            var hit = pref.find(function (l) { return supported.indexOf(l) !== -1; });
+            localStorage.setItem('rx-lang', hit || 'en');
+            if (hit) location.replace('/' + hit + '/');
+          } catch (e) {}
+        })();
+      </script>
+    )}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href={localePath(locale, '/')}>
+          <img src="/favicon.png" alt="" width="30" height="30" />
+          RxDown
+        </a>
+        <nav class="site-nav" aria-label="Main">
+          <a href={localePath(locale, '/calculator/')} aria-current={page === 'calculator' ? 'page' : undefined}>{t.nav.calculator}</a>
+          <a href={localePath(locale, '/faq/')} aria-current={page === 'faq' ? 'page' : undefined}>{t.nav.faq}</a>
+          <a href={localePath(locale, '/support/')} aria-current={page === 'support' ? 'page' : undefined}>{t.nav.support}</a>
+          <span class="lang-picker">
+            <select id="lang-select" aria-label="Language">
+              {LOCALE_CODES.map((l) => (
+                <option value={localePath(l, path)} data-lang={l} selected={l === locale}>
+                  {LOCALES[l].name}
+                </option>
+              ))}
+            </select>
+          </span>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-cols">
+          <div>
+            <h4>{t.footer.product}</h4>
+            <a href={APP_STORE_URL} rel="noopener">App Store</a>
+            <a href={PLAY_STORE_URL} rel="noopener">Google Play</a>
+            <a href={localePath(locale, '/calculator/')}>{t.nav.calculator}</a>
+          </div>
+          <div>
+            <h4>{t.footer.resources}</h4>
+            <a href={localePath(locale, '/faq/')}>{t.nav.faq}</a>
+            <a href={localePath(locale, '/support/')}>{t.nav.support}</a>
+          </div>
+          <div>
+            <h4>{t.footer.legal}</h4>
+            <a href={localePath(locale, '/privacy/')}>{t.nav.privacy}</a>
+            <a href={localePath(locale, '/terms/')}>{t.nav.terms}</a>
+          </div>
+          <div>
+            <h4>{t.footer.languages}</h4>
+            {LOCALE_CODES.map((l) => (
+              <a href={localePath(l, path)} hreflang={LOCALES[l].hreflang}>{LOCALES[l].name}</a>
+            ))}
+          </div>
+        </div>
+        <div class="footer-meta">
+          <p>{t.footer.disclaimer}</p>
+          <p>{t.footer.copyright}</p>
+        </div>
+      </div>
+    </footer>
+
+    <script is:inline>
+      document.getElementById('lang-select').addEventListener('change', function (e) {
+        var opt = e.target.selectedOptions[0];
+        try { localStorage.setItem('rx-lang', opt.dataset.lang); } catch (err) {}
+        location.href = opt.value;
+      });
+    </script>
+  </body>
+</html>

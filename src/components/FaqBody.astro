@@ -1,0 +1,20 @@
+---
+import { STRINGS } from '../i18n/locales.js';
+const { locale } = Astro.props;
+const t = STRINGS[locale];
+---
+
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">RxDown</span>
+    <h1>{t.faqPage.h1}</h1>
+    <div class="faq-list">
+      {t.faqPage.items.map((item) => (
+        <details>
+          <summary>{item.q}</summary>
+          <div><p>{item.a}</p></div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,304 @@
+{
+  "meta": {
+    "siteName": "RxDown",
+    "home": {
+      "title": "RxDown — Medication Withdrawal Diary & Taper Planner",
+      "description": "RxDown helps you come off antidepressants, benzodiazepines, and sleeping pills gently: AI voice journaling, guideline-based reduction schedules, and a clinician-ready Doctor Report. iOS & Android."
+    },
+    "calculator": {
+      "title": "Free Hyperbolic Taper Calculator — RxDown",
+      "description": "Build a gradual dose-reduction schedule using the hyperbolic method described in the Maudsley Deprescribing Guidelines. Free, no sign-up, with sources and methodology."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions — RxDown",
+      "description": "Answers about RxDown: supported medications, how the AI works, privacy, hyperbolic tapering, and what the Doctor Report contains."
+    },
+    "privacy": {
+      "title": "Privacy Policy — RxDown",
+      "description": "RxDown is local-first: your health diary stays on your device. What data the app and this website do — and do not — collect."
+    },
+    "terms": {
+      "title": "Terms of Service — RxDown",
+      "description": "Terms of service for the RxDown app and website."
+    },
+    "support": {
+      "title": "Support & Contact — RxDown",
+      "description": "Get help with RxDown: contact, data recovery, and common troubleshooting."
+    }
+  },
+  "nav": {
+    "calculator": "Taper calculator",
+    "faq": "FAQ",
+    "support": "Support",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "getApp": "Get the app"
+  },
+  "langBanner": {
+    "text": "This page is also available in your language.",
+    "cta": "Switch",
+    "dismiss": "Dismiss"
+  },
+  "hero": {
+    "eyebrow": "Medication withdrawal, tracked gently",
+    "h1": "Come off your medication one gentle step at a time",
+    "lede": "RxDown is a diary for medication withdrawal. Speak for thirty seconds a day — the AI captures your dose, sleep, mood, and symptoms, spots patterns, and turns your experience into a report your doctor can actually use.",
+    "ctaAppStore": "Download on the App Store",
+    "ctaPlay": "Get it on Google Play",
+    "note": "Free to use. Built on the Maudsley Deprescribing Guidelines, the Ashton Manual, and Royal College of Psychiatrists guidance.",
+    "formerly": "RxTaper is now RxDown — same app, your data is untouched."
+  },
+  "answerFirst": "RxDown is a medication-withdrawal diary app for iOS and Android. It helps adults who are working with a doctor to gradually reduce antidepressants, benzodiazepines, sleeping pills, opioids, or other long-term prescriptions — by logging dose, sleep, mood, and withdrawal symptoms in seconds a day, and turning that record into clear, clinician-ready data.",
+  "how": {
+    "heading": "How does RxDown work?",
+    "steps": [
+      {
+        "title": "Log in seconds — just talk",
+        "body": "Don't feel like typing on a foggy day? Speak. The AI (powered by Gemini) captures your dose, sleep, mood, and physical sensations, and you review every entry before it saves."
+      },
+      {
+        "title": "See the patterns",
+        "body": "Dose curve, stability score, sleep pattern, and symptom timeline in one place — so you can see whether a reduction affects your sleep or mood days later."
+      },
+      {
+        "title": "Bring real data to your doctor",
+        "body": "Generate a clinician-ready Doctor Report in SBAR format with trend charts, plus clean CSV and PDF exports. Walk into your next appointment with evidence, not guesswork."
+      }
+    ]
+  },
+  "features": {
+    "heading": "What can RxDown do?",
+    "cards": [
+      {
+        "icon": "🎙️",
+        "title": "AI voice journaling",
+        "body": "Thirty seconds of talking becomes a structured entry: dose, sleep hours, mood, symptoms, and notes — reviewed and editable before saving."
+      },
+      {
+        "icon": "📉",
+        "title": "Receptor occupancy, made visible",
+        "isNew": true,
+        "body": "See why the last few milligrams matter most. RxDown plots estimated receptor occupancy alongside your dose curve, based on the hyperbolic model described by Horowitz & Taylor and the Maudsley Deprescribing Guidelines."
+      },
+      {
+        "icon": "📚",
+        "title": "Guideline-based schedules",
+        "body": "Reduction plans grounded in the Maudsley Deprescribing Guidelines, the Ashton Manual, and Royal College of Psychiatrists references — with hold and reinstate as first-class states, not failures."
+      },
+      {
+        "icon": "💊",
+        "title": "Benzodiazepine & Z-drug education",
+        "isNew": true,
+        "body": "Ashton-based guidance with diazepam-equivalence references, plus formulation tips for the tiny doses at the end of a reduction — liquids, compounded preparations, careful dispersion."
+      },
+      {
+        "icon": "😴",
+        "title": "Automatic sleep import",
+        "isNew": true,
+        "body": "Connect Apple Health or Health Connect and your sleep lines up with your dose changes on one timeline — no manual entry."
+      },
+      {
+        "icon": "📄",
+        "title": "Doctor Report (SBAR)",
+        "isNew": true,
+        "body": "A clinician-ready summary in SBAR format with trend charts and a plain-language AI narrative — plus CSV and PDF exports of your full history."
+      }
+    ]
+  },
+  "evidence": {
+    "heading": "Why does gradual, hyperbolic tapering matter?",
+    "body1": "Withdrawal is common, not rare: in a systematic review, an average of 56% of people who stopped antidepressants experienced withdrawal symptoms, and nearly half of those described them as severe (Davies & Read, 2019, Addictive Behaviors).",
+    "body2": "Because the relationship between dose and receptor occupancy is hyperbolic, equal-size dose cuts hit harder and harder as the dose gets lower. Horowitz & Taylor (The Lancet Psychiatry, 2019) therefore recommend reducing by a proportion of the current dose — for example about 10% per step — so each step produces a similar change at the receptor level. This approach now anchors the Maudsley Deprescribing Guidelines (2024).",
+    "body3": "RxDown operationalizes this evidence for patients: proportional reduction schedules, occupancy curves you can actually see, and hold/reinstate states for when symptoms flare — always in partnership with your prescriber.",
+    "sources": ["Maudsley Deprescribing Guidelines (2024)", "The Ashton Manual", "Royal College of Psychiatrists", "Horowitz & Taylor, Lancet Psychiatry (2019)", "Davies & Read, Addictive Behaviors (2019)"]
+  },
+  "privacyPromise": {
+    "heading": "Your diary stays on your device",
+    "body": "RxDown has no account and cannot see your logs. Your medications, doses, journal, mood, and voice transcripts are stored locally on your phone. When you use an AI feature, only the content of that request is processed — and it is never used to train models. We never sell health data. This website sets no cookies and runs no ad trackers.",
+    "link": "Read the full privacy policy"
+  },
+  "faqTeaser": {
+    "heading": "Questions people ask",
+    "cta": "See all questions"
+  },
+  "finalCta": {
+    "heading": "Start your diary tonight",
+    "body": "Free to download, free to log every day. Bring your first week of real data to your next appointment.",
+    "formerly": "Looking for RxTaper? You're in the right place — RxDown is its new name."
+  },
+  "footer": {
+    "product": "Product",
+    "resources": "Resources",
+    "legal": "Legal",
+    "languages": "Languages",
+    "disclaimer": "RxDown is a data tracking and journaling tool for adults (18+). It does not provide medical advice, diagnosis, or treatment. Never stop taking medication or change your dose based solely on information from this app or website — medication reduction should always be supervised by a qualified healthcare professional.",
+    "copyright": "© 2026 XUPLABS. All rights reserved."
+  },
+  "calc": {
+    "h1": "Hyperbolic taper calculator",
+    "answerFirst": "A hyperbolic taper reduces your medication by a constant proportion of your current dose (for example 10% per step) instead of a fixed amount — so the absolute cuts get smaller as your dose gets lower, matching how dose relates to receptor occupancy. This free calculator builds an example schedule you can discuss with your prescriber.",
+    "labelStart": "Current daily dose",
+    "labelUnit": "Unit",
+    "labelPercent": "Reduction per step",
+    "labelInterval": "Days between steps",
+    "labelTarget": "Stop threshold",
+    "hintTarget": "Schedule ends when the dose reaches this fraction of your current dose. The final jump to zero should be planned with your prescriber.",
+    "generate": "Build schedule",
+    "colStep": "Step",
+    "colDay": "Day",
+    "colDose": "Dose",
+    "colReduction": "Cut from previous",
+    "chartTitle": "Your dose curve",
+    "summaryPrefix": "This schedule takes about",
+    "summaryWeeks": "weeks",
+    "summarySteps": "steps",
+    "disclaimer": "This calculator is an educational illustration, not a prescription. Real-world tapers need to account for your medication's available formulations, your history, and your symptoms — slow down, hold, or reinstate as your prescriber advises. Do not change your dose without medical supervision.",
+    "methodHeading": "How is this schedule calculated?",
+    "methodBody": "Each step multiplies the current dose by (1 − reduction%). This mirrors the proportional-reduction approach described by Horowitz & Taylor (Lancet Psychiatry, 2019) and the Maudsley Deprescribing Guidelines (2024): because receptor occupancy follows a hyperbolic curve, proportional cuts produce roughly even effects, while equal-milligram cuts become progressively harsher at low doses. Typical clinical practice ranges from 5–10% (cautious) to 25% (faster) per step, every 2–4 weeks, adjusted to symptoms.",
+    "appBridge": "Want this schedule to live in your pocket — with daily logging, symptom tracking, and a report your doctor can read? RxDown does exactly that.",
+    "faq": [
+      {
+        "q": "Why do the steps get smaller and smaller?",
+        "a": "Because each cut is a percentage of the current dose. Evidence suggests the brain responds to proportional, not absolute, changes: at low doses, each milligram occupies far more receptor capacity, so fixed-size cuts hit hardest exactly when you're most vulnerable."
+      },
+      {
+        "q": "What reduction rate should I choose?",
+        "a": "That's a decision for you and your prescriber. The Maudsley Deprescribing Guidelines describe proportional reductions often in the 5–10% range per step for cautious tapers, with faster rates for people who tolerate reductions well. Symptoms — not the calendar — should set the pace."
+      },
+      {
+        "q": "How do I actually take a dose like 3.7 mg?",
+        "a": "Small doses usually need liquid formulations, compounded preparations, or careful tablet dispersion in water. Your pharmacist is the right person to ask — and RxDown's liquid-dose units can track whatever form you use."
+      }
+    ]
+  },
+  "faqPage": {
+    "h1": "Frequently asked questions",
+    "items": [
+      {
+        "q": "What is RxDown?",
+        "a": "RxDown is a medication-withdrawal diary app for iOS and Android. It helps adults working with a doctor to gradually reduce antidepressants, benzodiazepines, sleeping pills, opioids, and other long-term prescriptions — with AI voice journaling, guideline-based reduction schedules, symptom and sleep tracking, and a clinician-ready Doctor Report."
+      },
+      {
+        "q": "Is RxDown free?",
+        "a": "Yes — downloading, daily logging, reminders, and reduction schedules are free forever. Optional Plus and Pro subscriptions unlock AI features: voice-to-entry journaling, AI symptom analysis, and AI schedule suggestions. A free lifetime trial quota lets you test every AI feature before paying."
+      },
+      {
+        "q": "Does RxDown give medical advice?",
+        "a": "No. RxDown is a tracking and education tool for adults aged 18 and over. It does not provide medical advice, diagnosis, or treatment, and its charts and AI insights are informational only. Any change to your medication should be made with a qualified healthcare professional."
+      },
+      {
+        "q": "Which medications does RxDown support?",
+        "a": "Any long-term medication you're reducing with your doctor: antidepressants (SSRIs, SNRIs, and others), benzodiazepines, Z-drugs and sleeping pills, opioids, and more. Receptor-occupancy curves are available for common SSRI/SNRI antidepressants, and benzodiazepine education includes Ashton-based diazepam equivalences."
+      },
+      {
+        "q": "What is hyperbolic tapering?",
+        "a": "Hyperbolic tapering reduces medication by a proportion of the current dose (for example 10% per step) rather than a fixed amount. Because receptor occupancy rises steeply at low doses, proportional cuts keep each step's effect roughly even — while equal-milligram cuts get harsher as the dose falls. The approach was described by Horowitz & Taylor (Lancet Psychiatry, 2019) and anchors the Maudsley Deprescribing Guidelines. Try our free taper calculator to see it in action."
+      },
+      {
+        "q": "Why are the last few milligrams the hardest?",
+        "a": "Because the dose-to-occupancy curve is hyperbolic: going from 4 mg to 2 mg can release more receptor occupancy than going from 20 mg to 10 mg. RxDown plots this curve for your own plan so you can see why the end of a taper deserves the smallest, slowest steps."
+      },
+      {
+        "q": "How does the AI work, and does it see my data?",
+        "a": "When you record a voice or text entry, that entry — plus the plan context needed to understand it — is sent to Google's Gemini via Firebase AI Logic, processed, and returned immediately. It is not stored permanently on cloud servers and is not used to train models. Everything else lives only on your device. AI features are optional; you can log everything manually."
+      },
+      {
+        "q": "What is in the Doctor Report?",
+        "a": "A clinician-ready PDF in SBAR format (Situation, Background, Assessment, Recommendation) with your dose curve, stability and sleep trends, symptom timeline, plan history including holds and reinstatements, and a plain-language summary. CSV export is also available for spreadsheets or EHR import."
+      },
+      {
+        "q": "Where is my data stored, and can I delete it?",
+        "a": "On your device, in a local database — RxDown has no account system and cannot see your diary. You can export everything (CSV/PDF) or delete all data permanently from within the app at any time. The optional backup feature shares an encrypted file wherever you choose."
+      },
+      {
+        "q": "Was RxDown previously called RxTaper?",
+        "a": "Yes. RxTaper was renamed to RxDown in 2026. It is the same app from the same developer — your data, subscription, and history are unaffected."
+      },
+      {
+        "q": "Which languages and platforms are supported?",
+        "a": "RxDown runs on iOS and Android and is fully localized in nine languages: English, Traditional Chinese, Japanese, Korean, German, Spanish, French, Indonesian, and European Portuguese."
+      }
+    ]
+  },
+  "support": {
+    "h1": "Support & contact",
+    "answerFirst": "Fastest way to reach us: email. We read every message — feedback shapes the app.",
+    "emailLabel": "Email support",
+    "topicsHeading": "Before you write — quick answers",
+    "topics": [
+      {
+        "title": "The app won't start",
+        "body": "Reinstalling usually fixes startup problems, but export a backup first if you can. If the app fails before you can back up, email us — we have a recovery flow for database files."
+      },
+      {
+        "title": "Restore a subscription",
+        "body": "Me tab → subscription page → Restore purchases. Make sure you're signed into the same App Store / Google account that bought the plan."
+      },
+      {
+        "title": "Export or delete your data",
+        "body": "Me tab → Export for CSV/PDF. Deleting all data is permanent and also under the Me tab. We can't recover deleted data — it only ever existed on your device."
+      }
+    ],
+    "responseNote": "Solo developer, real human replies — usually within 48 hours."
+  },
+  "privacyPage": {
+    "h1": "Privacy policy",
+    "updated": "Last updated: July 2026",
+    "sections": [
+      {
+        "h2": "The short version",
+        "body": "Your health diary never leaves your device unless you explicitly export it. RxDown has no accounts, no health-data cloud sync, and no data sales. AI requests are processed transiently and never used for model training. This website sets no cookies and runs no ad trackers."
+      },
+      {
+        "h2": "What the app stores, and where",
+        "body": "All health records — medications, doses, daily logs, mood, symptoms, journal text, and voice transcripts — are stored locally in the app's database on your device, protected by your device's own security (screen lock and OS storage protection). We, the developers, cannot access, view, or back up this data. You own it entirely."
+      },
+      {
+        "h2": "AI features and third-party processing",
+        "body": "When you use AI Journal or Smart Analysis, the entry you chose to analyze (its text or audio) plus the plan and medical-history context it needs are sent to Google's Gemini via Firebase AI Logic, processed, and returned immediately. These requests are not permanently stored on cloud servers and are not used to train models. AI features are optional — everything can be logged manually."
+      },
+      {
+        "h2": "Anonymous usage analytics",
+        "body": "The app collects anonymous, aggregate usage events (for example: 'a log was created', 'the export screen was opened') to improve the product. These events never contain health information — no medication names, doses, moods, symptoms, or journal content. This website itself collects nothing and sets no cookies; your language preference is stored only in your own browser."
+      },
+      {
+        "h2": "Your rights and controls",
+        "body": "Export everything as CSV or PDF at any time. Delete all data permanently from within the app — since data lives only on your device, deletion is immediate and total. No account means there is nothing to close and nothing held on our side."
+      },
+      {
+        "h2": "Changes to this policy",
+        "body": "Significant changes will be announced in the app. Questions? Email us — see the Support page."
+      }
+    ]
+  },
+  "termsPage": {
+    "h1": "Terms of service",
+    "updated": "Last updated: July 2026",
+    "sections": [
+      {
+        "h2": "Acceptance",
+        "body": "By downloading or using the RxDown app or this website, you agree to these terms. If you do not agree, please discontinue use."
+      },
+      {
+        "h2": "No medical advice",
+        "body": "RxDown is an informational tracking and journaling tool for adults aged 18 and over. It does not provide medical advice, diagnosis, or treatment. Decisions you make based on the app or this website — including its calculators, charts, and AI-generated insights — are at your own risk and should always involve a qualified healthcare professional."
+      },
+      {
+        "h2": "AI accuracy",
+        "body": "The app uses artificial intelligence, which can produce erroneous, misleading, or fabricated output. You are responsible for verifying AI-generated content before relying on it."
+      },
+      {
+        "h2": "Limitation of liability",
+        "body": "To the maximum extent permitted by law, the RxDown team shall not be liable for any direct, indirect, incidental, or consequential damages — including deterioration of health or data loss — resulting from use of, or inability to use, the app or website."
+      },
+      {
+        "h2": "Subscriptions",
+        "body": "Optional subscriptions are billed through the App Store or Google Play under their respective terms. Prices are shown in-app before purchase; subscriptions renew automatically unless cancelled in your store account settings."
+      },
+      {
+        "h2": "License and termination",
+        "body": "We grant you a personal, non-transferable license to use the app. We reserve the right to terminate access for violations of these terms."
+      }
+    ]
+  }
+}

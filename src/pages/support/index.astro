@@ -1,0 +1,10 @@
+---
+import Base from '../../layouts/Base.astro';
+import SupportBody from '../../components/SupportBody.astro';
+import { STRINGS } from '../../i18n/locales.js';
+import { breadcrumbLd } from '../../i18n/jsonld.js';
+const t = STRINGS.en;
+---
+<Base locale="en" page="support" path="/support/" jsonLd={[breadcrumbLd('en', '/support/', t.support.h1)]}>
+  <SupportBody locale="en" />
+</Base>

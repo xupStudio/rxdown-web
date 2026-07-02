@@ -1,0 +1,10 @@
+---
+import Base from '../layouts/Base.astro';
+import HomeBody from '../components/HomeBody.astro';
+import { STRINGS } from '../i18n/locales.js';
+import { webSiteLd, softwareAppLd } from '../i18n/jsonld.js';
+const t = STRINGS.en;
+---
+<Base locale="en" page="home" path="/" autoDetect={true} jsonLd={[webSiteLd(), softwareAppLd(t)]}>
+  <HomeBody locale="en" />
+</Base>

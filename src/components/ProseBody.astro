@@ -1,0 +1,16 @@
+---
+// Shared renderer for privacy / terms style documents.
+const { doc } = Astro.props;
+---
+
+<article class="prose wrap">
+  <span class="eyebrow">RxDown</span>
+  <h1>{doc.h1}</h1>
+  <p class="small">{doc.updated}</p>
+  {doc.sections.map((s) => (
+    <>
+      <h2>{s.h2}</h2>
+      <p>{s.body}</p>
+    </>
+  ))}
+</article>

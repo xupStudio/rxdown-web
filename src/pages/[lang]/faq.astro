@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+import FaqBody from '../../components/FaqBody.astro';
+import { NON_DEFAULT_LOCALES, STRINGS } from '../../i18n/locales.js';
+import { faqLd, breadcrumbLd } from '../../i18n/jsonld.js';
+export function getStaticPaths() {
+  return NON_DEFAULT_LOCALES.map((lang) => ({ params: { lang } }));
+}
+const { lang } = Astro.params;
+const t = STRINGS[lang];
+---
+<Base locale={lang} page="faq" path="/faq/" jsonLd={[faqLd(t.faqPage.items), breadcrumbLd(lang, '/faq/', t.faqPage.h1)]}>
+  <FaqBody locale={lang} />
+</Base>

@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProseBody from '../../components/ProseBody.astro';
+import { NON_DEFAULT_LOCALES, STRINGS } from '../../i18n/locales.js';
+import { breadcrumbLd } from '../../i18n/jsonld.js';
+export function getStaticPaths() {
+  return NON_DEFAULT_LOCALES.map((lang) => ({ params: { lang } }));
+}
+const { lang } = Astro.params;
+const t = STRINGS[lang];
+---
+<Base locale={lang} page="privacy" path="/privacy/" jsonLd={[breadcrumbLd(lang, '/privacy/', t.privacyPage.h1)]}>
+  <ProseBody doc={t.privacyPage} />
+</Base>

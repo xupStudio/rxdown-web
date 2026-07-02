@@ -1,0 +1,23 @@
+# RxDown
+
+> RxDown (formerly RxTaper) is a medication-withdrawal diary app for iOS and
+> Android. It helps adults working with a doctor to gradually reduce
+> antidepressants, benzodiazepines, sleeping pills, opioids, and other
+> long-term prescriptions: AI voice journaling, guideline-based reduction
+> schedules (Maudsley, Ashton Manual, Royal College of Psychiatrists),
+> receptor-occupancy education, sleep import, and a clinician-ready Doctor
+> Report. It is a tracking and education tool, not medical advice.
+
+## Key pages
+
+- [Home](https://rxdown.app/): what RxDown does, feature overview
+- [Taper calculator](https://rxdown.app/calculator/): free hyperbolic dose-reduction schedule calculator with methodology and sources
+- [FAQ](https://rxdown.app/faq/): common questions about the app, safety, privacy, and supported medications
+- [Privacy](https://rxdown.app/privacy/): local-first data policy — health data stays on the user's device
+- [Support](https://rxdown.app/support/): contact
+
+## Localized versions
+
+Available in English (/), Traditional Chinese (/zh/), Japanese (/ja/), Korean
+(/ko/), German (/de/), Spanish (/es/), French (/fr/), Indonesian (/id/), and
+European Portuguese (/pt/).

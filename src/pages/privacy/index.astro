@@ -1,0 +1,10 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProseBody from '../../components/ProseBody.astro';
+import { STRINGS } from '../../i18n/locales.js';
+import { breadcrumbLd } from '../../i18n/jsonld.js';
+const t = STRINGS.en;
+---
+<Base locale="en" page="privacy" path="/privacy/" jsonLd={[breadcrumbLd('en', '/privacy/', t.privacyPage.h1)]}>
+  <ProseBody doc={t.privacyPage} />
+</Base>

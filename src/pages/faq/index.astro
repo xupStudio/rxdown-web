@@ -1,0 +1,10 @@
+---
+import Base from '../../layouts/Base.astro';
+import FaqBody from '../../components/FaqBody.astro';
+import { STRINGS } from '../../i18n/locales.js';
+import { faqLd, breadcrumbLd } from '../../i18n/jsonld.js';
+const t = STRINGS.en;
+---
+<Base locale="en" page="faq" path="/faq/" jsonLd={[faqLd(t.faqPage.items), breadcrumbLd('en', '/faq/', t.faqPage.h1)]}>
+  <FaqBody locale="en" />
+</Base>

@@ -38,8 +38,9 @@ export function faqLd(items) {
   };
 }
 
-/** Guide articles: Article schema with real dates and an honest author. */
-export function articleLd(entry, url) {
+/** Guide articles: Article schema with real dates and an honest author.
+ *  slug is the locale-free article id; the diagram is shared across locales. */
+export function articleLd(entry, url, slug, locale = 'en') {
   const d = entry.data;
   return {
     '@context': 'https://schema.org',
@@ -48,9 +49,9 @@ export function articleLd(entry, url) {
     description: d.description,
     datePublished: d.pubDate.toISOString().slice(0, 10),
     dateModified: (d.updatedDate ?? d.pubDate).toISOString().slice(0, 10),
-    inLanguage: 'en',
+    inLanguage: locale,
     mainEntityOfPage: url,
-    image: `https://rxdown.app/guides/${entry.id}.png`,
+    image: `https://rxdown.app/guides/${slug ?? entry.id}.png`,
     author: {
       '@type': 'Person',
       name: 'Chih Yu Lin',
@@ -71,14 +72,18 @@ export function articleLd(entry, url) {
   };
 }
 
-export function breadcrumbLd(locale, pathName, pageName) {
-  const base = locale === 'en' ? 'https://rxdown.app' : `https://rxdown.app/${locale}`;
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'RxDown', item: `${base}/` },
-      { '@type': 'ListItem', position: 2, name: pageName, item: `${base}${pathName}` },
-    ],
-  };
+export function breadcrumbLd(locale, pathName, pageName, parentName, parentPath) {
+  const home = locale === 'en' ? 'https://rxdown.app/' : `https://rxdown.app/${locale}/`;
+  const abs = (p) => new URL(p, 'https://rxdown.app').href;
+  const items = [{ '@type': 'ListItem', position: 1, name: 'RxDown', item: home }];
+  if (parentName && parentPath) {
+    items.push({ '@type': 'ListItem', position: 2, name: parentName, item: abs(parentPath) });
+  }
+  items.push({
+    '@type': 'ListItem',
+    position: items.length + 1,
+    name: pageName,
+    item: abs(pathName),
+  });
+  return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items };
 }

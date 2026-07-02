@@ -1,29 +1,33 @@
 ---
 import { render } from 'astro:content';
-import Base from '../../layouts/Base.astro';
-import { articleLd, faqLd, breadcrumbLd } from '../../i18n/jsonld.js';
-import { LOCALES } from '../../i18n/locales.js';
-import { GUIDES_UI } from '../../i18n/guides-ui.js';
+import Base from '../../../layouts/Base.astro';
+import { articleLd, faqLd, breadcrumbLd } from '../../../i18n/jsonld.js';
+import { LOCALES, NON_DEFAULT_LOCALES } from '../../../i18n/locales.js';
+import { GUIDES_UI } from '../../../i18n/guides-ui.js';
 import {
   guidesForLocale,
   guidePath,
   guidesIndexPath,
   guideAlternates,
-  guideSlug,
-} from '../../i18n/guides.js';
-
-const locale = 'en';
+} from '../../../i18n/guides.js';
 
 export async function getStaticPaths() {
-  const guides = await guidesForLocale('en');
-  return guides.map(({ entry, slug }) => ({ params: { slug }, props: { entry, slug } }));
+  const paths = [];
+  for (const lang of NON_DEFAULT_LOCALES) {
+    const guides = await guidesForLocale(lang);
+    for (const { entry, slug } of guides) {
+      paths.push({ params: { lang, slug }, props: { entry, slug } });
+    }
+  }
+  return paths;
 }
 
+const { lang } = Astro.params;
 const { entry, slug } = Astro.props;
 const { Content } = await render(entry);
 const d = entry.data;
-const gt = GUIDES_UI[locale];
-const path = guidePath(locale, slug);
+const gt = GUIDES_UI[lang];
+const path = guidePath(lang, slug);
 const url = `https://rxdown.app${path}`;
 const heroImage = `/guides/${slug}.png`;
 
@@ -31,27 +35,27 @@ const alts = await guideAlternates(slug);
 const alternates = alts.map((a) => ({ hreflang: LOCALES[a.locale].hreflang, href: a.path }));
 
 const fmt = (x) =>
-  x.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  x.toLocaleDateString(LOCALES[lang].hreflang, { year: 'numeric', month: 'long', day: 'numeric' });
 
-const related = (await guidesForLocale(locale))
+const related = (await guidesForLocale(lang))
   .filter((g) => g.slug !== slug)
   .filter((g) => g.entry.data.tags.some((t) => d.tags.includes(t)))
   .slice(0, 3);
 ---
 
 <Base
-  locale={locale}
+  locale={lang}
   page="guides"
   path={path}
   customAlternates={alternates}
-  titleOverride={`${d.title} | RxDown Guides`}
+  titleOverride={`${d.title} | RxDown`}
   descriptionOverride={d.description}
   ogImagePath={heroImage}
-  jsonLd={[articleLd(entry, url, slug, locale), faqLd(d.faq), breadcrumbLd(locale, path, d.title, gt.crumb, guidesIndexPath(locale))]}
+  jsonLd={[articleLd(entry, url, slug, lang), faqLd(d.faq), breadcrumbLd(lang, path, d.title, gt.crumb, guidesIndexPath(lang))]}
 >
   <article class="guide prose wrap">
     <nav class="guide-crumbs small">
-      <a href={guidesIndexPath(locale)}>{gt.crumb}</a> <span aria-hidden="true">›</span> {d.title}
+      <a href={guidesIndexPath(lang)}>{gt.crumb}</a> <span aria-hidden="true">›</span> {d.title}
     </nav>
     <h1>{d.title}</h1>
     <p class="guide-byline small">
@@ -90,7 +94,7 @@ const related = (await guidesForLocale(locale))
         <h2>{gt.keepReading}</h2>
         <ul>
           {related.map((g) => (
-            <li><a href={guidePath(locale, g.slug)}>{g.entry.data.title}</a></li>
+            <li><a href={guidePath(lang, g.slug)}>{g.entry.data.title}</a></li>
           ))}
         </ul>
       </section>
@@ -99,9 +103,9 @@ const related = (await guidesForLocale(locale))
     <div class="callout" style="border-left-color: var(--mint); background: var(--mint-wash)">
       <p>
         {gt.ctaText}{' '}
-        <a href={locale === 'en' ? '/' : `/${locale}/`} style="font-weight:700">{gt.ctaApp}</a>
+        <a href={`/${lang}/`} style="font-weight:700">{gt.ctaApp}</a>
         {' · '}
-        <a href={locale === 'en' ? '/calculator/' : `/${locale}/calculator/`} style="font-weight:700">{gt.ctaCalc}</a>
+        <a href={`/${lang}/calculator/`} style="font-weight:700">{gt.ctaCalc}</a>
       </p>
     </div>
   </article>

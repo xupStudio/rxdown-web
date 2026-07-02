@@ -1,19 +1,22 @@
 ---
-import Base from '../../layouts/Base.astro';
-import { breadcrumbLd } from '../../i18n/jsonld.js';
-import { LOCALES, LOCALE_CODES } from '../../i18n/locales.js';
-import { GUIDES_UI } from '../../i18n/guides-ui.js';
-import { guidesForLocale, guidePath, guidesIndexPath } from '../../i18n/guides.js';
+import Base from '../../../layouts/Base.astro';
+import { breadcrumbLd } from '../../../i18n/jsonld.js';
+import { LOCALES, LOCALE_CODES, NON_DEFAULT_LOCALES } from '../../../i18n/locales.js';
+import { GUIDES_UI } from '../../../i18n/guides-ui.js';
+import { guidesForLocale, guidePath, guidesIndexPath } from '../../../i18n/guides.js';
 import { getCollection } from 'astro:content';
 
-const locale = 'en';
-const gt = GUIDES_UI[locale];
+export async function getStaticPaths() {
+  return NON_DEFAULT_LOCALES.map((lang) => ({ params: { lang } }));
+}
 
-const guides = (await guidesForLocale(locale)).sort((a, b) =>
-  a.entry.data.title.localeCompare(b.entry.data.title)
+const { lang } = Astro.params;
+const gt = GUIDES_UI[lang];
+
+const guides = (await guidesForLocale(lang)).sort((a, b) =>
+  a.entry.data.title.localeCompare(b.entry.data.title, lang)
 );
 
-// hreflang cluster: every locale that has at least one guide.
 const all = await getCollection('guides');
 const localesWithGuides = LOCALE_CODES.filter((l) =>
   all.some((g) => (l === 'en' ? !g.id.includes('/') : g.id.startsWith(`${l}/`)))
@@ -24,17 +27,17 @@ const alternates = localesWithGuides.map((l) => ({
 }));
 
 const fmt = (d) =>
-  d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+  d.toLocaleDateString(LOCALES[lang].hreflang, { year: 'numeric', month: 'short', day: 'numeric' });
 ---
 
 <Base
-  locale={locale}
+  locale={lang}
   page="guides"
   path="/guides/"
   customAlternates={alternates}
   titleOverride={gt.metaTitle}
   descriptionOverride={gt.metaDescription}
-  jsonLd={[breadcrumbLd(locale, '/guides/', gt.crumb)]}
+  jsonLd={[breadcrumbLd(lang, guidesIndexPath(lang), gt.crumb)]}
 >
   <section class="section">
     <div class="wrap">
@@ -43,7 +46,7 @@ const fmt = (d) =>
       <p class="lede" style="max-width:52rem">{gt.lede}</p>
       <div class="guide-grid">
         {guides.map(({ entry, slug }) => (
-          <a class="guide-card" href={guidePath(locale, slug)}>
+          <a class="guide-card" href={guidePath(lang, slug)}>
             <img
               class="guide-card-img"
               src={`/guides/${slug}.png`}

@@ -8,6 +8,7 @@ import {
   APP_STORE_URL,
   PLAY_STORE_URL,
 } from '../i18n/locales.js';
+import { guidesIndexPath } from '../i18n/guides.js';
 
 const {
   locale = 'en',
@@ -18,7 +19,8 @@ const {
   titleOverride,
   descriptionOverride,
   ogImagePath, // page-specific social image (e.g. a guide's diagram)
-  noAlternates = false, // EN-only pages (guides): no locale alternates
+  noAlternates = false, // EN-only pages: no locale alternates
+  customAlternates, // [{hreflang, href}] — e.g. the locales a guide exists in
 } = Astro.props;
 
 const t = STRINGS[locale];
@@ -49,17 +51,25 @@ const allLd = [orgLd, ...jsonLd];
     <title>{meta.title}</title>
     <meta name="description" content={meta.description} />
     <link rel="canonical" href={canonical} />
-    {!noAlternates &&
-      LOCALE_CODES.map((l) => (
-        <link
-          rel="alternate"
-          hreflang={LOCALES[l].hreflang}
-          href={new URL(localePath(l, path), Astro.site).href}
-        />
-      ))}
-    {!noAlternates && (
-      <link rel="alternate" hreflang="x-default" href={new URL(path, Astro.site).href} />
-    )}
+    {customAlternates ? (
+      <>
+        {customAlternates.map((a) => (
+          <link rel="alternate" hreflang={a.hreflang} href={new URL(a.href, Astro.site).href} />
+        ))}
+        <link rel="alternate" hreflang="x-default" href={new URL(customAlternates[0].href, Astro.site).href} />
+      </>
+    ) : !noAlternates ? (
+      <>
+        {LOCALE_CODES.map((l) => (
+          <link
+            rel="alternate"
+            hreflang={LOCALES[l].hreflang}
+            href={new URL(localePath(l, path), Astro.site).href}
+          />
+        ))}
+        <link rel="alternate" hreflang="x-default" href={new URL(path, Astro.site).href} />
+      </>
+    ) : null}
 
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
@@ -116,7 +126,7 @@ const allLd = [orgLd, ...jsonLd];
         </a>
         <nav class="site-nav" aria-label="Main">
           <a href={localePath(locale, '/calculator/')} aria-current={page === 'calculator' ? 'page' : undefined}>{t.nav.calculator}</a>
-          <a href="/guides/" hreflang="en">{t.nav.guides}</a>
+          <a href={guidesIndexPath(locale)} aria-current={page === 'guides' ? 'page' : undefined}>{t.nav.guides}</a>
           <a href={localePath(locale, '/faq/')} aria-current={page === 'faq' ? 'page' : undefined}>{t.nav.faq}</a>
           <a href={localePath(locale, '/support/')} aria-current={page === 'support' ? 'page' : undefined}>{t.nav.support}</a>
           <details class="lang-menu" id="lang-menu">
@@ -163,7 +173,7 @@ const allLd = [orgLd, ...jsonLd];
           </div>
           <div>
             <h4>{t.footer.resources}</h4>
-            <a href="/guides/" hreflang="en">{t.nav.guides}</a>
+            <a href={guidesIndexPath(locale)}>{t.nav.guides}</a>
             <a href={localePath(locale, '/faq/')}>{t.nav.faq}</a>
             <a href={localePath(locale, '/support/')}>{t.nav.support}</a>
           </div>

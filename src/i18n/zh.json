@@ -27,6 +27,7 @@
     }
   },
   "nav": {
+    "menu": "選單",
     "calculator": "減量計算機",
     "faq": "常見問題",
     "support": "支援",

@@ -27,6 +27,7 @@
     }
   },
   "nav": {
+    "menu": "메뉴",
     "calculator": "감량 계산기",
     "faq": "FAQ",
     "support": "지원",

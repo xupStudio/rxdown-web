@@ -27,6 +27,7 @@
     }
   },
   "nav": {
+    "menu": "Menu",
     "calculator": "Calculadora de desmame",
     "faq": "FAQ",
     "support": "Apoio",

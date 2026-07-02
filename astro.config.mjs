@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import remarkCjkFriendly from 'remark-cjk-friendly';
+import rehypeWrapTables from './scripts/rehype-wrap-tables.mjs';
 
 export default defineConfig({
   site: 'https://rxdown.app',
@@ -10,6 +11,7 @@ export default defineConfig({
   // asterisks literally). This plugin applies the CommonMark-CJK draft rules.
   markdown: {
     remarkPlugins: [remarkCjkFriendly],
+    rehypePlugins: [rehypeWrapTables],
   },
   i18n: {
     defaultLocale: 'en',

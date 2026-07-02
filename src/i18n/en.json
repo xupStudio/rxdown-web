@@ -27,6 +27,7 @@
     }
   },
   "nav": {
+    "menu": "Menu",
     "calculator": "Taper calculator",
     "faq": "FAQ",
     "support": "Support",

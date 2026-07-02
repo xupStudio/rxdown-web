@@ -27,6 +27,7 @@
     }
   },
   "nav": {
+    "menu": "Menü",
     "calculator": "Ausschleichrechner",
     "faq": "FAQ",
     "support": "Support",

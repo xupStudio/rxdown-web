@@ -27,6 +27,7 @@
     }
   },
   "nav": {
+    "menu": "Menu",
     "calculator": "Calculateur de sevrage",
     "faq": "FAQ",
     "support": "Support",

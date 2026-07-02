@@ -50,6 +50,7 @@ export function articleLd(entry, url) {
     dateModified: (d.updatedDate ?? d.pubDate).toISOString().slice(0, 10),
     inLanguage: 'en',
     mainEntityOfPage: url,
+    image: `https://rxdown.app/guides/${entry.id}.png`,
     author: {
       '@type': 'Person',
       name: 'Chih Yu Lin',

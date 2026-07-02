@@ -13,6 +13,7 @@ const { Content } = await render(entry);
 const d = entry.data;
 const path = `/guides/${entry.id}/`;
 const url = `https://rxdown.app${path}`;
+const heroImage = `/guides/${entry.id}.png`;
 const fmt = (x) =>
   x.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
@@ -29,6 +30,7 @@ const related = (await getCollection('guides'))
   noAlternates={true}
   titleOverride={`${d.title} | RxDown Guides`}
   descriptionOverride={d.description}
+  ogImagePath={heroImage}
   jsonLd={[articleLd(entry, url), faqLd(d.faq), breadcrumbLd('en', path, d.title)]}
 >
   <article class="guide prose wrap">
@@ -47,6 +49,15 @@ const related = (await getCollection('guides'))
         prescriber — some medications are dangerous to stop abruptly.
       </p>
     </div>
+
+    <img
+      class="guide-hero"
+      src={heroImage}
+      width="1200"
+      height="630"
+      decoding="async"
+      alt={`Diagram: ${d.title}`}
+    />
 
     <Content />
 

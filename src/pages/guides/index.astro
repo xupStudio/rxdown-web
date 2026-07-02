@@ -32,6 +32,15 @@ const fmt = (d) =>
       <div class="guide-grid">
         {guides.map((g) => (
           <a class="guide-card" href={`/guides/${g.id}/`}>
+            <img
+              class="guide-card-img"
+              src={`/guides/${g.id}.png`}
+              width="1200"
+              height="630"
+              loading="lazy"
+              decoding="async"
+              alt={`Diagram: ${g.data.title}`}
+            />
             <h3>{g.data.title}</h3>
             <p>{g.data.description}</p>
             <div class="guide-meta">

@@ -608,7 +608,8 @@ a:hover { color: var(--mint-bright); }
   background: var(--paper-raise);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  padding: 1.5rem 1.4rem;
+  padding: 0 0 1.4rem;
+  overflow: hidden;
   box-shadow: var(--shadow-soft);
   text-decoration: none;
   color: var(--ink);
@@ -620,16 +621,35 @@ a:hover { color: var(--mint-bright); }
   border-color: var(--mint);
   color: var(--ink);
 }
-.guide-card h3 { margin: 0; font-size: 1.16rem; }
-.guide-card p { font-size: 0.95rem; color: var(--ink-soft); margin: 0; max-width: none; flex: 1; }
+.guide-card-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 630;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+.guide-card h3 { margin: 0.7rem 0 0; padding: 0 1.4rem; font-size: 1.16rem; }
+.guide-card p { font-size: 0.95rem; color: var(--ink-soft); margin: 0; padding: 0 1.4rem; max-width: none; flex: 1; }
 .guide-meta {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  padding: 0 1.4rem;
   font-size: 0.8rem;
   color: var(--ink-faint);
 }
 .guide-tags { text-align: right; }
+
+.guide-hero {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  margin: 0.4rem 0 2rem;
+}
 
 .guide-crumbs { margin-bottom: 1.2rem; }
 .guide-crumbs a { color: var(--ink-faint); text-decoration: none; }

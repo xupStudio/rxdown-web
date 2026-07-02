@@ -17,6 +17,7 @@ const {
   autoDetect = false,
   titleOverride,
   descriptionOverride,
+  ogImagePath, // page-specific social image (e.g. a guide's diagram)
   noAlternates = false, // EN-only pages (guides): no locale alternates
 } = Astro.props;
 
@@ -27,7 +28,7 @@ const meta = {
   description: descriptionOverride ?? baseMeta.description,
 };
 const canonical = new URL(localePath(locale, path), Astro.site).href;
-const ogImage = new URL('/og.png', Astro.site).href;
+const ogImage = new URL(ogImagePath ?? '/og.png', Astro.site).href;
 
 const orgLd = {
   '@context': 'https://schema.org',

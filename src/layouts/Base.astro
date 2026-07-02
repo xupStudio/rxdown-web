@@ -107,15 +107,31 @@ const allLd = [orgLd, ...jsonLd];
           <a href={localePath(locale, '/calculator/')} aria-current={page === 'calculator' ? 'page' : undefined}>{t.nav.calculator}</a>
           <a href={localePath(locale, '/faq/')} aria-current={page === 'faq' ? 'page' : undefined}>{t.nav.faq}</a>
           <a href={localePath(locale, '/support/')} aria-current={page === 'support' ? 'page' : undefined}>{t.nav.support}</a>
-          <span class="lang-picker">
-            <select id="lang-select" aria-label="Language">
+          <details class="lang-menu" id="lang-menu">
+            <summary aria-label="Language">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3 12h18M12 3c2.5 2.5 2.5 15.5 0 18M12 3c-2.5 2.5-2.5 15.5 0 18" />
+              </svg>
+              <span>{LOCALES[locale].name}</span>
+              <svg class="chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </summary>
+            <ul role="menu">
               {LOCALE_CODES.map((l) => (
-                <option value={localePath(l, path)} data-lang={l} selected={l === locale}>
-                  {LOCALES[l].name}
-                </option>
+                <li role="none">
+                  <a
+                    role="menuitem"
+                    href={localePath(l, path)}
+                    data-lang={l}
+                    hreflang={LOCALES[l].hreflang}
+                    aria-current={l === locale ? 'true' : undefined}
+                  >{LOCALES[l].name}</a>
+                </li>
               ))}
-            </select>
-          </span>
+            </ul>
+          </details>
         </nav>
       </div>
     </header>
@@ -158,11 +174,23 @@ const allLd = [orgLd, ...jsonLd];
     </footer>
 
     <script is:inline>
-      document.getElementById('lang-select').addEventListener('change', function (e) {
-        var opt = e.target.selectedOptions[0];
-        try { localStorage.setItem('rx-lang', opt.dataset.lang); } catch (err) {}
-        location.href = opt.value;
-      });
+      (function () {
+        var menu = document.getElementById('lang-menu');
+        if (!menu) return;
+        // Remember the chosen language so the root-page auto-detect respects it.
+        menu.querySelectorAll('a[data-lang]').forEach(function (a) {
+          a.addEventListener('click', function () {
+            try { localStorage.setItem('rx-lang', a.dataset.lang); } catch (e) {}
+          });
+        });
+        // Close on outside click or Escape.
+        document.addEventListener('click', function (e) {
+          if (menu.open && !menu.contains(e.target)) menu.open = false;
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && menu.open) menu.open = false;
+        });
+      })();
     </script>
   </body>
 </html>

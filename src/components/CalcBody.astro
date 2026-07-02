@@ -54,15 +54,19 @@ const c = t.calc;
           <div class="hint">{c.hintTarget}</div>
         </div>
       </div>
-      <p class="calc-actions" style="margin-top:1.4rem; margin-bottom:0">
+      <p class="calc-actions">
         <button class="btn btn-primary" id="calc-run">{c.generate}</button>
-        <button class="btn btn-ghost calc-tool" id="calc-share" hidden>🔗 {c.share}</button>
-        <button class="btn btn-ghost calc-tool" id="calc-print" hidden>🖨️ {c.print}</button>
-        <button class="btn btn-ghost calc-tool" id="calc-copy" hidden>📋 {c.copyTable}</button>
       </p>
 
       <div class="calc-chart" id="calc-chart" hidden>
-        <h3 style="margin-top:1.8rem">{c.chartTitle}</h3>
+        <div class="calc-result-head">
+          <h3>{c.chartTitle}</h3>
+          <div class="calc-toolbar">
+            <button class="tool-chip" id="calc-share"><span aria-hidden="true">🔗</span> {c.share}</button>
+            <button class="tool-chip" id="calc-print"><span aria-hidden="true">🖨️</span> {c.print}</button>
+            <button class="tool-chip" id="calc-copy"><span aria-hidden="true">📋</span> {c.copyTable}</button>
+          </div>
+        </div>
         <svg id="calc-svg" viewBox="0 0 640 300" role="img"></svg>
         <p id="calc-summary" class="muted"></p>
       </div>
@@ -196,9 +200,6 @@ const c = t.calc;
         .join('');
       $('calc-out').hidden = false;
       $('calc-chart').hidden = false;
-      ['calc-share', 'calc-print', 'calc-copy'].forEach(function (id) {
-        $(id).hidden = false;
-      });
       draw(rows, unit);
       lastRows = rows; lastUnit = unit;
       // Shareable state (also lets a doctor's link restore the exact plan).

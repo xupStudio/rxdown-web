@@ -175,7 +175,11 @@
         "q": "Bagaimana sebenarnya cara minum dosis seperti 3,7 mg?",
         "a": "Dosis kecil biasanya memerlukan bentuk cair, sediaan racikan, atau pelarutan tablet yang cermat dalam air. Apoteker Anda adalah orang yang tepat untuk ditanya — dan satuan dosis cair RxDown dapat melacak bentuk apa pun yang Anda gunakan."
       }
-    ]
+    ],
+    "share": "Salin tautan",
+    "copied": "Tersalin!",
+    "print": "Cetak / PDF",
+    "copyTable": "Salin tabel"
   },
   "faqPage": {
     "h1": "Pertanyaan yang sering diajukan",

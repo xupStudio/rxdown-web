@@ -175,7 +175,11 @@
         "q": "¿Cómo tomo en la práctica una dosis como 3,7 mg?",
         "a": "Las dosis pequeñas suelen requerir presentaciones líquidas, preparaciones formuladas (compounding) o dispersar con cuidado el comprimido en agua. Su farmacéutico es la persona indicada a la que preguntar, y las unidades de dosis líquida de RxDown pueden registrar cualquier forma que utilice."
       }
-    ]
+    ],
+    "share": "Copiar enlace",
+    "copied": "¡Copiado!",
+    "print": "Imprimir / PDF",
+    "copyTable": "Copiar tabla"
   },
   "faqPage": {
     "h1": "Preguntas frecuentes",

@@ -175,7 +175,11 @@
         "q": "Wie nehme ich überhaupt eine Dosis wie 3,7 mg ein?",
         "a": "Kleine Dosen benötigen meist flüssige Darreichungsformen, Rezepturpräparate oder das sorgfältige Auflösen einer Tablette in Wasser. Die richtige Ansprechperson dafür ist Ihre Apothekerin oder Ihr Apotheker – und die Flüssigdosis-Einheiten von RxDown können jede Form erfassen, die Sie verwenden."
       }
-    ]
+    ],
+    "share": "Link kopieren",
+    "copied": "Kopiert!",
+    "print": "Drucken / PDF",
+    "copyTable": "Tabelle kopieren"
   },
   "faqPage": {
     "h1": "Häufig gestellte Fragen",

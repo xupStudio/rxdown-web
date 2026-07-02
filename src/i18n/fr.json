@@ -175,7 +175,11 @@
         "q": "Comment prendre concrètement une dose comme 3,7 mg ?",
         "a": "Les petites doses nécessitent généralement des solutions liquides, des préparations magistrales ou une dispersion soignée du comprimé dans l'eau. Votre pharmacien est la bonne personne à consulter — et les unités de dose liquide de RxDown savent suivre la forme que vous utilisez."
       }
-    ]
+    ],
+    "share": "Copier le lien",
+    "copied": "Copié !",
+    "print": "Imprimer / PDF",
+    "copyTable": "Copier le tableau"
   },
   "faqPage": {
     "h1": "Foire aux questions",

@@ -175,7 +175,11 @@
         "q": "How do I actually take a dose like 3.7 mg?",
         "a": "Small doses usually need liquid formulations, compounded preparations, or careful tablet dispersion in water. Your pharmacist is the right person to ask — and RxDown's liquid-dose units can track whatever form you use."
       }
-    ]
+    ],
+    "share": "Copy share link",
+    "copied": "Copied!",
+    "print": "Print / save PDF",
+    "copyTable": "Copy table"
   },
   "faqPage": {
     "h1": "Frequently asked questions",

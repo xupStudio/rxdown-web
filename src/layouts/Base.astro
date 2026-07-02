@@ -20,7 +20,7 @@ const {
 const t = STRINGS[locale];
 const meta = t.meta[page] ?? t.meta.home;
 const canonical = new URL(localePath(locale, path), Astro.site).href;
-const ogImage = new URL('/icon-512.png', Astro.site).href;
+const ogImage = new URL('/og.png', Astro.site).href;
 
 const orgLd = {
   '@context': 'https://schema.org',
@@ -64,13 +64,14 @@ const allLd = [orgLd, ...jsonLd];
     <meta property="og:description" content={meta.description} />
     <meta property="og:site_name" content="RxDown" />
     <meta property="og:image" content={ogImage} />
-    <meta property="og:image:width" content="512" />
-    <meta property="og:image:height" content="512" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="RxDown — Medication Withdrawal Diary" />
     <meta property="og:locale" content={LOCALES[locale].ogLocale} />
     {LOCALE_CODES.filter((l) => l !== locale).map((l) => (
       <meta property="og:locale:alternate" content={LOCALES[l].ogLocale} />
     ))}
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

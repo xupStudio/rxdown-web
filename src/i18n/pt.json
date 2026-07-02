@@ -175,7 +175,11 @@
         "q": "Como é que tomo, na prática, uma dose como 3,7 mg?",
         "a": "As doses pequenas costumam exigir formulações líquidas, preparações manipuladas ou dispersão cuidadosa do comprimido em água. O seu farmacêutico é a pessoa certa para perguntar — e as unidades de dose líquida do RxDown acompanham qualquer forma que utilize."
       }
-    ]
+    ],
+    "share": "Copiar ligação",
+    "copied": "Copiado!",
+    "print": "Imprimir / PDF",
+    "copyTable": "Copiar tabela"
   },
   "faqPage": {
     "h1": "Perguntas frequentes",

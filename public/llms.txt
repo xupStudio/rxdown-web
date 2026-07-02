@@ -16,6 +16,10 @@
 - [Privacy](https://rxdown.app/privacy/): local-first data policy — health data stays on the user's device
 - [Support](https://rxdown.app/support/): contact
 
+## Full content
+
+- [llms-full.txt](https://rxdown.app/llms-full.txt): the entire English site as clean Markdown, for direct ingestion
+
 ## Localized versions
 
 Available in English (/), Traditional Chinese (/zh/), Japanese (/ja/), Korean

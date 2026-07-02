@@ -54,8 +54,11 @@ const c = t.calc;
           <div class="hint">{c.hintTarget}</div>
         </div>
       </div>
-      <p style="margin-top:1.4rem; margin-bottom:0">
+      <p class="calc-actions" style="margin-top:1.4rem; margin-bottom:0">
         <button class="btn btn-primary" id="calc-run">{c.generate}</button>
+        <button class="btn btn-ghost calc-tool" id="calc-share" hidden>🔗 {c.share}</button>
+        <button class="btn btn-ghost calc-tool" id="calc-print" hidden>🖨️ {c.print}</button>
+        <button class="btn btn-ghost calc-tool" id="calc-copy" hidden>📋 {c.copyTable}</button>
       </p>
 
       <div class="calc-chart" id="calc-chart" hidden>
@@ -111,6 +114,7 @@ const c = t.calc;
     summaryPrefix: c.summaryPrefix,
     summaryWeeks: c.summaryWeeks,
     summarySteps: c.summarySteps,
+    copiedLabel: c.copied,
   }}
 >
   (function () {
@@ -168,7 +172,9 @@ const c = t.calc;
         summaryPrefix + ' ' + weeks + ' ' + summaryWeeks + ' (' + (rows.length - 1) + ' ' + summarySteps + ').';
     }
 
-    $('calc-run').addEventListener('click', function () {
+    var lastRows = null, lastUnit = 'mg';
+
+    function run() {
       var start = parseFloat($('calc-dose').value);
       if (!isFinite(start) || start <= 0) return;
       var unit = $('calc-unit').value;
@@ -190,7 +196,51 @@ const c = t.calc;
         .join('');
       $('calc-out').hidden = false;
       $('calc-chart').hidden = false;
+      ['calc-share', 'calc-print', 'calc-copy'].forEach(function (id) {
+        $(id).hidden = false;
+      });
       draw(rows, unit);
+      lastRows = rows; lastUnit = unit;
+      // Shareable state (also lets a doctor's link restore the exact plan).
+      var q = new URLSearchParams({
+        d: start, u: unit, p: $('calc-pct').value,
+        i: $('calc-days').value, t: $('calc-target').value,
+      });
+      history.replaceState(null, '', '?' + q.toString());
+    }
+
+    function flash(btn) {
+      var orig = btn.textContent;
+      btn.textContent = '✓ ' + copiedLabel;
+      setTimeout(function () { btn.textContent = orig; }, 1600);
+    }
+
+    $('calc-run').addEventListener('click', run);
+    $('calc-share').addEventListener('click', function () {
+      navigator.clipboard.writeText(location.href).then(flash.bind(null, $('calc-share')));
     });
+    $('calc-print').addEventListener('click', function () { window.print(); });
+    $('calc-copy').addEventListener('click', function () {
+      if (!lastRows) return;
+      var text = lastRows
+        .map(function (r) {
+          return [r.step, r.day, fmt(r.dose) + ' ' + lastUnit,
+                  r.step === 0 ? '' : '-' + fmt(r.cut) + ' ' + lastUnit].join('\t');
+        })
+        .join('\n');
+      navigator.clipboard.writeText(text).then(flash.bind(null, $('calc-copy')));
+    });
+
+    // Restore state from a shared link and auto-run.
+    (function () {
+      var q = new URLSearchParams(location.search);
+      if (!q.has('d')) return;
+      $('calc-dose').value = q.get('d');
+      if (q.get('u')) $('calc-unit').value = q.get('u');
+      if (q.get('p')) $('calc-pct').value = q.get('p');
+      if (q.get('i')) $('calc-days').value = q.get('i');
+      if (q.get('t')) $('calc-target').value = q.get('t');
+      run();
+    })();
   })();
 </script>

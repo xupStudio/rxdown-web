@@ -541,6 +541,18 @@ a:hover { color: var(--mint-bright); }
 }
 .stores a:hover { border-color: var(--mint); transform: translateY(-2px); }
 
+/* print: a clean schedule handout for the doctor's visit */
+@media print {
+  .site-header, .site-footer, .lang-banner, .hero-curve, .gallery,
+  .calc-actions .calc-tool, #calc-run, .faq-list, .callout:last-of-type {
+    display: none !important;
+  }
+  body { background: #fff; color: #111; font-size: 11pt; }
+  body::before { display: none; }
+  .calc-panel { box-shadow: none; border: 1px solid #bbb; }
+  a { color: #111; text-decoration: none; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .curve-path, .curve-dot, .rise { animation: none; opacity: 1; transform: none; stroke-dashoffset: 0; }
   html { scroll-behavior: auto; }

@@ -254,9 +254,50 @@ a:hover { color: var(--mint-bright); }
   z-index: 1;
   pointer-events: none;
 }
-.hero-curve svg { position: absolute; right: -4%; top: 8%; width: 58%; min-width: 480px; opacity: 0.9; }
+.hero-curve svg { position: absolute; right: -4%; top: 8%; width: 58%; min-width: 480px; opacity: 0.55; }
 @media (max-width: 780px) {
   .hero-curve svg { opacity: 0.24; width: 130%; right: -40%; }
+}
+
+/* hero layout: copy left, phone cluster right (rides above the curve) */
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2.5rem;
+  align-items: center;
+}
+.hero-phones {
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+  padding-right: 0.5rem;
+}
+.hero-phones img {
+  width: 207px;
+  height: auto;
+  border-radius: 26px 26px 0 0;
+  border: 1px solid var(--line);
+  border-bottom: none;
+  box-shadow: var(--shadow-lift);
+  background: #14202e;
+}
+.hero-phones img:first-child {
+  transform: rotate(-4deg) translateY(14px);
+  z-index: 2;
+}
+.hero-phones img:last-child {
+  transform: rotate(3.5deg) translateX(-30px);
+  margin-top: 3.2rem;
+  z-index: 1;
+}
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-phones {
+    justify-content: center;
+    padding-top: 2.2rem;
+    padding-right: 0;
+  }
+  .hero-phones img { width: min(42vw, 190px); }
 }
 .curve-path {
   fill: none;

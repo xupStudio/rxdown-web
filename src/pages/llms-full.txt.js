@@ -1,3 +1,4 @@
+import { getCollection } from 'astro:content';
 import { STRINGS, APP_STORE_URL, PLAY_STORE_URL } from '../i18n/locales.js';
 
 /** Full-content companion to /llms.txt: the whole EN site as clean Markdown
@@ -35,6 +36,14 @@ export async function GET() {
 
   push(`\n## Privacy (https://rxdown.app/privacy/)\n`);
   t.privacyPage.sections.forEach((s) => push(`### ${s.h2}\n\n${s.body}\n`));
+
+  const guides = await getCollection('guides').catch(() => []);
+  if (guides.length) {
+    push(`\n## Guides — evidence-based withdrawal education (https://rxdown.app/guides/)\n`);
+    guides.forEach((g) =>
+      push(`- [${g.data.title}](https://rxdown.app/guides/${g.id}/) — ${g.data.description}`)
+    );
+  }
 
   push(`\n## Important disclaimer\n`);
   push(t.footer.disclaimer);

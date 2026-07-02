@@ -38,6 +38,38 @@ export function faqLd(items) {
   };
 }
 
+/** Guide articles: Article schema with real dates and an honest author. */
+export function articleLd(entry, url) {
+  const d = entry.data;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: d.title,
+    description: d.description,
+    datePublished: d.pubDate.toISOString().slice(0, 10),
+    dateModified: (d.updatedDate ?? d.pubDate).toISOString().slice(0, 10),
+    inLanguage: 'en',
+    mainEntityOfPage: url,
+    author: {
+      '@type': 'Person',
+      name: 'Chih Yu Lin',
+      description:
+        'Founder of RxDown. Writing synthesizes published clinical guidelines and peer-reviewed research; sources are cited in each article. Not a medical professional — content is educational, not medical advice.',
+      url: 'https://rxdown.app/support/',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'XUPLABS',
+      logo: { '@type': 'ImageObject', url: 'https://rxdown.app/icon-512.png' },
+    },
+    citation: d.sources.map((s) => ({
+      '@type': 'CreativeWork',
+      name: s.label,
+      url: s.url,
+    })),
+  };
+}
+
 export function breadcrumbLd(locale, pathName, pageName) {
   const base = locale === 'en' ? 'https://rxdown.app' : `https://rxdown.app/${locale}`;
   return {

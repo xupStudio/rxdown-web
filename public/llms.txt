@@ -12,6 +12,7 @@
 
 - [Home](https://rxdown.app/): what RxDown does, feature overview
 - [Taper calculator](https://rxdown.app/calculator/): free hyperbolic dose-reduction schedule calculator with methodology and sources
+- [Guides](https://rxdown.app/guides/): 12 evidence-based, source-cited education articles — hyperbolic tapering, benzodiazepines (Ashton), DORA and Z-drug sleep medications, brain zaps, withdrawal vs relapse, and more
 - [FAQ](https://rxdown.app/faq/): common questions about the app, safety, privacy, and supported medications
 - [Privacy](https://rxdown.app/privacy/): local-first data policy — health data stays on the user's device
 - [Support](https://rxdown.app/support/): contact

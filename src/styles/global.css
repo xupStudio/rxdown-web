@@ -5,7 +5,7 @@
    Signature motif: the hyperbolic descent curve.
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,50;1,9..144,300..700,50&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import './fonts.css'; /* self-hosted latin subsets — no third-party render-blocking request */
 
 :root {
   --paper: #faf5ee;
@@ -593,6 +593,83 @@ a:hover { color: var(--mint-bright); }
 .prose h1 { font-size: clamp(2rem, 4.5vw, 2.9rem); }
 .prose h2 { font-size: 1.45rem; margin-top: 2.2rem; }
 .prose li { margin-bottom: 0.4rem; }
+
+/* ---------- guides ---------- */
+.guide-grid {
+  display: grid;
+  gap: 1.3rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-top: 2.2rem;
+}
+.guide-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: var(--paper-raise);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.4rem;
+  box-shadow: var(--shadow-soft);
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.guide-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lift);
+  border-color: var(--mint);
+  color: var(--ink);
+}
+.guide-card h3 { margin: 0; font-size: 1.16rem; }
+.guide-card p { font-size: 0.95rem; color: var(--ink-soft); margin: 0; max-width: none; flex: 1; }
+.guide-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+}
+.guide-tags { text-align: right; }
+
+.guide-crumbs { margin-bottom: 1.2rem; }
+.guide-crumbs a { color: var(--ink-faint); text-decoration: none; }
+.guide-crumbs a:hover { color: var(--mint); }
+.guide-byline { margin-top: -0.4rem; margin-bottom: 1.4rem; }
+.guide-disclaimer { margin-top: 0; }
+
+.guide table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-block: 1.4rem;
+  font-size: 0.96rem;
+}
+.guide th, .guide td {
+  text-align: left;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.guide th {
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.guide tr:nth-child(even) td {
+  background: color-mix(in srgb, var(--paper-deep) 45%, transparent);
+}
+.guide blockquote {
+  margin: 1.4rem 0;
+  padding: 0.9rem 1.2rem;
+  border-left: 3.5px solid var(--mint);
+  background: var(--mint-wash);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.guide blockquote p { margin: 0; max-width: none; }
+.guide-faq { margin-top: 2.6rem; }
+.guide-related { margin-top: 2.2rem; }
+.guide-related ul { padding-left: 1.2rem; }
+.guide-related li { margin-bottom: 0.45rem; }
 
 /* ---------- footer ---------- */
 .site-footer {

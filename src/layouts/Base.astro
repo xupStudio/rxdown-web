@@ -15,10 +15,17 @@ const {
   path = '/',
   jsonLd = [],
   autoDetect = false,
+  titleOverride,
+  descriptionOverride,
+  noAlternates = false, // EN-only pages (guides): no locale alternates
 } = Astro.props;
 
 const t = STRINGS[locale];
-const meta = t.meta[page] ?? t.meta.home;
+const baseMeta = t.meta[page] ?? t.meta.home;
+const meta = {
+  title: titleOverride ?? baseMeta.title,
+  description: descriptionOverride ?? baseMeta.description,
+};
 const canonical = new URL(localePath(locale, path), Astro.site).href;
 const ogImage = new URL('/og.png', Astro.site).href;
 
@@ -41,14 +48,17 @@ const allLd = [orgLd, ...jsonLd];
     <title>{meta.title}</title>
     <meta name="description" content={meta.description} />
     <link rel="canonical" href={canonical} />
-    {LOCALE_CODES.map((l) => (
-      <link
-        rel="alternate"
-        hreflang={LOCALES[l].hreflang}
-        href={new URL(localePath(l, path), Astro.site).href}
-      />
-    ))}
-    <link rel="alternate" hreflang="x-default" href={new URL(path, Astro.site).href} />
+    {!noAlternates &&
+      LOCALE_CODES.map((l) => (
+        <link
+          rel="alternate"
+          hreflang={LOCALES[l].hreflang}
+          href={new URL(localePath(l, path), Astro.site).href}
+        />
+      ))}
+    {!noAlternates && (
+      <link rel="alternate" hreflang="x-default" href={new URL(path, Astro.site).href} />
+    )}
 
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
@@ -73,8 +83,8 @@ const allLd = [orgLd, ...jsonLd];
     ))}
     <meta name="twitter:card" content="summary_large_image" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/Fraunces-normal-300_700.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/AlegreyaSans-normal-400.woff2" crossorigin />
 
     <script type="application/ld+json" set:html={JSON.stringify(allLd)} />
 
@@ -105,6 +115,7 @@ const allLd = [orgLd, ...jsonLd];
         </a>
         <nav class="site-nav" aria-label="Main">
           <a href={localePath(locale, '/calculator/')} aria-current={page === 'calculator' ? 'page' : undefined}>{t.nav.calculator}</a>
+          <a href="/guides/" hreflang="en">{t.nav.guides}</a>
           <a href={localePath(locale, '/faq/')} aria-current={page === 'faq' ? 'page' : undefined}>{t.nav.faq}</a>
           <a href={localePath(locale, '/support/')} aria-current={page === 'support' ? 'page' : undefined}>{t.nav.support}</a>
           <details class="lang-menu" id="lang-menu">
@@ -151,6 +162,7 @@ const allLd = [orgLd, ...jsonLd];
           </div>
           <div>
             <h4>{t.footer.resources}</h4>
+            <a href="/guides/" hreflang="en">{t.nav.guides}</a>
             <a href={localePath(locale, '/faq/')}>{t.nav.faq}</a>
             <a href={localePath(locale, '/support/')}>{t.nav.support}</a>
           </div>

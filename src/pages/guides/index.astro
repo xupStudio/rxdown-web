@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { breadcrumbLd } from '../../i18n/jsonld.js';
+
+const guides = (await getCollection('guides')).sort(
+  (a, b) => a.data.title.localeCompare(b.data.title)
+);
+const fmt = (d) =>
+  d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+---
+
+<Base
+  locale="en"
+  page="home"
+  path="/guides/"
+  noAlternates={true}
+  titleOverride="Guides — Evidence-Based Medication Withdrawal Education | RxDown"
+  descriptionOverride="Plain-language, source-cited guides to medication withdrawal: hyperbolic tapering, benzodiazepines, sleep medications, brain zaps, and talking to your doctor."
+  jsonLd={[breadcrumbLd('en', '/guides/', 'Guides')]}
+>
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow">RxDown Guides</span>
+      <h1>Medication withdrawal, explained properly</h1>
+      <p class="lede" style="max-width:52rem">
+        Plain-language education grounded in the Maudsley Deprescribing
+        Guidelines, the Ashton Manual, and peer-reviewed research — every claim
+        cited, every article dated. Education, not medical advice: work with
+        your prescriber.
+      </p>
+      <div class="guide-grid">
+        {guides.map((g) => (
+          <a class="guide-card" href={`/guides/${g.id}/`}>
+            <h3>{g.data.title}</h3>
+            <p>{g.data.description}</p>
+            <div class="guide-meta">
+              <span>{fmt(g.data.updatedDate ?? g.data.pubDate)}</span>
+              <span class="guide-tags">{g.data.tags.slice(0, 3).join(' · ')}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.xupstudio.rxtaper",
+      "sha256_cert_fingerprints": [
+        "DA:01:66:F0:04:36:8A:E0:B2:94:0C:C9:92:1E:55:E1:98:2B:52:99:7B:05:8B:18:1E:F5:BC:FE:3D:C9:7D:95"
+      ]
+    }
+  }
+]

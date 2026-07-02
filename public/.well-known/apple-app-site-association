@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["P8M3X4M8X4.com.xupstudio.rxtaper"],
+        "components": [
+          { "/": "/app/*", "comment": "app deep-link routes" }
+        ]
+      }
+    ]
+  }
+}

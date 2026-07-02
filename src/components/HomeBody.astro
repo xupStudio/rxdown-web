@@ -32,17 +32,17 @@ const t = STRINGS[locale];
     </div>
     <div class="hero-phones rise" style="animation-delay:.2s">
       <img
-        src="/shot-dashboard.png"
+        src="/shots/today.webp"
         alt={t.how.steps[1].title}
         width="207"
-        height="350"
+        height="424"
         fetchpriority="high"
       />
       <img
-        src="/shot-voice.png"
+        src="/shots/voice.webp"
         alt={t.how.steps[0].title}
         width="207"
-        height="350"
+        height="424"
         loading="lazy"
       />
     </div>
@@ -84,6 +84,20 @@ const t = STRINGS[locale];
         </div>
       ))}
     </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>{t.gallery.heading}</h2>
+  </div>
+  <div class="gallery" tabindex="0">
+    <img src="/shots/journey.webp" alt={t.how.steps[1].title} width="207" height="424" loading="lazy" />
+    <img src="/shots/insights.webp" alt={t.features.cards[1].title} width="207" height="424" loading="lazy" />
+    <img src="/shots/ai.webp" alt={t.features.cards[0].title} width="207" height="424" loading="lazy" />
+    <img src="/shots/report.webp" alt={t.features.cards[5].title} width="207" height="424" loading="lazy" />
+    <img src="/shots/log.webp" alt={t.how.steps[0].title} width="207" height="424" loading="lazy" />
+    <img src="/shots/export.webp" alt={t.features.cards[5].title} width="207" height="424" loading="lazy" />
   </div>
 </section>
 

@@ -110,7 +110,13 @@
     "body1": "Withdrawal is common, not rare: in a systematic review, an average of 56% of people who stopped antidepressants experienced withdrawal symptoms, and nearly half of those described them as severe (Davies & Read, 2019, Addictive Behaviors).",
     "body2": "Because the relationship between dose and receptor occupancy is hyperbolic, equal-size dose cuts hit harder and harder as the dose gets lower. Horowitz & Taylor (The Lancet Psychiatry, 2019) therefore recommend reducing by a proportion of the current dose — for example about 10% per step — so each step produces a similar change at the receptor level. This approach now anchors the Maudsley Deprescribing Guidelines (2024).",
     "body3": "RxDown operationalizes this evidence for patients: proportional reduction schedules, occupancy curves you can actually see, and hold/reinstate states for when symptoms flare — always in partnership with your prescriber.",
-    "sources": ["Maudsley Deprescribing Guidelines (2024)", "The Ashton Manual", "Royal College of Psychiatrists", "Horowitz & Taylor, Lancet Psychiatry (2019)", "Davies & Read, Addictive Behaviors (2019)"]
+    "sources": [
+      "Maudsley Deprescribing Guidelines (2024)",
+      "The Ashton Manual",
+      "Royal College of Psychiatrists",
+      "Horowitz & Taylor, Lancet Psychiatry (2019)",
+      "Davies & Read, Addictive Behaviors (2019)"
+    ]
   },
   "privacyPromise": {
     "heading": "Your diary stays on your device",
@@ -300,5 +306,8 @@
         "body": "We grant you a personal, non-transferable license to use the app. We reserve the right to terminate access for violations of these terms."
       }
     ]
+  },
+  "gallery": {
+    "heading": "Inside the app"
   }
 }

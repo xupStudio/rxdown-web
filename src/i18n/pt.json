@@ -110,7 +110,13 @@
     "body1": "A abstinência é comum, não rara: numa revisão sistemática, em média 56% das pessoas que deixaram antidepressivos tiveram sintomas de abstinência, e quase metade descreveu-os como graves (Davies & Read, 2019, Addictive Behaviors).",
     "body2": "Como a relação entre a dose e a ocupação dos recetores é hiperbólica, cortes de dose de igual dimensão pesam cada vez mais à medida que a dose diminui. Por isso, Horowitz & Taylor (The Lancet Psychiatry, 2019) recomendam reduzir uma proporção da dose atual — por exemplo, cerca de 10% por passo — para que cada passo produza uma alteração semelhante ao nível dos recetores. Esta abordagem sustenta hoje as Maudsley Deprescribing Guidelines (2024).",
     "body3": "O RxDown põe esta evidência em prática para os doentes: planos de redução proporcionais, curvas de ocupação que consegue mesmo ver e estados de pausa e reposição da dose para quando os sintomas se agravam — sempre em parceria com quem lhe prescreve.",
-    "sources": ["Maudsley Deprescribing Guidelines (2024)", "The Ashton Manual", "Royal College of Psychiatrists", "Horowitz & Taylor, Lancet Psychiatry (2019)", "Davies & Read, Addictive Behaviors (2019)"]
+    "sources": [
+      "Maudsley Deprescribing Guidelines (2024)",
+      "The Ashton Manual",
+      "Royal College of Psychiatrists",
+      "Horowitz & Taylor, Lancet Psychiatry (2019)",
+      "Davies & Read, Addictive Behaviors (2019)"
+    ]
   },
   "privacyPromise": {
     "heading": "O seu diário fica no seu dispositivo",
@@ -300,5 +306,8 @@
         "body": "Concedemos-lhe uma licença pessoal e intransmissível de utilização da app. Reservamo-nos o direito de terminar o acesso em caso de violação destes termos."
       }
     ]
+  },
+  "gallery": {
+    "heading": "Um olhar pela app"
   }
 }

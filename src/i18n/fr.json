@@ -110,7 +110,13 @@
     "body1": "Le sevrage est fréquent, pas rare : dans une revue systématique, en moyenne 56 % des personnes ayant arrêté un antidépresseur ont ressenti des symptômes de sevrage, et près de la moitié d'entre elles les ont décrits comme sévères (Davies & Read, 2019, Addictive Behaviors).",
     "body2": "Comme la relation entre la dose et l'occupation des récepteurs est hyperbolique, des baisses de même ampleur frappent de plus en plus fort à mesure que la dose diminue. Horowitz & Taylor (The Lancet Psychiatry, 2019) recommandent donc de réduire d'une proportion de la dose actuelle — par exemple environ 10 % par palier — pour que chaque palier produise un changement similaire au niveau des récepteurs. Cette approche ancre aujourd'hui les Maudsley Deprescribing Guidelines (2024).",
     "body3": "RxDown met ces preuves en pratique pour les patients : calendriers de réduction proportionnelle, courbes d'occupation que vous pouvez réellement voir, et états de pause/reprise pour les moments où les symptômes s'intensifient — toujours en partenariat avec votre prescripteur.",
-    "sources": ["Maudsley Deprescribing Guidelines (2024)", "The Ashton Manual", "Royal College of Psychiatrists", "Horowitz & Taylor, Lancet Psychiatry (2019)", "Davies & Read, Addictive Behaviors (2019)"]
+    "sources": [
+      "Maudsley Deprescribing Guidelines (2024)",
+      "The Ashton Manual",
+      "Royal College of Psychiatrists",
+      "Horowitz & Taylor, Lancet Psychiatry (2019)",
+      "Davies & Read, Addictive Behaviors (2019)"
+    ]
   },
   "privacyPromise": {
     "heading": "Votre journal reste sur votre appareil",
@@ -300,5 +306,8 @@
         "body": "Nous vous accordons une licence personnelle et non transférable d'utilisation de l'application. Nous nous réservons le droit de résilier votre accès en cas de violation de ces conditions."
       }
     ]
+  },
+  "gallery": {
+    "heading": "Un aperçu de l'app"
   }
 }

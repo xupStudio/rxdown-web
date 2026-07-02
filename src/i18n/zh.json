@@ -110,7 +110,13 @@
     "body1": "戒斷很常見，並不罕見：一篇系統性回顧發現，停用抗憂鬱劑的人平均有 56% 出現戒斷症狀，其中將近一半形容為嚴重（Davies & Read, 2019, Addictive Behaviors）。",
     "body2": "因為劑量與受體佔據率的關係是雙曲線的，等量的劑量削減會隨著劑量降低而越來越吃力。因此 Horowitz & Taylor（The Lancet Psychiatry, 2019）建議按目前劑量的比例來減——例如每一步約 10%——讓每一步在受體層面產生相近的變化。這套做法如今也是 Maudsley Deprescribing Guidelines（2024）的核心。",
     "body3": "RxDown 把這些實證落實給病人：按比例的減量時程、你真的看得見的佔據率曲線，以及症狀加劇時的暫停／回到前一階狀態——一切都與你的處方醫師攜手進行。",
-    "sources": ["Maudsley Deprescribing Guidelines (2024)", "The Ashton Manual", "Royal College of Psychiatrists", "Horowitz & Taylor, Lancet Psychiatry (2019)", "Davies & Read, Addictive Behaviors (2019)"]
+    "sources": [
+      "Maudsley Deprescribing Guidelines (2024)",
+      "The Ashton Manual",
+      "Royal College of Psychiatrists",
+      "Horowitz & Taylor, Lancet Psychiatry (2019)",
+      "Davies & Read, Addictive Behaviors (2019)"
+    ]
   },
   "privacyPromise": {
     "heading": "你的日記留在你的裝置上",
@@ -300,5 +306,8 @@
         "body": "我們授予你個人、不可轉讓的授權以使用本 App。若違反這些條款，我們保留終止你使用權的權利。"
       }
     ]
+  },
+  "gallery": {
+    "heading": "App 內一覽"
   }
 }

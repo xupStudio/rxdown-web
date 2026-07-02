@@ -275,9 +275,8 @@ a:hover { color: var(--mint-bright); }
 .hero-phones img {
   width: 207px;
   height: auto;
-  border-radius: 26px 26px 0 0;
+  border-radius: 22px;
   border: 1px solid var(--line);
-  border-bottom: none;
   box-shadow: var(--shadow-lift);
   background: #14202e;
 }
@@ -387,6 +386,30 @@ a:hover { color: var(--mint-bright); }
 }
 .step h3 { margin-bottom: 0.3rem; }
 .step p { font-size: 0.98rem; color: var(--ink-soft); }
+
+/* app screenshot gallery — edge-to-edge horizontal scroll with snap */
+.gallery {
+  display: flex;
+  gap: 1.1rem;
+  overflow-x: auto;
+  padding: 1.6rem max(calc((100% - 1080px) / 2), 1.25rem) 1.2rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.gallery img {
+  flex: 0 0 auto;
+  width: 207px;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+  background: #14202e;
+  scroll-snap-align: center;
+  transition: transform 0.18s ease;
+}
+.gallery img:hover { transform: translateY(-4px); }
+.gallery::-webkit-scrollbar { height: 8px; }
+.gallery::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
 
 /* evidence strip */
 .evidence { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.6rem; }

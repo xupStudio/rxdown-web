@@ -110,7 +110,13 @@
     "body1": "Entzugserscheinungen sind häufig, nicht selten: In einer systematischen Übersichtsarbeit erlebten durchschnittlich 56 % der Menschen, die Antidepressiva absetzten, Entzugserscheinungen – und fast die Hälfte davon beschrieb sie als schwer (Davies & Read, 2019, Addictive Behaviors).",
     "body2": "Da der Zusammenhang zwischen Dosis und Rezeptorbesetzung hyperbolisch ist, treffen gleich große Dosisreduktionen umso härter, je niedriger die Dosis wird. Horowitz & Taylor (The Lancet Psychiatry, 2019) empfehlen deshalb, um einen Anteil der aktuellen Dosis zu reduzieren – zum Beispiel etwa 10 % pro Schritt –, damit jeder Schritt eine ähnliche Veränderung auf Rezeptorebene bewirkt. Dieser Ansatz bildet heute die Grundlage der Maudsley Deprescribing Guidelines (2024).",
     "body3": "RxDown macht diese Evidenz für Patientinnen und Patienten nutzbar: proportionale Ausschleichpläne, sichtbare Besetzungskurven und die Optionen Halten und Dosis wieder erhöhen, wenn Symptome aufflammen – immer in Absprache mit Ihrer verschreibenden Ärztin oder Ihrem verschreibenden Arzt.",
-    "sources": ["Maudsley Deprescribing Guidelines (2024)", "The Ashton Manual", "Royal College of Psychiatrists", "Horowitz & Taylor, Lancet Psychiatry (2019)", "Davies & Read, Addictive Behaviors (2019)"]
+    "sources": [
+      "Maudsley Deprescribing Guidelines (2024)",
+      "The Ashton Manual",
+      "Royal College of Psychiatrists",
+      "Horowitz & Taylor, Lancet Psychiatry (2019)",
+      "Davies & Read, Addictive Behaviors (2019)"
+    ]
   },
   "privacyPromise": {
     "heading": "Ihr Tagebuch bleibt auf Ihrem Gerät",
@@ -300,5 +306,8 @@
         "body": "Wir gewähren Ihnen eine persönliche, nicht übertragbare Lizenz zur Nutzung der App. Bei Verstößen gegen diese Bedingungen behalten wir uns vor, den Zugriff zu beenden."
       }
     ]
+  },
+  "gallery": {
+    "heading": "Ein Blick in die App"
   }
 }

@@ -110,7 +110,13 @@
     "body1": "금단은 드문 일이 아니라 흔한 일이에요. 한 체계적 문헌고찰에 따르면, 항우울제를 끊은 사람의 평균 56%가 금단 증상을 겪었고, 그중 거의 절반이 증상을 심각하다고 표현했어요 (Davies & Read, 2019, Addictive Behaviors).",
     "body2": "복용량과 수용체 점유율의 관계는 쌍곡선이기 때문에, 같은 크기로 용량을 줄여도 용량이 낮아질수록 그 충격은 점점 더 커져요. 그래서 Horowitz & Taylor (The Lancet Psychiatry, 2019)는 현재 용량의 일정 비율 — 예를 들어 한 단계에 약 10% — 만큼 줄여 매 단계가 수용체 수준에서 비슷한 변화를 내도록 권고해요. 이 방식은 이제 Maudsley Deprescribing Guidelines (2024)의 근간을 이뤄요.",
     "body3": "RxDown는 이 근거를 환자를 위해 실제로 구현해요: 비율 기반 감량 일정, 눈으로 볼 수 있는 점유율 곡선, 증상이 심해질 때를 위한 유지/복귀 상태까지 — 언제나 처방의와 함께요.",
-    "sources": ["Maudsley Deprescribing Guidelines (2024)", "The Ashton Manual", "Royal College of Psychiatrists", "Horowitz & Taylor, Lancet Psychiatry (2019)", "Davies & Read, Addictive Behaviors (2019)"]
+    "sources": [
+      "Maudsley Deprescribing Guidelines (2024)",
+      "The Ashton Manual",
+      "Royal College of Psychiatrists",
+      "Horowitz & Taylor, Lancet Psychiatry (2019)",
+      "Davies & Read, Addictive Behaviors (2019)"
+    ]
   },
   "privacyPromise": {
     "heading": "일기는 기기에 그대로 남아요",
@@ -300,5 +306,8 @@
         "body": "저희는 귀하에게 개인적이고 양도 불가능한 앱 사용 라이선스를 부여합니다. 본 약관을 위반할 경우 접근을 종료할 권리를 보유합니다."
       }
     ]
+  },
+  "gallery": {
+    "heading": "앱 미리보기"
   }
 }

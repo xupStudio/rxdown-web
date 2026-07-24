@@ -266,6 +266,10 @@
         "body": "Todos los registros de salud —medicamentos, dosis, registros diarios, estado de ánimo, síntomas, texto del diario y transcripciones de voz— se guardan localmente en la base de datos de la app, en su dispositivo, protegidos por la propia seguridad del dispositivo (bloqueo de pantalla y protección de almacenamiento del sistema operativo). Nosotros, los desarrolladores, no podemos acceder a estos datos, verlos ni hacer copias de seguridad. Son enteramente suyos."
       },
       {
+        "h2": "Importación de sueño (Health Connect / Apple Salud)",
+        "body": "Con su permiso explícito, la aplicación puede leer las sesiones de sueño de la última noche desde Health Connect de Android o Apple Salud (HealthKit) para rellenar automáticamente las horas de sueño de su registro diario. Este acceso es de solo lectura: la aplicación nunca escribe datos en Health Connect ni en Apple Salud. Los datos de sueño leídos se procesan y almacenan únicamente en su dispositivo — nunca se suben a ningún servidor, nunca se usan para análisis o publicidad y nunca se comparten con terceros. Puede rechazar o revocar el permiso en cualquier momento desde los ajustes del sistema e introducir las horas de sueño manualmente; la aplicación funciona plenamente sin él."
+      },
+      {
         "h2": "Funciones de IA y procesamiento por terceros",
         "body": "Cuando usa el Registro con IA o el Análisis inteligente, la entrada que elige analizar (su texto o audio), junto con el plan y el contexto de su historial médico que necesita, se envía a Gemini de Google a través de Firebase AI Logic, se procesa y se devuelve al instante. Estas solicitudes no se almacenan de forma permanente en servidores en la nube ni se usan para entrenar modelos. Las funciones de IA son opcionales: todo puede registrarse manualmente."
       },

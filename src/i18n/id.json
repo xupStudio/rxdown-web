@@ -266,6 +266,10 @@
         "body": "Semua catatan kesehatan — obat, dosis, catatan harian, suasana hati, gejala, teks jurnal, dan transkrip suara — disimpan secara lokal di basis data aplikasi pada perangkat Anda, dilindungi oleh keamanan perangkat Anda sendiri (kunci layar dan proteksi penyimpanan sistem operasi). Kami, para pengembang, tidak dapat mengakses, melihat, atau mencadangkan data ini. Data itu sepenuhnya milik Anda."
       },
       {
+        "h2": "Impor tidur (Health Connect / Apple Health)",
+        "body": "Dengan izin eksplisit Anda, aplikasi dapat membaca sesi tidur semalam dari Health Connect (Android) atau Apple Health (HealthKit) untuk mengisi otomatis jam tidur di catatan harian Anda. Akses ini hanya-baca: aplikasi tidak pernah menulis data ke Health Connect atau Apple Health. Data tidur yang dibaca hanya diproses dan disimpan di perangkat Anda — tidak pernah diunggah ke server mana pun, tidak pernah digunakan untuk analitik atau iklan, dan tidak pernah dibagikan kepada siapa pun. Anda dapat menolak atau mencabut izin kapan saja di pengaturan sistem dan memasukkan jam tidur secara manual; aplikasi tetap berfungsi penuh tanpanya."
+      },
+      {
         "h2": "Fitur AI dan pemrosesan pihak ketiga",
         "body": "Saat Anda menggunakan Jurnal AI atau Analisis Cerdas, entri yang Anda pilih untuk dianalisis (teksnya atau audionya) beserta konteks rencana dan riwayat medis yang diperlukannya dikirim ke Gemini milik Google melalui Firebase AI Logic, diproses, dan dikembalikan segera. Permintaan ini tidak disimpan permanen di server cloud dan tidak dipakai untuk melatih model. Fitur AI bersifat opsional — semuanya bisa dicatat secara manual."
       },

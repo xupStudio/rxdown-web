@@ -266,6 +266,10 @@
         "body": "All health records — medications, doses, daily logs, mood, symptoms, journal text, and voice transcripts — are stored locally in the app's database on your device, protected by your device's own security (screen lock and OS storage protection). We, the developers, cannot access, view, or back up this data. You own it entirely."
       },
       {
+        "h2": "Sleep import (Health Connect / Apple Health)",
+        "body": "With your explicit permission, the app can read last night's sleep sessions from Android Health Connect or Apple Health (HealthKit) to pre-fill the sleep-hours entry in your daily log. This access is read-only: the app never writes anything to Health Connect or Apple Health. Sleep data read this way is processed and stored only on your device, alongside the rest of your log — it is never uploaded to any server, never used for analytics or advertising, and never shared with anyone. You can decline or revoke the permission at any time in system settings and enter sleep hours manually; the app works fully without it."
+      },
+      {
         "h2": "AI features and third-party processing",
         "body": "When you use AI Journal or Smart Analysis, the entry you chose to analyze (its text or audio) plus the plan and medical-history context it needs are sent to Google's Gemini via Firebase AI Logic, processed, and returned immediately. These requests are not permanently stored on cloud servers and are not used to train models. AI features are optional — everything can be logged manually."
       },

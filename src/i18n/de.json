@@ -266,6 +266,10 @@
         "body": "Alle Gesundheitsdaten – Medikamente, Dosen, Tageseinträge, Stimmung, Symptome, Tagebuchtext und Sprachtranskripte – werden lokal in der Datenbank der App auf Ihrem Gerät gespeichert und durch die geräteeigene Sicherheit geschützt (Bildschirmsperre und Speicherschutz des Betriebssystems). Wir, die Entwickler, können auf diese Daten weder zugreifen noch sie einsehen oder sichern. Sie gehören vollständig Ihnen."
       },
       {
+        "h2": "Schlaf-Import (Health Connect / Apple Health)",
+        "body": "Mit Ihrer ausdrücklichen Erlaubnis kann die App die Schlafdaten der letzten Nacht aus Android Health Connect oder Apple Health (HealthKit) lesen, um das Schlafstunden-Feld im Tagesprotokoll vorauszufüllen. Der Zugriff ist rein lesend: Die App schreibt niemals Daten in Health Connect oder Apple Health. So gelesene Schlafdaten werden ausschließlich auf Ihrem Gerät verarbeitet und gespeichert — sie werden niemals auf Server hochgeladen, nie für Analysen oder Werbung verwendet und nie mit Dritten geteilt. Sie können die Berechtigung jederzeit in den Systemeinstellungen widerrufen und die Schlafstunden manuell eingeben; die App funktioniert auch ohne sie vollständig."
+      },
+      {
         "h2": "KI-Funktionen und Verarbeitung durch Dritte",
         "body": "Wenn Sie „KI-Eintrag“ oder „Intelligente Analyse“ nutzen, werden der Eintrag, den Sie zur Analyse ausgewählt haben (sein Text oder Audio), sowie der benötigte Plan- und Krankengeschichte-Kontext über Firebase AI Logic an Googles Gemini gesendet, verarbeitet und umgehend zurückgegeben. Diese Anfragen werden nicht dauerhaft auf Cloud-Servern gespeichert und nicht zum Training von Modellen verwendet. KI-Funktionen sind optional – alles lässt sich manuell erfassen."
       },

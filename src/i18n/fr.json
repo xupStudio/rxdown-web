@@ -266,6 +266,10 @@
         "body": "Tous les enregistrements de santé — médicaments, doses, entrées quotidiennes, humeur, symptômes, texte du journal et transcriptions vocales — sont stockés localement dans la base de données de l'application sur votre appareil, protégés par la sécurité propre à votre appareil (verrouillage de l'écran et protection du stockage du système d'exploitation). Nous, les développeurs, ne pouvons ni accéder à ces données, ni les consulter, ni les sauvegarder. Elles vous appartiennent entièrement."
       },
       {
+        "h2": "Import du sommeil (Health Connect / Apple Santé)",
+        "body": "Avec votre autorisation explicite, l'application peut lire les sessions de sommeil de la nuit précédente depuis Health Connect (Android) ou Apple Santé (HealthKit) afin de préremplir les heures de sommeil de votre journal quotidien. Cet accès est en lecture seule : l'application n'écrit jamais de données dans Health Connect ni dans Apple Santé. Les données de sommeil ainsi lues sont traitées et stockées uniquement sur votre appareil — jamais envoyées à un serveur, jamais utilisées à des fins d'analyse ou de publicité, jamais partagées avec des tiers. Vous pouvez refuser ou révoquer l'autorisation à tout moment dans les réglages système et saisir vos heures de sommeil manuellement ; l'application fonctionne parfaitement sans."
+      },
+      {
         "h2": "Fonctionnalités IA et traitement par des tiers",
         "body": "Lorsque vous utilisez Journal IA ou Analyse intelligente, l'entrée que vous choisissez d'analyser (son texte ou son audio) ainsi que le plan et le contexte des antécédents médicaux dont elle a besoin sont envoyés au Gemini de Google via Firebase AI Logic, traités et renvoyés immédiatement. Ces requêtes ne sont pas stockées de façon permanente sur des serveurs cloud et ne sont pas utilisées pour entraîner des modèles. Les fonctionnalités IA sont facultatives — tout peut être enregistré manuellement."
       },

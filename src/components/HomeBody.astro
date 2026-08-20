@@ -2,7 +2,8 @@
 import { STRINGS, localePath, APP_STORE_URL, PLAY_STORE_URL } from '../i18n/locales.js';
 const { locale } = Astro.props;
 const t = STRINGS[locale];
-const shotPath = (shot) => `/shots/${locale}/${shot}.webp`;
+const screenshotVersion = '20260820-3';
+const shotPath = (shot) => `/shots/${locale}/${shot}.webp?v=${screenshotVersion}`;
 ---
 
 <section class="hero">

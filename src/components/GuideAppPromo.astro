@@ -4,7 +4,8 @@ import { APP_STORE_URL, PLAY_STORE_URL, STRINGS } from '../i18n/locales.js';
 const { locale = 'en' } = Astro.props;
 const t = STRINGS[locale];
 const copy = t.how.steps[2];
-const shotPath = `/shots/${locale}/report.webp`;
+const screenshotVersion = '20260820-3';
+const shotPath = `/shots/${locale}/report.webp?v=${screenshotVersion}`;
 ---
 
 <section class="guide-app-promo" data-guide-app-promo aria-labelledby="guide-app-promo-title">

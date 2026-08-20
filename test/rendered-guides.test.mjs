@@ -10,6 +10,7 @@ const locales = ['en', 'zh', 'ja', 'ko', 'de', 'es', 'fr', 'id', 'pt'];
 const hreflang = { en: 'en', zh: 'zh-Hant', ja: 'ja', ko: 'ko', de: 'de', es: 'es', fr: 'fr', id: 'id', pt: 'pt-PT' };
 const appStore = 'https://apps.apple.com/app/id6757333483';
 const playStore = 'https://play.google.com/store/apps/details?id=com.xupstudio.rxtaper';
+const shotVersion = '20260820-3';
 
 function slugs(locale) {
   const dir = locale === 'en' ? contentRoot : join(contentRoot, locale);
@@ -57,7 +58,11 @@ test('every guide renders one heading, a category, and the app promotion as its 
         `${locale}/${slug} safety reminder must appear before article content`
       );
       assert.match(html, /data-guide-app-promo/, `${locale}/${slug} app promo`);
-      assert.match(html, new RegExp(`/shots/${locale}/report\\.webp`), `${locale}/${slug} app image`);
+      assert.match(
+        html,
+        new RegExp(`/shots/${locale}/report\\.webp\\?v=${shotVersion}`),
+        `${locale}/${slug} must use the current localized app image URL`
+      );
       const promoImage = html.match(/<section class="guide-app-promo"[\s\S]*?<img(?=[^>]*\/shots\/[^"]+\/report\.webp)[^>]*>/)?.[0];
       assert.ok(promoImage, `${locale}/${slug} app promo image must render`);
       assert.doesNotMatch(

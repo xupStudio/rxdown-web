@@ -9,6 +9,7 @@ const locales = ['en', 'zh', 'ja', 'ko', 'de', 'es', 'fr', 'id', 'pt'];
 const shots = ['today', 'voice', 'journey', 'insights', 'ai', 'report', 'log', 'export'];
 const galleryShots = ['journey', 'insights', 'ai', 'report', 'log', 'export'];
 const phoneFrameShots = ['today', 'journey', 'insights', 'export'];
+const shotVersion = '20260820-3';
 
 function homeFile(locale) {
   return locale === 'en'
@@ -25,6 +26,7 @@ test('each localized homepage ships and renders its matching app screenshots', (
     const html = readFileSync(homeFile(locale), 'utf8');
     for (const shot of shots) {
       const source = `/shots/${locale}/${shot}.webp`;
+      const renderedSource = `${source}?v=${shotVersion}`;
       assert.ok(
         existsSync(join(root, 'public', 'shots', locale, `${shot}.webp`)),
         `${locale}/${shot} source asset must exist`
@@ -33,7 +35,7 @@ test('each localized homepage ships and renders its matching app screenshots', (
         existsSync(join(distRoot, 'shots', locale, `${shot}.webp`)),
         `${locale}/${shot} built asset must exist`
       );
-      assert.ok(html.includes(`src="${source}"`), `${locale} homepage must render ${source}`);
+      assert.ok(html.includes(`src="${renderedSource}"`), `${locale} homepage must render ${renderedSource}`);
     }
   }
 });
@@ -43,7 +45,7 @@ test('visible homepage gallery screenshots are ready without horizontal-scroll l
     const html = readFileSync(homeFile(locale), 'utf8');
     for (const shot of galleryShots) {
       const source = `/shots/${locale}/${shot}.webp`;
-      const image = html.match(new RegExp(`<img(?=[^>]*src="${source}")[^>]*>`))?.[0];
+      const image = html.match(new RegExp(`<img(?=[^>]*src="${source}\\?v=${shotVersion}")[^>]*>`))?.[0];
       assert.ok(image, `${locale}/${shot} gallery image must render`);
       assert.doesNotMatch(
         image,

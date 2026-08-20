@@ -2,6 +2,7 @@
 import { STRINGS, localePath, APP_STORE_URL, PLAY_STORE_URL } from '../i18n/locales.js';
 const { locale } = Astro.props;
 const t = STRINGS[locale];
+const shotPath = (shot) => `/shots/${locale}/${shot}.webp`;
 ---
 
 <section class="hero">
@@ -32,17 +33,17 @@ const t = STRINGS[locale];
     </div>
     <div class="hero-phones rise" style="animation-delay:.2s">
       <img
-        src="/shots/today.webp"
+        src={shotPath('today')}
         alt={t.how.steps[1].title}
-        width="207"
-        height="424"
+        width="414"
+        height="900"
         fetchpriority="high"
       />
       <img
-        src="/shots/voice.webp"
+        src={shotPath('voice')}
         alt={t.how.steps[0].title}
-        width="207"
-        height="424"
+        width="414"
+        height="900"
         loading="lazy"
       />
     </div>
@@ -92,12 +93,12 @@ const t = STRINGS[locale];
     <h2>{t.gallery.heading}</h2>
   </div>
   <div class="gallery" tabindex="0">
-    <img src="/shots/journey.webp" alt={t.how.steps[1].title} width="207" height="424" loading="lazy" />
-    <img src="/shots/insights.webp" alt={t.features.cards[1].title} width="207" height="424" loading="lazy" />
-    <img src="/shots/ai.webp" alt={t.features.cards[0].title} width="207" height="424" loading="lazy" />
-    <img src="/shots/report.webp" alt={t.features.cards[5].title} width="207" height="424" loading="lazy" />
-    <img src="/shots/log.webp" alt={t.how.steps[0].title} width="207" height="424" loading="lazy" />
-    <img src="/shots/export.webp" alt={t.features.cards[5].title} width="207" height="424" loading="lazy" />
+    <img src={shotPath('journey')} alt={t.how.steps[1].title} width="414" height="900" loading="lazy" />
+    <img src={shotPath('insights')} alt={t.features.cards[1].title} width="414" height="900" loading="lazy" />
+    <img src={shotPath('ai')} alt={t.features.cards[0].title} width="414" height="900" loading="lazy" />
+    <img src={shotPath('report')} alt={t.features.cards[5].title} width="414" height="900" loading="lazy" />
+    <img src={shotPath('log')} alt={t.how.steps[0].title} width="414" height="900" loading="lazy" />
+    <img src={shotPath('export')} alt={t.features.cards[5].title} width="414" height="900" loading="lazy" />
   </div>
 </section>
 

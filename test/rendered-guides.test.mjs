@@ -51,7 +51,7 @@ test('every guide renders one heading, a category, and the app promotion as its 
       assert.equal((html.match(/<h1(?:\s|>)/g) ?? []).length, 1, `${locale}/${slug} h1`);
       assert.match(html, /data-guide-category/, `${locale}/${slug} category`);
       assert.match(html, /data-guide-app-promo/, `${locale}/${slug} app promo`);
-      assert.match(html, /\/shots\/report\.webp/, `${locale}/${slug} app image`);
+      assert.match(html, new RegExp(`/shots/${locale}/report\\.webp`), `${locale}/${slug} app image`);
       assert.ok(html.includes(appStore), `${locale}/${slug} App Store link`);
       assert.ok(html.includes(playStore), `${locale}/${slug} Play Store link`);
       assert.ok(

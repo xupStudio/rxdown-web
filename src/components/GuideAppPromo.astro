@@ -4,15 +4,16 @@ import { APP_STORE_URL, PLAY_STORE_URL, STRINGS } from '../i18n/locales.js';
 const { locale = 'en' } = Astro.props;
 const t = STRINGS[locale];
 const copy = t.how.steps[2];
+const shotPath = `/shots/${locale}/report.webp`;
 ---
 
 <section class="guide-app-promo" data-guide-app-promo aria-labelledby="guide-app-promo-title">
   <div class="guide-app-visual">
     <div class="guide-app-glow" aria-hidden="true"></div>
     <img
-      src="/shots/report.webp"
+      src={shotPath}
       width="414"
-      height="849"
+      height="900"
       loading="lazy"
       decoding="async"
       alt={copy.title}

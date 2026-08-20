@@ -8,11 +8,16 @@ const distRoot = join(root, 'dist');
 const locales = ['en', 'zh', 'ja', 'ko', 'de', 'es', 'fr', 'id', 'pt'];
 const shots = ['today', 'voice', 'journey', 'insights', 'ai', 'report', 'log', 'export'];
 const galleryShots = ['journey', 'insights', 'ai', 'report', 'log', 'export'];
+const phoneFrameShots = ['today', 'journey', 'insights', 'export'];
 
 function homeFile(locale) {
   return locale === 'en'
     ? join(distRoot, 'index.html')
     : join(distRoot, locale, 'index.html');
+}
+
+function hasWebpAlpha(source) {
+  return source.subarray(12, 16).toString() === 'VP8X' && (source[20] & 0x10) !== 0;
 }
 
 test('each localized homepage ships and renders its matching app screenshots', () => {
@@ -44,6 +49,19 @@ test('visible homepage gallery screenshots are ready without horizontal-scroll l
         image,
         /\sloading="lazy"/,
         `${locale}/${shot} must not wait for horizontal scrolling before it loads`
+      );
+    }
+  }
+});
+
+test('localized app screenshots have opaque safe areas instead of transparent phone-frame gaps', () => {
+  for (const locale of locales) {
+    for (const shot of phoneFrameShots) {
+      const source = readFileSync(join(root, 'public', 'shots', locale, `${shot}.webp`));
+      assert.equal(
+        hasWebpAlpha(source),
+        false,
+        `${locale}/${shot} must not expose the page background through its phone frame`
       );
     }
   }

@@ -58,6 +58,13 @@ test('every guide renders one heading, a category, and the app promotion as its 
       );
       assert.match(html, /data-guide-app-promo/, `${locale}/${slug} app promo`);
       assert.match(html, new RegExp(`/shots/${locale}/report\\.webp`), `${locale}/${slug} app image`);
+      const promoImage = html.match(/<section class="guide-app-promo"[\s\S]*?<img(?=[^>]*\/shots\/[^"]+\/report\.webp)[^>]*>/)?.[0];
+      assert.ok(promoImage, `${locale}/${slug} app promo image must render`);
+      assert.doesNotMatch(
+        promoImage,
+        /\sloading="lazy"/,
+        `${locale}/${slug} app promo must not flash a blank phone card before it enters view`
+      );
       assert.ok(html.includes(appStore), `${locale}/${slug} App Store link`);
       assert.ok(html.includes(playStore), `${locale}/${slug} Play Store link`);
       assert.ok(
@@ -174,6 +181,25 @@ test('guide pages do not emit broken root-relative links or image sources', () =
         assert.ok(existsSync(target), `${routePath(locale, slug)} → ${path}`);
       }
     }
+  }
+});
+
+test('homepages offer only the current cache-busted raster favicon choices', () => {
+  for (const locale of locales) {
+    const file = locale === 'en' ? join(distRoot, 'index.html') : join(distRoot, locale, 'index.html');
+    const html = readFileSync(file, 'utf8');
+    const iconLinks = html.match(/<link rel="icon"[^>]*>/g) ?? [];
+
+    assert.equal(iconLinks.length, 2, `${locale} must expose ICO and PNG favicon fallbacks`);
+    assert.ok(
+      iconLinks.some((link) => /href="\/favicon\.ico\?v=20260820-2"/.test(link)),
+      `${locale} must cache-bust the current ICO favicon`
+    );
+    assert.ok(
+      iconLinks.some((link) => /href="\/favicon\.png\?v=20260820-2"/.test(link)),
+      `${locale} must cache-bust the current PNG favicon`
+    );
+    assert.doesNotMatch(html, /<link rel="icon"[^>]+icon\.svg/, `${locale} must not advertise the legacy SVG favicon`);
   }
 });
 

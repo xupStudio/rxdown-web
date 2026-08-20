@@ -7,6 +7,7 @@ const root = new URL('..', import.meta.url).pathname;
 const distRoot = join(root, 'dist');
 const locales = ['en', 'zh', 'ja', 'ko', 'de', 'es', 'fr', 'id', 'pt'];
 const shots = ['today', 'voice', 'journey', 'insights', 'ai', 'report', 'log', 'export'];
+const galleryShots = ['journey', 'insights', 'ai', 'report', 'log', 'export'];
 
 function homeFile(locale) {
   return locale === 'en'
@@ -28,6 +29,22 @@ test('each localized homepage ships and renders its matching app screenshots', (
         `${locale}/${shot} built asset must exist`
       );
       assert.ok(html.includes(`src="${source}"`), `${locale} homepage must render ${source}`);
+    }
+  }
+});
+
+test('visible homepage gallery screenshots are ready without horizontal-scroll lazy loading', () => {
+  for (const locale of locales) {
+    const html = readFileSync(homeFile(locale), 'utf8');
+    for (const shot of galleryShots) {
+      const source = `/shots/${locale}/${shot}.webp`;
+      const image = html.match(new RegExp(`<img(?=[^>]*src="${source}")[^>]*>`))?.[0];
+      assert.ok(image, `${locale}/${shot} gallery image must render`);
+      assert.doesNotMatch(
+        image,
+        /\sloading="lazy"/,
+        `${locale}/${shot} must not wait for horizontal scrolling before it loads`
+      );
     }
   }
 });

@@ -44,7 +44,6 @@ const shotPath = (shot) => `/shots/${locale}/${shot}.webp`;
         alt={t.how.steps[0].title}
         width="414"
         height="900"
-        loading="lazy"
       />
     </div>
   </div>
@@ -93,12 +92,12 @@ const shotPath = (shot) => `/shots/${locale}/${shot}.webp`;
     <h2>{t.gallery.heading}</h2>
   </div>
   <div class="gallery" tabindex="0">
-    <img src={shotPath('journey')} alt={t.how.steps[1].title} width="414" height="900" loading="lazy" />
-    <img src={shotPath('insights')} alt={t.features.cards[1].title} width="414" height="900" loading="lazy" />
-    <img src={shotPath('ai')} alt={t.features.cards[0].title} width="414" height="900" loading="lazy" />
-    <img src={shotPath('report')} alt={t.features.cards[5].title} width="414" height="900" loading="lazy" />
-    <img src={shotPath('log')} alt={t.how.steps[0].title} width="414" height="900" loading="lazy" />
-    <img src={shotPath('export')} alt={t.features.cards[5].title} width="414" height="900" loading="lazy" />
+    <img src={shotPath('journey')} alt={t.how.steps[1].title} width="414" height="900" />
+    <img src={shotPath('insights')} alt={t.features.cards[1].title} width="414" height="900" />
+    <img src={shotPath('ai')} alt={t.features.cards[0].title} width="414" height="900" />
+    <img src={shotPath('report')} alt={t.features.cards[5].title} width="414" height="900" />
+    <img src={shotPath('log')} alt={t.how.steps[0].title} width="414" height="900" />
+    <img src={shotPath('export')} alt={t.features.cards[5].title} width="414" height="900" />
   </div>
 </section>
 

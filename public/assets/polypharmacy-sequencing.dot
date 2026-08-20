@@ -1,0 +1,12 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="transparent", fontname="Arial", pad="0.25"];
+  node [shape=box, style="rounded", fontname="Arial", fontsize=11, margin="0.18,0.10"];
+  edge [fontname="Arial", fontsize=10];
+  list [label="Create one verified medication list"];
+  indication [label="Confirm indication, benefit, duration,\nformulation, and current stability"];
+  risk [label="Rank urgent harms, withdrawal risk,\nrelapse risk, and interactions"];
+  choose [label="Choose one change with a clear reason"];
+  monitor [label="Define what to monitor and when to pause"];
+  learn [label="Observe before the next medication change"];
+  list -> indication -> risk -> choose -> monitor -> learn;
+}

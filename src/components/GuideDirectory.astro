@@ -1,0 +1,193 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { GUIDE_DIRECTORY_UI, guideHubLabel } from '../i18n/guide-directory.js';
+import { GUIDES_UI } from '../i18n/guides-ui.js';
+import { breadcrumbLd } from '../i18n/jsonld.js';
+import { LOCALES, LOCALE_CODES } from '../i18n/locales.js';
+import { guidePath, guidesIndexPath } from '../i18n/guides.js';
+import { guideGroups } from '../lib/guide-catalog.js';
+
+const { locale = 'en', guides } = Astro.props;
+const gt = GUIDES_UI[locale];
+const ui = GUIDE_DIRECTORY_UI[locale];
+const groups = guideGroups(guides, locale);
+const all = await getCollection('guides');
+const localesWithGuides = LOCALE_CODES.filter((code) =>
+  all.some((entry) => (code === 'en' ? !entry.id.includes('/') : entry.id.startsWith(`${code}/`)))
+);
+const alternates = localesWithGuides.map((code) => ({
+  hreflang: LOCALES[code].hreflang,
+  href: guidesIndexPath(code),
+}));
+const localeTag = LOCALES[locale].hreflang;
+const formatDate = (value) => {
+  if (!value) return null;
+  const date = value instanceof Date ? value : new Date(`${value}T00:00:00Z`);
+  return date.toLocaleDateString(localeTag, {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    timeZone: 'UTC',
+  });
+};
+const searchableText = (guide) => {
+  const data = guide.entry.data;
+  return [
+    data.title,
+    data.description,
+    data.primary_keyword,
+    ...(data.secondary_keywords ?? []),
+    data.canonical_medication_name,
+    ...(data.brand_name_search_synonyms ?? []),
+    data.medication_class,
+    ...(data.tags ?? []),
+  ]
+    .filter(Boolean)
+    .join(' ');
+};
+---
+
+<Base
+  locale={locale}
+  page="guides"
+  path="/guides/"
+  customAlternates={alternates}
+  titleOverride={gt.metaTitle}
+  descriptionOverride={gt.metaDescription}
+  jsonLd={[breadcrumbLd(locale, guidesIndexPath(locale), gt.crumb)]}
+>
+  <section
+    class="guide-library section"
+    data-guide-directory
+    data-article-label={ui.article}
+    data-articles-label={ui.articles}
+  >
+    <div class="wrap">
+      <header class="guide-library-hero">
+        <span class="eyebrow">{gt.eyebrow}</span>
+        <h1>{gt.heading}</h1>
+        <p class="lede">{gt.lede}</p>
+      </header>
+
+      <div class="guide-finder">
+        <div class="guide-search">
+          <label for="guide-search">{ui.searchLabel}</label>
+          <div class="guide-search-control">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2" />
+              <path d="m16 16 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <input id="guide-search" type="search" placeholder={ui.searchPlaceholder} autocomplete="off" />
+            <button type="button" data-guide-search-clear hidden>{ui.clearSearch}</button>
+          </div>
+          <output class="guide-result-count" for="guide-search" aria-live="polite">
+            {guides.length} {ui.articles}
+          </output>
+        </div>
+
+        <nav class="guide-hub-nav" aria-labelledby="guide-hub-heading">
+          <h2 id="guide-hub-heading">{ui.browseTopics}</h2>
+          <div>
+            {groups.map((group) => (
+              <a href={`#${group.id}`} data-guide-hub-link>
+                <span>{guideHubLabel(locale, group.hub)}</span>
+                <strong>{group.guides.length}</strong>
+              </a>
+            ))}
+          </div>
+        </nav>
+      </div>
+
+      <p class="guide-no-results callout" data-guide-no-results hidden>{ui.noResults}</p>
+
+      <div class="guide-hub-sections">
+        {groups.map((group) => (
+          <section class="guide-hub-section" id={group.id} data-guide-hub-section>
+            <header>
+              <p class="guide-hub-number" aria-hidden="true">
+                {String(groups.indexOf(group) + 1).padStart(2, '0')}
+              </p>
+              <div>
+                <h2>{guideHubLabel(locale, group.hub)}</h2>
+                <p>{group.guides.length} {ui.articles}</p>
+              </div>
+            </header>
+            <div class="guide-grid">
+              {group.guides.map((guide) => {
+                const data = guide.entry.data;
+                const displayDate = formatDate(data.evidence_cutoff ?? data.updatedDate ?? data.pubDate);
+                return (
+                  <a
+                    class="guide-card"
+                    href={guidePath(locale, guide.slug)}
+                    data-guide-card
+                    data-search={searchableText(guide)}
+                  >
+                    <span class="guide-card-category">{guideHubLabel(locale, group.hub)}</span>
+                    <h3>{data.title}</h3>
+                    <p>{data.description}</p>
+                    {displayDate && (
+                      <span class="guide-card-date">
+                        {data.evidence_cutoff ? `${ui.evidenceDate}: ` : ''}{displayDate}
+                      </span>
+                    )}
+                  </a>
+                );
+              })}
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>
+
+<script is:inline>
+  document.querySelectorAll('[data-guide-directory]').forEach(function (directory) {
+    var input = directory.querySelector('input[type="search"]');
+    var clear = directory.querySelector('[data-guide-search-clear]');
+    var output = directory.querySelector('.guide-result-count');
+    var noResults = directory.querySelector('[data-guide-no-results]');
+    var cards = Array.from(directory.querySelectorAll('[data-guide-card]'));
+    var sections = Array.from(directory.querySelectorAll('[data-guide-hub-section]'));
+    var hubLinks = Array.from(directory.querySelectorAll('[data-guide-hub-link]'));
+    var articleLabel = directory.dataset.articleLabel;
+    var articlesLabel = directory.dataset.articlesLabel;
+    if (!input || !clear || !output || !noResults) return;
+
+    function normalize(value) {
+      return value.toLocaleLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
+    }
+
+    function filterGuides() {
+      var query = normalize(input.value.trim());
+      var visible = 0;
+      cards.forEach(function (card) {
+        var match = !query || normalize(card.dataset.search || '').includes(query);
+        card.hidden = !match;
+        if (match) visible += 1;
+      });
+      sections.forEach(function (section) {
+        section.hidden = !section.querySelector('[data-guide-card]:not([hidden])');
+      });
+      clear.hidden = !query;
+      noResults.hidden = visible !== 0;
+      output.textContent = visible + ' ' + (visible === 1 ? articleLabel : articlesLabel);
+    }
+
+    input.addEventListener('input', filterGuides);
+    clear.addEventListener('click', function () {
+      input.value = '';
+      filterGuides();
+      input.focus();
+    });
+    hubLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (!input.value) return;
+        input.value = '';
+        filterGuides();
+      });
+    });
+  });
+</script>

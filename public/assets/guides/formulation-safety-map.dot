@@ -1,0 +1,16 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="transparent", fontname="Arial", pad="0.25"];
+  node [shape=box, style="rounded", fontname="Arial", fontsize=11, margin="0.18,0.10"];
+  edge [fontname="Arial", fontsize=10];
+  start [label="Need a smaller dose"];
+  identify [label="Identify exact product, strength,\nrelease type, and country"];
+  modified [shape=diamond, label="Modified-, delayed-,\nor enteric-release?"];
+  label [label="Check product label and pharmacist\nbefore splitting, crushing, or opening"];
+  options [label="Discuss licensed liquid, smaller strength,\ncompounding, or product-specific manipulation"];
+  verify [label="Verify measurement accuracy, storage,\nand dose uniformity"];
+  record [label="Record method consistently"];
+  start -> identify -> modified;
+  modified -> label [label="Yes or unsure"];
+  modified -> options [label="No"];
+  label -> options -> verify -> record;
+}

@@ -1,0 +1,150 @@
+---
+import { render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { articleLd, breadcrumbLd, faqLd } from '../i18n/jsonld.js';
+import { LOCALES } from '../i18n/locales.js';
+import { GUIDE_DIRECTORY_UI, guideHubLabel } from '../i18n/guide-directory.js';
+import { GUIDES_UI } from '../i18n/guides-ui.js';
+import {
+  guideAlternates,
+  guidePath,
+  guidesForLocale,
+  guidesIndexPath,
+} from '../i18n/guides.js';
+import { GUIDE_HUB_IDS, guideHub, relatedGuides } from '../lib/guide-catalog.js';
+import GuideAppPromo from './GuideAppPromo.astro';
+
+const { locale = 'en', entry, slug } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+const gt = GUIDES_UI[locale];
+const directoryUi = GUIDE_DIRECTORY_UI[locale];
+const localPath = guidePath(locale, slug);
+const localeFreePath = `/guides/${slug}/`;
+const url = `https://rxdown.app${localPath}`;
+const imported = Boolean(d.content_hub);
+const hub = guideHub({ entry, slug });
+const hubLabel = guideHubLabel(locale, hub);
+const heroImage = d.featured_image
+  ? locale === 'en'
+    ? d.featured_image
+    : `/${locale}${d.featured_image}`
+  : `/guides/${slug}.png`;
+
+const alts = await guideAlternates(slug);
+const alternates = alts.map((alternate) => ({
+  hreflang: LOCALES[alternate.locale].hreflang,
+  href: alternate.path,
+}));
+
+const localeTag = LOCALES[locale].hreflang;
+const formatDate = (date) =>
+  date?.toLocaleDateString(localeTag, { year: 'numeric', month: 'long', day: 'numeric' });
+const formatEvidenceDate = (value) =>
+  value
+    ? new Date(`${value}T00:00:00Z`).toLocaleDateString(localeTag, {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        timeZone: 'UTC',
+      })
+    : null;
+
+const allGuides = await guidesForLocale(locale);
+const current = { entry, slug };
+const related = relatedGuides(current, allGuides, 3, locale);
+const jsonLd = [
+  articleLd(entry, url, slug, locale),
+  breadcrumbLd(locale, localPath, d.title, gt.crumb, guidesIndexPath(locale)),
+];
+if (d.faq?.length) jsonLd.splice(1, 0, faqLd(d.faq));
+---
+
+<Base
+  locale={locale}
+  page="guides"
+  path={localeFreePath}
+  customAlternates={alternates}
+  titleOverride={`${d.title} | RxDown`}
+  descriptionOverride={d.description}
+  ogImagePath={heroImage}
+  jsonLd={jsonLd}
+>
+  <article class:list={['guide', 'prose', 'wrap', { 'guide-imported': imported }]} data-guide-article>
+    <nav class="guide-crumbs small" aria-label={gt.crumb}>
+      <a href={guidesIndexPath(locale)}>{gt.crumb}</a>
+      <span aria-hidden="true">›</span>
+      <a href={`${guidesIndexPath(locale)}#${GUIDE_HUB_IDS[hub]}`}>{hubLabel}</a>
+      <span aria-hidden="true">›</span>
+      <span>{d.title}</span>
+    </nav>
+
+    <span class="guide-category" data-guide-category>{hubLabel}</span>
+
+    {!imported && <h1>{d.title}</h1>}
+
+    {imported ? (
+      d.evidence_cutoff && (
+        <p class="guide-evidence-date small">
+          {directoryUi.evidenceDate}: <time datetime={d.evidence_cutoff}>{formatEvidenceDate(d.evidence_cutoff)}</time>
+        </p>
+      )
+    ) : (
+      <p class="guide-byline small">
+        {gt.by} <strong>Chih Yu Lin</strong>, {gt.role} · {gt.published}{' '}
+        <time datetime={d.pubDate.toISOString().slice(0, 10)}>{formatDate(d.pubDate)}</time>
+        {d.updatedDate && (
+          <> · {gt.updated} <time datetime={d.updatedDate.toISOString().slice(0, 10)}>{formatDate(d.updatedDate)}</time></>
+        )}
+      </p>
+    )}
+
+    {!imported && (
+      <>
+        <div class="callout guide-disclaimer"><p>⚕️ {gt.disclaimer}</p></div>
+        <img
+          class="guide-hero"
+          src={heroImage}
+          width="1200"
+          height="630"
+          decoding="async"
+          alt={`${gt.diagramAlt}: ${d.title}`}
+        />
+      </>
+    )}
+
+    <div class="guide-body">
+      <Content />
+    </div>
+
+    {d.faq?.length > 0 && (
+      <section class="guide-faq">
+        <h2>{gt.faqHeading}</h2>
+        <div class="faq-list">
+          {d.faq.map((item) => (
+            <details>
+              <summary>{item.q}</summary>
+              <div><p>{item.a}</p></div>
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {related.length > 0 && (
+      <section class="guide-related" data-guide-related>
+        <h2>{gt.keepReading}</h2>
+        <div class="guide-related-grid">
+          {related.map((guide) => (
+            <a href={guidePath(locale, guide.slug)}>
+              <span>{guideHubLabel(locale, guideHub(guide))}</span>
+              <strong>{guide.entry.data.title}</strong>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <GuideAppPromo locale={locale} />
+  </article>
+</Base>

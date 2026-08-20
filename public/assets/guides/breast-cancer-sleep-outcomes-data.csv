@@ -1,0 +1,5 @@
+treatment,poor_sleep_quality_percent,clinically_significant_insomnia_percent,source
+Surgery,63,20,"Carson et al., 2025, PMID 41460589"
+Chemotherapy,62,24,"Carson et al., 2025, PMID 41460589"
+Radiotherapy,64,23,"Carson et al., 2025, PMID 41460589"
+Endocrine therapy,57,35,"Carson et al., 2025, PMID 41460589"

@@ -1,147 +1,133 @@
 ---
-title: "Dejar las benzodiazepinas: el enfoque del Manual de Ashton"
-description: "El Manual de Ashton reduce las benzodiazepinas de forma lenta y guiada por síntomas, con sustitución por diazepam. Nunca las deje de golpe: hay riesgo de convulsiones."
-pubDate: 2026-07-02
-tags: ["benzodiazepines", "tapering", "ashton manual", "withdrawal", "deprescribing"]
-faq:
-  - q: "¿Es peligroso dejar las benzodiazepinas de golpe?"
-    a: "Sí. Las benzodiazepinas son una de las pocas clases de fármacos —junto con el alcohol— en las que suspenderlas de forma brusca tras una dependencia física puede desencadenar convulsiones, delirium y, en raras ocasiones, la muerte. Tanto el Manual de Ashton como la guía ASAM de 2025 desaconsejan la interrupción brusca y recomiendan en su lugar una reducción gradual y supervisada por un profesional."
-  - q: "¿Por qué recomienda el Manual de Ashton cambiar a diazepam?"
-    a: "El diazepam tiene una semivida muy larga, por lo que su concentración en sangre baja de forma suave entre dosis, en lugar de producir los picos y valles pronunciados de fármacos de acción corta como el alprazolam. Además, existe en comprimidos de dosis bajas que permiten reducciones diminutas al final de una reducción. El cambio suele hacerse de forma gradual, una porción de la dosis diaria cada vez."
-  - q: "¿Cuánto dura una reducción de benzodiazepinas?"
-    a: "Meses, no semanas. El Manual de Ashton y NICE describen reducciones que suelen durar de 3 a 12 meses o más, ajustadas a cómo se siente la persona. No hay un calendario fijo; el ritmo suele frenarse aún más a medida que baja la dosis."
-sources:
-  - label: "Ashton CH, Benzodiazepines: How They Work and How to Withdraw (The Ashton Manual) (2002)"
-    url: "https://www.benzo.org.uk/manual/"
-  - label: "Brunner E et al., Joint Clinical Practice Guideline on Benzodiazepine Tapering, Journal of General Internal Medicine (2025)"
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12463801/"
-  - label: "American Society of Addiction Medicine, Benzodiazepine Tapering Clinical Practice Guideline (2025)"
-    url: "https://www.asam.org/quality-care/clinical-guidelines/benzodiazepine-tapering"
-  - label: "NICE, Medicines associated with dependence or withdrawal symptoms (NG215) (2022)"
-    url: "https://www.nice.org.uk/guidance/ng215"
-  - label: "Horowitz M & Taylor D, The Maudsley Deprescribing Guidelines (Wiley-Blackwell, 2024)"
-    url: "https://bjgp.org/content/74/745/369"
-  - label: "Davies J & Read J, A systematic review into the incidence, severity and duration of antidepressant withdrawal effects, Addictive Behaviors (2019)"
-    url: "https://pubmed.ncbi.nlm.nih.gov/30292574/"
-  - label: "Chrystal Heather Ashton, obituary, The Lancet (2019)"
-    url: "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)33150-2/fulltext"
-  - label: "ASAM, Pharmacokinetic Properties of Benzodiazepines (2025)"
-    url: "https://downloads.asam.org/sitefinity-production-blobs/docs/default-source/guidelines/benzodiazepine-tapering-2025/pharmacokinetic-properties-of-benzodiazepines.pdf"
+title: 'Reducción de Benzodiazepine y Ashton Manual: qué sigue siendo útil y qué cambia la guía de 2025'
+slug: benzodiazepine-tapering-ashton
+description: Comparación corregida de Ashton Manual, ASAM 2025 y NICE, con redacción precisa del ritmo y ajustes según síntomas.
+primary_keyword: Reducción de benzodiazepinas según el Ashton Manual
+secondary_keywords: []
+search_intent: Informativo; apoyo a la decisión basado en evidencia y educación de seguridad
+content_hub: Benzodiazepinas
+priority: P0
+article_type: revisión continua
+evidence_cutoff: '2026-08-19'
+last_evidence_search: '2026-08-19'
+review_status: Borrador editorial que requiere revisión especializada; no publicar hasta que lo aprueben los revisores designados.
+required_reviewers: los especialistas clínicos y el profesional farmacéutico indicados en el campo fuente en inglés
+specialist_review_required: true
+schema_types:
+- MedicalWebPage
+- Article
+- FAQPage
+featured_image: /assets/guides/benzodiazepine-symptom-response-pathway.svg
+app_keyword_theme: Reducción de benzodiazepinas según el Ashton Manual
+terminology_standard: Estándar de terminología clínica de RxDown v1.1
+region_note: Las vías asistenciales y la disponibilidad de programas varían según el país y el sistema sanitario.
+article_action: live-update
+source_locale: en
+required_reviewers_en: benzodiazepine-experienced prescriber and clinical pharmacist
+region_note_en: Care pathways and program availability vary by country and health system.
+locale: es
+canonical_url: https://rxdown.app/es/guides/benzodiazepine-tapering-ashton/
+hreflang:
+  en: https://rxdown.app/guides/benzodiazepine-tapering-ashton/
+  x-default: https://rxdown.app/guides/benzodiazepine-tapering-ashton/
+  zh-Hant: https://rxdown.app/zh/guides/benzodiazepine-tapering-ashton/
+  ja: https://rxdown.app/ja/guides/benzodiazepine-tapering-ashton/
+  ko: https://rxdown.app/ko/guides/benzodiazepine-tapering-ashton/
+  de: https://rxdown.app/de/guides/benzodiazepine-tapering-ashton/
+  es: https://rxdown.app/es/guides/benzodiazepine-tapering-ashton/
+  fr: https://rxdown.app/fr/guides/benzodiazepine-tapering-ashton/
+  id: https://rxdown.app/id/guides/benzodiazepine-tapering-ashton/
+  pt-PT: https://rxdown.app/pt/guides/benzodiazepine-tapering-ashton/
+translation_source_sha256: 4733eb9c61ecf240f2d5a0a7887c28060f957b22b26edb7680c6dc4bcfd9f5d7
+translation_model: RxDown locked-terminology multilingual localization (manual + validated translation memory)
+translation_date: '2026-08-20'
+translation_status: machine-localized-clinical-review-required
+translation_review_note: Antes de publicar, se requiere la revisión de profesionales clínicos nativos y de un farmacéutico.
+localized_keywords_status: translated-not-local-search-volume-validated
+publication_status: clinical-review-required
 ---
+# Reducción de Benzodiazepine y Ashton Manual: qué sigue siendo útil y qué cambia la guía de 2025
 
-**TL;DR:** El Manual de Ashton, escrito por la profesora Heather Ashton y disponible gratis en benzo.org.uk, sigue siendo la guía para pacientes más usada para dejar las benzodiazepinas. Su método central es una reducción de dosis lenta y guiada por los síntomas, a menudo tras cambiar al diazepam de acción prolongada para que las concentraciones del fármaco bajen de forma suave. Las benzodiazepinas son una de las pocas clases de medicamentos en las que dejarlas de golpe puede ser médicamente peligroso —la retirada brusca tras una dependencia física puede causar convulsiones—, así que cualquier cambio debe ser gradual y supervisado por quien le receta. La guía de reducción de benzodiazepinas de ASAM de 2025 es el complemento clínico moderno, y recomienda reducciones iniciales de dosis de en torno al 5–10% cada 2–4 semanas, individualizadas para cada persona.
+> **Borrador de sustitución para la URL existente de RxDown.** Conserve el valor histórico del Ashton Manual, pero no atribuya a NICE un calendario fijo del 5–10% cada 1–2 weeks.
 
-> **Esto es información educativa, no consejo médico.** Los cambios de dosis de benzodiazepinas deben planificarlos y supervisarlos siempre quien le receta y conoce su historia. No las suspenda ni las reduzca de forma brusca por su cuenta. Este artículo describe enfoques y rangos de dosis publicados; no le indica qué debe tomar.
+## Respuesta clave
 
-## ¿Quién fue Heather Ashton y por qué importa su manual?
+El Ashton Manual sigue siendo un relato influyente y dirigido a pacientes sobre la retirada lenta y adaptada a los síntomas de benzodiazepine y la sustitución por diazepam. No es una guía moderna con graduación de la evidencia y sus calendarios no deben copiarse automáticamente. La guía multidisciplinar de ASAM de 2025 ofrece un marco clínico actual: en general, empezar con reducciones del 5–10% cada 2–4 semanas, normalmente no superar el 25% cada 2 semanas, y ralentizar, pausar o reducir menos cuando aparezcan síntomas significativos. [1]
 
-Chrystal Heather Ashton (1929–2019) fue una psicofarmacóloga clínica británica y profesora en la Universidad de Newcastle. De 1982 a 1994 dirigió una clínica dedicada a la retirada de benzodiazepinas en el Royal Victoria Infirmary de Newcastle, donde trabajó con cientos de personas que las consumían a largo plazo durante esos doce años y siguió de cerca lo que realmente las ayudaba a dejarlas.
+NICE **no** prescribe «5–10% cada 1–2 weeks». NICE recomienda un ritmo lento y escalonado proporcional a la dosis existente, con decrementos menores a medida que baja la dosis y modificaciones flexibles según síntomas y preferencias. [2]
 
-Esa experiencia clínica se convirtió en *Benzodiazepines: How They Work and How to Withdraw* —publicado por primera vez en 1999, revisado en 2002 y conocido universalmente como **el Manual de Ashton**. Se ha traducido a 11 idiomas y está disponible de forma gratuita en [benzo.org.uk](https://www.benzo.org.uk/manual/).
+## De un vistazo
 
-El manual importa por dos motivos. Primero, fue uno de los primeros documentos en insistir en que la retirada de benzodiazepinas debía marcarla el ritmo del paciente, no imponerse con un calendario fijo de la clínica. Segundo, ante la ausencia de guías oficiales durante muchos años, llenó un vacío real: tanto profesionales como pacientes usaban sus calendarios de retirada porque apenas existía otra cosa. Es un recurso derivado de la experiencia de los pacientes y clínicamente fundamentado, más que una guía formal graduada por la evidencia, y conviene leerlo junto a guías modernas como la de ASAM de 2025 y la de NICE.
+| Pregunta | respuesta actual |
+|---|---|
+| ¿Sigue siendo útil el Ashton Manual? | Sí, como recurso clínico y para pacientes de carácter histórico, pero no como una prescripción moderna graduada por evidencia. |
+| ¿Es obligatoria la sustitución por diazepam? | No. Puede ayudar a algunas personas y ser inadecuado para otras. |
+| ¿NICE especifica una reducción del 5–10% cada 1–2 semanas? | No. NICE recomienda reducciones lentas, proporcionales y adaptadas a los síntomas. |
+| ¿Con qué recomienda empezar, en general, ASAM 2025? | 5–10% cada 2–4 weeks, a menudo más despacio cuando existe una dependencia intensa; normalmente no más del 25% cada 2 weeks. |
+| ¿Qué ocurre si aparecen síntomas importantes? | Evalúe, ralentice, pause o haga reducciones menores; la dosis anterior es una opción limitada, no una regla automática. |
 
-## ¿Cuáles son los principios centrales del enfoque del Manual de Ashton?
+## Comparación de Ashton, ASAM y NICE
 
-Tres principios recorren todo el manual:
-
-- **Reducción gradual de la dosis.** Los recortes son pequeños y espaciados para que las concentraciones del fármaco en sangre y tejidos bajen de forma constante. Un descenso constante da tiempo al sistema GABA del cerebro a reajustarse, lo que mantiene los síntomas más leves.
-- **Cambio a un fármaco de semivida larga (sustitución por diazepam).** A las personas que toman benzodiazepinas de acción corta se las suele cambiar, por etapas, a diazepam, porque su semivida larga suaviza los picos y valles que hacen más difícil la reducción.
-- **Un ritmo guiado por los síntomas.** La persona que deja el fármaco ayuda a marcar la velocidad. Si una reducción provoca síntomas fuertes, el plan se pausa o se ralentiza; no avanza según el calendario. Ashton lo describió como ceder el control al paciente.
-
-Estas mismas tres ideas reaparecen, en un lenguaje más formal, en las guías de NICE y en la de ASAM de 2025, prueba de que los instintos clínicos de Ashton han resistido el paso del tiempo.
-
-## ¿Por qué cambiar a diazepam antes de reducir?
-
-Las benzodiazepinas de acción corta se eliminan del cuerpo con rapidez, por lo que la concentración del fármaco sube y baja de forma pronunciada entre dosis. Eso produce síntomas «entre dosis» y hace difícil percibir reducciones muy pequeñas. El diazepam se comporta de otra manera: tiene una semivida de eliminación larga —de en torno a 20–48 horas, ampliada a alrededor de 100 horas por su metabolito activo—, por lo que su concentración se mantiene comparativamente estable a lo largo del día. Además, está disponible en dosis bajas (como 2 mg) y puede partirse, lo que le permite hacer las reducciones diminutas que importan al final de una reducción.
-
-El cambio en sí se hace de forma gradual: se convierte una porción de la dosis diaria cada vez, usando dosis equivalentes aproximadas, en lugar de sustituirlo todo de golpe. La guía de ASAM de 2025 señala la misma lógica y admite que «reducir con fármacos de acción muy prolongada» es una estrategia razonable en las circunstancias adecuadas. Para la farmacología de por qué los recortes proporcionales pequeños se vuelven más difíciles cerca del final, consulte nuestra [guía de reducción hiperbólica](/es/guides/hyperbolic-tapering-guide/) y [la ocupación de receptores explicada](/es/guides/receptor-occupancy-explained/).
-
-## ¿Cuánto de una benzodiazepina equivale a otra?
-
-Cualquier cambio a diazepam depende de cifras de equivalencia aproximadas. La tabla siguiente recoge las aproximaciones del Manual de Ashton, muy citadas, con las semividas de eliminación de la referencia farmacocinética de ASAM como contexto. **Estos valores son aproximados y varían entre fuentes**: distintas referencias y calculadoras dan números ligeramente diferentes, y factores individuales (edad, función hepática, tolerancia) los desplazan aún más. Son un punto de partida para un profesional, no una conversión precisa.
-
-| Benzodiazepina (marca) | Dosis aprox. equivalente a 10 mg de diazepam | Semivida de eliminación | Clase de duración |
+| Tema | Manual de Ashton | Guía ASAM 2025 | Guía NICE NG215 |
 |---|---|---|---|
-| Diazepam (Valium) | 10 mg (referencia) | ~20–100 h (con metabolito activo) | Acción prolongada |
-| Alprazolam (Xanax) | 0,5 mg | ~6–12 h | Corta/intermedia |
-| Lorazepam (Ativan) | 1 mg | ~10–20 h | Intermedia |
-| Clonazepam (Klonopin) | 0,5 mg | ~20–80 h | Acción prolongada |
-| Temazepam (Restoril) | 20 mg | ~8–15 h | Acción corta |
+| Estado | Manual clínico de expertos y recurso para pacientes | guía de práctica clínica multisociedad | guía nacional |
+| Ritmo | Cronogramas lentos e individualizados; en los ejemplos, a menudo etapas de 1–2 semanas | Inicio general de 5–10% cada 2–4 semanas; más lento si existe una dependencia intensa | Reducciones proporcionales, lentas y escalonadas; sin porcentaje ni intervalo fijos |
+| sustitución por Diazepam | Elemento central de muchos cronogramas | Puede considerarse cuando sea apropiado; no es obligatorio | Considerar para una benzodiazepina de semivida corta |
+| Síntomas | Flexibilidad guiada por el paciente | Monitorizar cada reducción; pausar/ralentizar/pasos menores | Ante síntomas nuevos angustiosos, retrasar, reducir menos o considerar la dosis anterior |
+| certeza de la evidencia | El dolor forma parte de un sistema multidireccional. Tratar el sueño puede ayudar al dolor al reducir la hiperactivación, mejorar el afrontamiento, aumentar la participación en actividades, mejorar el estado de ánimo o reducir el catastrofismo, pero la mejoría del dolor puede ser pequeña o nula. | Muchos aspectos prácticos de la reducción se basan en consenso porque los ensayos son limitados | Revisión de la evidencia más juicio del comité |
 
-El patrón es claro: el alprazolam es el más potente por miligramo del grupo, lo que es una de las razones por las que suele señalarse como difícil de dejar. Como las estimaciones de equivalencia difieren, tanto la guía de ASAM como la de NICE insisten en que cualquier conversión es individualizada y debe gestionarla quien receta.
+<figure><img src="../../assets/benzodiazepine-symptom-response-pathway.svg" alt="Vía de respuesta a síntomas durante la reducción de benzodiazepinas" loading="lazy"/><figcaption><strong>Un cronograma es solo el marco de partida.</strong>Las guías actuales destacan el ajuste después de cada respuesta, en lugar de forzar el siguiente paso del calendario.</figcaption></figure>
 
-## ¿Cuánto dura una reducción de benzodiazepinas?
+## Qué sigue siendo útil de Ashton
 
-Meses, no semanas. Este es el único punto en el que el enfoque de Ashton más a menudo se aparta de una prescripción apresurada.
+- Reconocimiento de que la suspensión brusca puede ser peligrosa.
+- Respeto por los síntomas comunicados por el paciente y por un progreso no lineal.
+- Reducciones más pequeñas hacia el final de la retirada.
+- Atención a medicamentos de vida media corta y fluctuación de concentraciones.
+- Ejemplos prácticos que ayudaron a los pacientes a hablar sobre la reducción cuando escaseaban las guías formales.
 
-- La guía de NICE (NG215, 2022) afirma que la retirada «puede llevar de 3 a 12 meses o más», con reducciones de aproximadamente el 5–10% cada 1–2 semanas (o alrededor de un octavo de la dosis cada quincena), frenando aún más a dosis bajas y ajustando a los síntomas.
-- La guía de ASAM de 2025 recomienda empezar por lo general con **reducciones de dosis del 5–10%**, espaciadas cada 2–4 semanas, y luego ajustar el ritmo a lo que la persona tolere. También señala que algunas personas manejan una reducción más rápida (en torno al 25% cada 2–4 semanas) mientras que otras necesitan ir mucho más despacio.
-- Los propios calendarios del Manual de Ashton abarcan con frecuencia muchos meses y se presentan explícitamente como plantillas que hay que adaptar, no como prescripciones rígidas.
+## qué necesita una matización moderna
 
-La razón del horizonte largo es biológica, no una cuestión de fuerza de voluntad. Las reducciones que parecen pequeñas en miligramos pueden ser grandes en términos de efecto sobre el receptor cerca del final de una reducción —la base de la reducción hiperbólica—, así que el último tramo suele tener que ser el más lento.
+Los valores de conversión de Diazepam son estimaciones, no equivalentes biológicos exactos. La edad avanzada, enfermedad hepática, interacciones, embarazo, indicaciones por convulsiones, enfermedad respiratoria, uso concomitante de opioid y retirada grave previa pueden cambiar el riesgo. Algunas personas pueden reducir directamente clonazepam u otro benzodiazepine; la sustitución en sí puede ser difícil o estar contraindicada. [1,2]
 
-## ¿Por qué es peligroso dejar las benzodiazepinas de golpe?
+## Qué hacer cuando aparecen síntomas
 
-Esta es la única clase en la que dejarlas de golpe puede ser médicamente peligroso, y merece una afirmación clara: **no deje las benzodiazepinas de forma brusca tras un consumo regular.** Junto con el alcohol y los barbitúricos, las benzodiazepinas actúan sobre el sistema GABA, y su retirada repentina tras una dependencia física deja al cerebro en un estado de sobreexcitación peligrosa.
+Una instrucción general de «aguantar» no concuerda con ASAM ni NICE. Los síntomas importantes relacionados con la reducción respaldan ralentizar, pausar o hacer reducciones menores. NICE también permite volver a la dosis previa ante síntomas nuevos y angustiosos. ASAM suele evitar una reversión automática al alza, pero permite la dosis previa en casos limitados e intolerables. Ninguna guía vigente hallada en esta revisión especifica «dosis previa menos 5–10%». [1,2]
 
-El Manual de Ashton advierte de que la retirada brusca o demasiado rápida, sobre todo desde dosis altas, «puede dar lugar a síntomas graves», incluidas convulsiones, reacciones psicóticas, estados de ansiedad aguda «e incluso la muerte». La guía de ASAM de 2025 lo expresa en términos clínicos: los profesionales «deben evitar interrumpir de forma brusca» las benzodiazepinas en pacientes que probablemente tengan dependencia física. El riesgo de convulsiones es mayor con el uso prolongado a dosis altas y con fármacos de acción corta, porque abandonan el cuerpo más rápido y producen el rebote de retirada más pronunciado.
+## preguntas para el profesional prescriptor
 
-El contrapunto tranquilizador es que dependencia no es lo mismo que adicción. La guía de ASAM estima que solo alrededor del **1,5% de las personas tratadas con benzodiazepinas desarrolla un trastorno por consumo de benzodiazepinas**; la dependencia física y la retirada pueden ocurrir incluso en alguien que toma el fármaco exactamente como se le recetó. Precisamente por eso importa una reducción planificada y supervisada: maneja de forma segura un proceso fisiológico predecible. Si ha reducido demasiado rápido y los síntomas van en aumento, consulte [pausar y reinstaurar](/es/guides/hold-and-reinstate-guide/) y contacte con quien le receta.
+- ¿Es más segura en este caso la reducción gradual directa o la sustitución por un fármaco de acción prolongada?
+- ¿Qué incertidumbre sobre la equivalencia de dosis importa?
+- ¿El porcentaje propuesto se basa en la dosis actual?
+- ¿Cómo se monitorizarán los síntomas, el sueño, la función y el riesgo de convulsiones?
+- ¿Cuál es el plan si no se tolera la primera reducción?
 
-## ¿En qué se diferencia la retirada de benzodiazepinas de la de antidepresivos?
+## Preguntas frecuentes
 
-Las dos se solapan en la sensación, pero difieren mucho en peligrosidad. La retirada de antidepresivos es frecuente y puede ser grave: una revisión sistemática de 2019 (Davies y Read, *Addictive Behaviors*, vol. 97) halló que el **56% de las personas que dejan los antidepresivos experimenta efectos de retirada**. Pero la discontinuación de antidepresivos, por desagradable que sea (mareo, [descargas eléctricas cerebrales](/es/guides/brain-zaps/), cambios de humor), no suele asociarse a convulsiones.
+### ¿Está obsoleto el Ashton Manual?
 
-La retirada de benzodiazepinas es distinta por naturaleza: conlleva un riesgo real de convulsiones y delirium. Esa es la distinción central. Ambas se benefician de una reducción lenta e hiperbólica, pero las benzodiazepinas son la clase en la que la *velocidad* de la retirada puede ser una urgencia médica, no solo una cuestión de comodidad.
+No, pero debe leerse como un recurso clínico históricamente importante junto con las guías actuales, no como una prescripción universal.
 
-| | Antidepresivos (ISRS/IRSN) | Benzodiazepinas |
-|---|---|---|
-| ¿Retirada frecuente? | Sí (~56% en Davies y Read, 2019) | Sí, tras un consumo regular |
-| ¿Riesgo de convulsiones al dejarlas de golpe? | No suele | Sí, puede poner en peligro la vida |
-| Reducción recomendada | Gradual, hiperbólica | Gradual, hiperbólica, supervisada |
-| ¿Se necesita una cola larga y lenta? | A menudo | A menudo |
+### ¿Recomienda NICE reducir un 5–10% cada 1–2 semanas?
 
-Para el lado de los antidepresivos en detalle, consulte la [cronología de la retirada de antidepresivos](/es/guides/antidepressant-withdrawal-timeline/).
+No. NICE utiliza una redacción cualitativa, proporcional y adaptada a los síntomas, y no prescribe esa fórmula exacta.
 
-## ¿Qué es la retirada entre dosis y por qué ocurre?
+### ¿Debe todo el mundo cambiar a diazepam?
 
-La retirada entre dosis es la miniretirada que aparece *entre* las dosis de una benzodiazepina de acción corta, antes de que toque la siguiente. Como fármacos como el alprazolam y el lorazepam se eliminan con rapidez, la concentración en sangre puede caer lo suficiente durante el día como para provocar ansiedad de rebote, inquietud o estar pendiente del reloj esperando el siguiente comprimido, síntomas que pueden confundirse con el regreso de la ansiedad original.
+No. ASAM y NICE indican que puede considerarse en circunstancias seleccionadas; importan las contraindicaciones específicas del paciente y la incertidumbre de la conversión.
 
-Las Maudsley Deprescribing Guidelines (Horowitz y Taylor, 2024) describen dos formas de manejarlo. Una es repartir la dosis diaria en dos a cuatro dosis más pequeñas para mantener la concentración más estable y reducir los bajones entre dosis. La otra es la estrategia de Ashton: cambiar al diazepam de acción prolongada para que el valle nunca llegue a ser lo bastante profundo como para desencadenar síntomas. Reconocer la retirada entre dosis por lo que es —un bajón farmacocinético, no una recaída— puede cambiar todo el plan; consulte [discontinuación frente a recaída](/es/guides/discontinuation-vs-relapse/).
+### ¿Una reducción lenta siempre está libre de síntomas?
 
-## ¿Cómo actualiza la guía de ASAM de 2025 el enfoque de Ashton?
+No. Una reducción lenta e individualizada puede reducir el riesgo, pero no garantiza la ausencia de síntomas.
 
-El Manual de Ashton es una guía de los años noventa derivada de la experiencia de los pacientes. La **Joint Clinical Practice Guideline on Benzodiazepine Tapering de 2025** (Brunner et al., *Journal of General Internal Medicine*) es su complemento moderno y graduado por la evidencia, desarrollado por la American Society of Addiction Medicine con diez sociedades profesionales que abarcan medicina de familia, medicina interna, psiquiatría, neurología, geriatría, medicina de adicciones, obstetricia y ginecología, farmacia psiquiátrica y toxicología médica.
+## Específico del producto y confirmado por un farmacéutico
 
-En qué coinciden las dos:
 
-- La **reducción gradual e individualizada** es la opción por defecto; la interrupción brusca debe evitarse en pacientes con dependencia física.
-- El **ritmo guiado por los síntomas** —ajustar la velocidad a cómo tolera la persona cada reducción— es explícito en ambas.
+1. [Brunner E, et al. Joint Clinical Practice Guideline on Benzodiazepine Tapering: Considerations When Risks Outweigh Benefits. 2025.](https://pmc.ncbi.nlm.nih.gov/articles/PMC12463801/) **Evidence type:** Multisociety clinical practice guideline. **Use:** Initial pace, symptom-responsive adjustment, pausing, smaller reductions, and limited circumstances for returning to a previous dose.
+2. [NICE. Medicines associated with dependence or withdrawal symptoms: safe prescribing and withdrawal management for adults (NG215).](https://www.nice.org.uk/guidance/ng215/chapter/Recommendations) **Evidence type:** National guideline. **Use:** Slow stepwise proportional reduction; delay, smaller reduction, or previous dose when distressing symptoms occur.
+3. [U.S. Food and Drug Administration. Boxed Warning updated to improve safe use of benzodiazepines. 2020.](https://www.fda.gov/drugs/drug-safety-and-availability/fda-requiring-boxed-warning-updated-improve-safe-use-benzodiazepine-drug-class) **Evidence type:** Regulatory safety communication. **Use:** Physical dependence, withdrawal, overdose and co-use risks.
+4. [Horowitz MA, et al. Pharmacological principles for safe benzodiazepine and Z-drug dose reduction. 2026.](https://pmc.ncbi.nlm.nih.gov/articles/PMC13280687/) **Evidence type:** Pharmacological analysis and clinical proposal. **Use:** Proportional/hyperbolic rationale and formulation constraints; not treated as a definitive comparative trial.
 
-Qué añade la guía de ASAM:
+5. [Ashton CH. Benzodiazepines: How They Work and How to Withdraw. Revised 2002.](https://www.benzo.org.uk/manual/) **Evidence type:** Expert clinical manual. **Use:** Historical method and patient-centered observations; not treated as an evidence-graded guideline.
 
-- Un ritmo de inicio concreto: por lo general, **reducciones del 5–10%**, espaciadas cada 2–4 semanas.
-- Una recomendación de que los profesionales **reevalúen los riesgos y beneficios del uso continuado de benzodiazepinas al menos cada 3 meses.**
-- Apoyo a complementos como la TCC y la TCC para el insomnio durante una reducción, y la toma de decisiones compartida a lo largo del proceso.
-
-Junto con la NG215 de NICE y las guías de Maudsley, estas ofrecen a los profesionales un marco actual y citable que hace eco —en lugar de sustituir— de la intuición original de Ashton: lo lento y guiado por el paciente gana.
-
-## ¿Qué síntomas debo esperar y cuánto duran?
-
-Los síntomas frecuentes de retirada de benzodiazepinas incluyen alteraciones del sueño, mayor ansiedad e irritabilidad, temblor de manos, sudoración, mala concentración, náuseas, palpitaciones, dolor de cabeza, dolor y rigidez musculares, y cambios perceptivos como una mayor sensibilidad a la luz y al sonido. A dosis altas, se hacen posibles eventos más graves —convulsiones y reacciones psicóticas—, y por eso importa la supervisión.
-
-La mayoría de los síntomas agudos ceden a lo largo de las semanas posteriores a cada reducción, pero una minoría de personas experimenta **síntomas prolongados que duran meses o, en ocasiones, más**, un patrón que la guía de ASAM de 2025 reconoce explícitamente. La recuperación suele llegar en [ventanas y olas](/es/guides/windows-and-waves-recovery/): temporadas buenas interrumpidas por brotes, con una tendencia gradual hacia la estabilidad. El sueño es con frecuencia lo último en asentarse; consulte [el sueño durante la retirada](/es/guides/sleep-during-withdrawal/). Si le recetaron la benzodiazepina para el insomnio, la clase relacionada de somníferos tiene sus propias consideraciones en [reducción de la dependencia de los fármacos Z](/es/guides/z-drugs-dependence-reduction/).
-
-Llevar un registro diario sencillo —dosis, síntomas, sueño, ánimo— convierte una experiencia confusa en datos sobre los que usted y quien le receta pueden actuar. RxDown es un diario privado de retirada creado justo para esto: registra cada paso de una reducción, representa los síntomas a lo largo del tiempo, incluye una [calculadora de reducción](/es/calculator/) para planificar las bajadas y puede generar un informe para el médico que llevar a las citas. Apoya la conversación con su profesional; no la sustituye. Para ayuda a la hora de iniciar esa conversación, consulte [cómo hablar con su médico sobre la deprescripción](/es/guides/talking-to-your-doctor-deprescribing/), y explore las preguntas frecuentes en nuestras [preguntas frecuentes](/es/faq/).
-
-## Sources
-
-1. [Ashton CH, Benzodiazepines: How They Work and How to Withdraw (The Ashton Manual) (2002)](https://www.benzo.org.uk/manual/)
-2. [Brunner E et al., Joint Clinical Practice Guideline on Benzodiazepine Tapering, Journal of General Internal Medicine (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12463801/)
-3. [American Society of Addiction Medicine, Benzodiazepine Tapering Clinical Practice Guideline (2025)](https://www.asam.org/quality-care/clinical-guidelines/benzodiazepine-tapering)
-4. [NICE, Medicines associated with dependence or withdrawal symptoms (NG215) (2022)](https://www.nice.org.uk/guidance/ng215)
-5. [Horowitz M & Taylor D, The Maudsley Deprescribing Guidelines (Wiley-Blackwell, 2024)](https://bjgp.org/content/74/745/369)
-6. [Davies J & Read J, A systematic review into the incidence, severity and duration of antidepressant withdrawal effects, Addictive Behaviors (2019)](https://pubmed.ncbi.nlm.nih.gov/30292574/)
-7. [Chrystal Heather Ashton, obituary, The Lancet (2019)](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)33150-2/fulltext)
-8. [ASAM, Pharmacokinetic Properties of Benzodiazepines (2025)](https://downloads.asam.org/sitefinity-production-blobs/docs/default-source/guidelines/benzodiazepine-tapering-2025/pharmacokinetic-properties-of-benzodiazepines.pdf)
+<!-- Preserve canonical URL: /es/guides/benzodiazepine-tapering-ashton/ . Correct the NICE attribution in every locale. -->

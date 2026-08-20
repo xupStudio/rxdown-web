@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">수면 위생과 CBT-I의 차이</title><desc id="desc">단순화한 의사결정 보조 도표이며 개인별 치료 계획이 아닙니다.</desc>
+<rect width="1200" height="700" fill="#fff"/><style>.h{font:700 30px sans-serif;fill:#111827}.th{font:700 26px sans-serif;fill:#111827}.t{font:21px sans-serif;fill:#111827}.box{fill:#f5f7fa;stroke:#1f2937;stroke-width:2}</style>
+<text x="600" y="62" text-anchor="middle" class="h"><tspan x="600" y="62.0">수면 위생과 CBT-I의 차이</tspan></text>
+<rect x="70" y="145" width="490" height="430" rx="24" class="box"/><rect x="640" y="145" width="490" height="430" rx="24" class="box"/>
+<text x="315" y="205" text-anchor="middle" class="th"><tspan x="315" y="205.0">수면 위생</tspan></text><text x="315" y="280" text-anchor="middle" class="t"><tspan x="315" y="280.0">보조 습관</tspan></text><text x="315" y="365" text-anchor="middle" class="t"><tspan x="315" y="365.0">수면 방해 요인을 줄임</tspan></text><text x="315" y="465" text-anchor="middle" class="t"><tspan x="315" y="465.0">만성 불면증 치료로 단독 사용은 대개 불충분</tspan></text>
+<text x="885" y="205" text-anchor="middle" class="th"><tspan x="885" y="205.0">다요소 CBT-I</tspan></text><text x="885" y="315" text-anchor="middle" class="t"><tspan x="885" y="315.0">불면증 기전을 다루는 1차 치료</tspan></text>
+<text x="600" y="635" text-anchor="middle" class="t"><tspan x="600" y="635.0">단순화한 의사결정 보조 도표이며 개인별 치료 계획이 아닙니다.</tspan></text>
+</svg>

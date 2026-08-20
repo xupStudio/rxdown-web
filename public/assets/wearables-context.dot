@@ -1,0 +1,11 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="transparent", fontname="Arial", pad="0.25"];
+  node [shape=box, style="rounded", fontname="Arial", fontsize=11, margin="0.18,0.10"];
+  edge [fontname="Arial", fontsize=10];
+  device [label="Consumer wearable or sleep app"];
+  trend [label="May show personal trends in timing,\nmovement, or estimated sleep"];
+  error [label="Algorithms and accuracy vary by device,\nnight, condition, and firmware"];
+  interpret [label="Interpret alongside symptoms, function,\nand clinical history"];
+  no [label="Not a stand-alone diagnosis or\nmedication-adjustment tool"];
+  device -> trend -> error -> interpret -> no;
+}

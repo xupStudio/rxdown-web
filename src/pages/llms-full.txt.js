@@ -1,5 +1,6 @@
 import { getCollection } from 'astro:content';
 import { STRINGS, APP_STORE_URL, PLAY_STORE_URL } from '../i18n/locales.js';
+import { guideLocale, guidePath, guideSlug } from '../i18n/guides.js';
 
 /** Full-content companion to /llms.txt: the whole EN site as clean Markdown
  *  so AI agents can ingest RxDown's content without parsing HTML. */
@@ -37,11 +38,13 @@ export async function GET() {
   push(`\n## Privacy (https://rxdown.app/privacy/)\n`);
   t.privacyPage.sections.forEach((s) => push(`### ${s.h2}\n\n${s.body}\n`));
 
-  const guides = await getCollection('guides').catch(() => []);
+  const guides = (await getCollection('guides').catch(() => []))
+    .filter((guide) => guideLocale(guide.id) === 'en')
+    .sort((a, b) => a.data.title.localeCompare(b.data.title, 'en'));
   if (guides.length) {
     push(`\n## Guides — evidence-based withdrawal education (https://rxdown.app/guides/)\n`);
     guides.forEach((g) =>
-      push(`- [${g.data.title}](https://rxdown.app/guides/${g.id}/) — ${g.data.description}`)
+      push(`- [${g.data.title}](https://rxdown.app${guidePath('en', guideSlug(g.id))}) — ${g.data.description}`)
     );
   }
 

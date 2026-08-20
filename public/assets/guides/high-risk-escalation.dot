@@ -1,0 +1,15 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="transparent", fontname="Arial", pad="0.25"];
+  node [shape=box, style="rounded", fontname="Arial", fontsize=11, margin="0.18,0.10"];
+  edge [fontname="Arial", fontsize=10];
+  event [label="Symptoms after a medication change"];
+  red [shape=diamond, label="Seizure, severe confusion, breathing difficulty,\nchest pain, fainting, dangerous agitation,\nor immediate self-harm risk?"];
+  emergency [label="Seek emergency or urgent clinical care"];
+  stable [label="Record exact dose, time, formulation,\nsymptoms, sleep, substances, and other changes"];
+  contact [label="Contact the relevant prescriber promptly"];
+  do [label="Do not improvise repeated dose changes\nwithout class-specific advice"];
+  event -> red;
+  red -> emergency [label="Yes"];
+  red -> stable [label="No"];
+  stable -> contact -> do;
+}

@@ -1,0 +1,11 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="transparent", fontname="Arial", pad="0.25"];
+  node [shape=box, style="rounded", fontname="Arial", fontsize=11, margin="0.18,0.10"];
+  edge [fontname="Arial", fontsize=10];
+  trial [label="DORA clinical trial"];
+  measured [label="Defined participants, dose, duration,\nquestionnaire, and run-out period"];
+  nondetect [label="No clear withdrawal or rebound\nsignal detected under those conditions"];
+  notprove [label="Does not prove zero risk for every person,\nlong-term pattern, combination, or population"];
+  real [label="Use label wording, pharmacovigilance,\nand new comparative studies"];
+  trial -> measured -> nondetect -> notprove -> real;
+}

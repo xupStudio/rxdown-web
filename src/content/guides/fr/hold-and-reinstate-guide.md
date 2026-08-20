@@ -1,155 +1,133 @@
 ---
-title: "Pause et réintroduction : quand le sevrage flambe"
-description: "La pause consiste à rester à votre dose actuelle jusqu'à ce que les symptômes se calment ; la réintroduction consiste à remonter — des outils prévus pour une poussée, pas un échec."
-pubDate: 2026-07-02
-tags: ["tapering", "withdrawal", "reinstatement", "deprescribing", "holds"]
-faq:
-  - q: "Faire une pause ou réintroduire mon médicament est-il le signe que ma décroissance a échoué ?"
-    a: "Non. Dans la pratique moderne de la déprescription, faire une pause à une dose et remonter sont des outils prévus pour gérer une poussée de sevrage, non la preuve d'un échec. La plupart des personnes qui doivent faire une pause ou réintroduire terminent tout de même leur décroissance avec succès en avançant plus lentement. Le but est un rythme confortable et guidé par les symptômes, non un calendrier fixe."
-  - q: "Combien de temps faut-il faire une pause avant de reprendre la décroissance ?"
-    a: "Les pauses sont guidées par les symptômes plutôt que fixes. Les cliniciens suggèrent généralement de rester à la dose actuelle jusqu'à ce que les symptômes se soient clairement calmés et que vous vous sentiez stable, ce qui prend souvent plusieurs semaines. Les Maudsley Deprescribing Guidelines et la clinicienne-chercheuse Adele Framer décrivent toutes deux l'attente d'une stabilisation avant de reprendre, puis l'usage de paliers plus petits. Votre prescripteur décide du moment avec vous."
-  - q: "Réintroduire mon ancienne dose fera-t-il disparaître les symptômes de sevrage ?"
-    a: "Pour un sevrage aigu, la réintroduction aide souvent assez rapidement. Une revue de 2022 dans BJPsych Advances (Horowitz & Taylor) note que, dans les études d'arrêt, les symptômes de sevrage se résolvaient en une semaine environ après la réintroduction du médicament. Pour un sevrage prolongé durant des mois, les preuves sont rares et la réintroduction est moins prévisible. Discutez de l'approche avec votre prescripteur."
-sources:
-  - label: "Framer A., What I have learnt from helping thousands of people taper off antidepressants, Therapeutic Advances in Psychopharmacology (2021)"
-    url: "https://journals.sagepub.com/doi/10.1177/2045125321991274"
-  - label: "Horowitz M. A. & Taylor D., Tapering of SSRI treatment to mitigate withdrawal symptoms, Lancet Psychiatry (2019)"
-    url: "https://pubmed.ncbi.nlm.nih.gov/31230676/"
-  - label: "Horowitz M. A. & Taylor D., Distinguishing relapse from antidepressant withdrawal, BJPsych Advances (2022)"
-    url: "https://www.cambridge.org/core/journals/bjpsych-advances/article/distinguishing-relapse-from-antidepressant-withdrawal-clinical-practice-and-antidepressant-discontinuation-studies/AE99BDE4435521CE9F3D626AE14D1962"
-  - label: "Horowitz M. & Taylor D., The Maudsley Deprescribing Guidelines, Wiley-Blackwell (2024)"
-    url: "https://books.google.com/books/about/The_Maudsley_Deprescribing_Guidelines.html?id=WJLqEAAAQBAJ"
-  - label: "Royal College of Psychiatrists, Stopping antidepressants (patient information)"
-    url: "https://www.rcpsych.ac.uk/mental-health/treatments-and-wellbeing/stopping-antidepressants"
-  - label: "NICE, Depression in adults: treatment and management (NG222) (2022)"
-    url: "https://www.nice.org.uk/guidance/ng222/chapter/recommendations"
-  - label: "Davies J. & Read J., A systematic review into the incidence, severity and duration of antidepressant withdrawal effects, Addictive Behaviors (2019)"
-    url: "https://pubmed.ncbi.nlm.nih.gov/30292574/"
-  - label: "Rennwald A. et al., Post-acute withdrawal syndrome (PAWS) after stopping antidepressants, Epidemiology and Psychiatric Sciences (2025)"
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12090023/"
+title: 'Maintenir, ralentir ou réintroduire pendant une réduction médicamenteuse : pourquoi la classe du médicament compte'
+slug: hold-and-reinstate-guide
+description: Un guide propre à chaque classe sur le maintien, le ralentissement et la réintroduction après des symptômes de sevrage, remplaçant les conseils dangereux et uniformes.
+primary_keyword: maintenir ou réintroduire pendant une diminution médicamenteuse
+secondary_keywords: []
+search_intent: Informatif ; aide à la décision fondée sur les données et éducation à la sécurité
+content_hub: Premiers pas et principes de la réduction
+priority: P0
+article_type: révision continue
+evidence_cutoff: '2026-08-19'
+last_evidence_search: '2026-08-19'
+review_status: Brouillon éditorial nécessitant une révision spécialisée ; ne pas publier avant l’approbation des réviseurs désignés.
+required_reviewers: les spécialistes cliniques et le professionnel de pharmacie indiqués dans le champ source en anglais
+specialist_review_required: true
+schema_types:
+- MedicalWebPage
+- Article
+- FAQPage
+featured_image: /assets/guides/benzodiazepine-symptom-response-pathway.svg
+app_keyword_theme: maintenir ou réintroduire pendant une diminution médicamenteuse
+terminology_standard: Norme de terminologie clinique RxDown v1.1
+region_note: Les parcours de soins et la disponibilité des programmes varient selon les pays et les systèmes de santé.
+article_action: live-update
+source_locale: en
+required_reviewers_en: prescriber, clinical pharmacist, and medication-class specialists
+region_note_en: Care pathways and program availability vary by country and health system.
+locale: fr
+canonical_url: https://rxdown.app/fr/guides/hold-and-reinstate-guide/
+hreflang:
+  en: https://rxdown.app/guides/hold-and-reinstate-guide/
+  x-default: https://rxdown.app/guides/hold-and-reinstate-guide/
+  zh-Hant: https://rxdown.app/zh/guides/hold-and-reinstate-guide/
+  ja: https://rxdown.app/ja/guides/hold-and-reinstate-guide/
+  ko: https://rxdown.app/ko/guides/hold-and-reinstate-guide/
+  de: https://rxdown.app/de/guides/hold-and-reinstate-guide/
+  es: https://rxdown.app/es/guides/hold-and-reinstate-guide/
+  fr: https://rxdown.app/fr/guides/hold-and-reinstate-guide/
+  id: https://rxdown.app/id/guides/hold-and-reinstate-guide/
+  pt-PT: https://rxdown.app/pt/guides/hold-and-reinstate-guide/
+translation_source_sha256: 54b6b0f0b6caebf5a9dc4af2373dc5227f6baa5ec5284a4fceaa7f6fef6a7ed8
+translation_model: RxDown locked-terminology multilingual localization (manual + validated translation memory)
+translation_date: '2026-08-20'
+translation_status: machine-localized-clinical-review-required
+translation_review_note: Avant publication, une relecture par des professionnels de santé locuteurs natifs et par un pharmacien est obligatoire.
+localized_keywords_status: translated-not-local-search-volume-validated
+publication_status: clinical-review-required
 ---
+# Maintenir, ralentir ou réintroduire pendant une réduction médicamenteuse : pourquoi la classe du médicament compte
 
-**TL;DR :** La *pause* consiste à rester à votre dose actuelle jusqu'à ce que les symptômes de sevrage se calment avant de réduire de nouveau ; la *réintroduction* consiste à remonter — généralement à votre dernière dose tolérée, ou à une petite dose partielle. Les deux sont des outils standard et prévus de la déprescription moderne, non des signes que votre décroissance a échoué. Pour un sevrage aigu, la réintroduction atténue souvent les symptômes en une semaine environ ; la pratique clinique privilégie de le faire rapidement, et après de longs intervalles la réponse est moins prévisible. Si les symptômes flambent, le conseil habituel est de se stabiliser d'abord, puis de reprendre la décroissance plus lentement avec des paliers plus petits.
+> **Projet de remplacement pour l’URL RxDown existante.** L’article actuellement en ligne généralise les preuves de réinstauration des antidépresseurs à plusieurs classes de médicaments. Cette révision sépare les classes et ne fournit pas d’instruction posologique autoguidée.
 
-**Cet article relève de l'éducation, pas du conseil médical.** Tout changement d'un médicament psychiatrique ou d'un somnifère doit être planifié et supervisé par le prescripteur qui connaît votre histoire. N'arrêtez pas un médicament brutalement et ne modifiez pas votre dose par vous-même — les changements brutaux sont le déclencheur le plus fréquent de sevrage sévère. Les chiffres de doses ci-dessous décrivent des approches publiées à des fins de reconnaissance ; ce ne sont pas des consignes pour vous.
+## Réponse essentielle
 
-## Que signifie « faire une pause » dans une décroissance ?
+**Maintenir** signifie généralement rester à la dose actuelle pendant l’évaluation des symptômes et retarder la prochaine diminution. **Ralentir** signifie utiliser un intervalle plus long ou une diminution suivante plus faible. **Réintroduire** signifie augmenter l’exposition après réduction ou arrêt. Ces notions ne sont pas interchangeables et les données diffèrent pour antidépresseurs, benzodiazepines, opioids, gabapentinoids, corticosteroids, antiépileptiques et autres médicaments.
 
-Faire une pause signifie garder votre dose identique pendant un temps au lieu de prendre la réduction suivante prévue. Vous « suspendez la descente », donnez à votre système nerveux le temps de se réadapter au niveau actuel, et attendez de vous sentir de nouveau stable avant de continuer.
+Pour les benzodiazepine, les recommandations actuelles privilégient généralement une pause, un ralentissement et de plus petites réductions lorsque des symptômes importants apparaissent ; une dose antérieure peut être envisagée dans certains cas intolérables. Pour les antidepressant, NICE autorise le retour à la dose précédente en cas de sevrage sévère, puis une diminution plus lente après stabilisation. Pour plusieurs autres classes, une remontée de dose peut comporter des risques différents et doit être dirigée par le clinicien concerné. [1–4]
 
-Il est utile de se représenter une décroissance comme un escalier plutôt qu'un toboggan. Chaque marche vers le bas est un petit stress auquel le cerveau s'adapte sur des jours ou des semaines. Une pause consiste simplement à rester sur une marche plus longtemps que le calendrier ne le suggérait — parce que la dernière marche a été plus dure que prévu, ou parce que le stress de la vie, une maladie ou un mauvais sommeil s'y sont ajoutés. La pause est intégrée aux principaux cadres de déprescription. Les Maudsley Deprescribing Guidelines (Horowitz & Taylor, 2024) présentent la décroissance comme guidée par les symptômes, ajustant le rythme à ce que la personne peut tolérer plutôt que d'imposer un calendrier fixe.
+## Aperçu par classe médicamenteuse
 
-Faire une pause est différent d'arrêter. Vous n'abandonnez pas la décroissance ; vous choisissez une dose stable comme camp de base temporaire. Le sevrage est assez fréquent pour que des pauses soient attendues : une revue systématique de 2019 (Davies & Read, *Addictive Behaviors*, vol. 97, pp. 111–121) a trouvé qu'environ 56 % des personnes qui ont arrêté les antidépresseurs éprouvaient des effets de sevrage, et parmi elles, environ 46 % les décrivaient comme sévères.
-
-## Quand la pause est-elle la bonne décision ?
-
-La pause est généralement la bonne première réponse lorsque les symptômes de sevrage montent après une réduction mais ne sont pas écrasants — ceux que vous pouvez traverser avec du soutien pendant que votre système se re-stabilise. Plutôt que de forcer vers l'étape suivante « selon le calendrier », vous restez en place jusqu'à ce que les symptômes s'estompent.
-
-Les recommandations publiées pointent dans le même sens. La ressource patient du Royal College of Psychiatrists, *Stopping Antidepressants*, conseille de réduire lentement et, si les symptômes de sevrage deviennent difficiles, d'arrêter la réduction (ou d'augmenter la dose) jusqu'à ce que les symptômes se calment. La recommandation NICE NG222 (2022) recommande de même de décroître par étapes tout en surveillant à la fois les symptômes de sevrage et tout retour de l'affection d'origine, et de ralentir si le sevrage est difficile à tolérer.
-
-Des signes qu'une pause vaut la peine d'être discutée avec votre prescripteur incluent : des symptômes qui ont clairement débuté ou empiré dans les jours suivant votre dernière baisse ; une poussée inconfortable mais stable ; ou une « vague » survenant pendant une période autrement bonne (voir [fenêtres et vagues](/fr/guides/windows-and-waves-recovery/)). La pause vous donne aussi de l'information — si les symptômes s'atténuent pendant que vous faites une pause, cela soutient une explication par le sevrage plutôt que par la rechute, une distinction abordée dans [sevrage ou rechute](/fr/guides/discontinuation-vs-relapse/).
-
-## Combien de temps dure généralement une pause ?
-
-Les pauses sont guidées par les symptômes, non par le calendrier, donc la réponse honnête est : aussi longtemps qu'il le faut pour se sentir stable, ce qui se mesure souvent en semaines plutôt qu'en jours. Le récit de Framer de 2021 dans *Therapeutic Advances in Psychopharmacology* — tiré d'une communauté en ligne qui a soutenu des milliers de personnes en décroissance — suggère que si les symptômes de sevrage ne montrent aucune amélioration après une semaine environ, c'est un signal d'agir plutôt que de continuer à souffrir, et qu'une décroissance ne devrait reprendre qu'une fois que la personne « s'est clairement stabilisée ».
-
-Il n'y a pas de chiffre unique validé ici ; les durées sont tirées de l'expérience clinique et de l'observation de communautés de patients, non d'essais randomisés. À titre d'orientation approximative seulement :
-
-| Situation | Durée de pause typique (observée, non garantie) | Ce que vous attendez |
+| Classe médicamenteuse | Ce que les recommandations soutiennent généralement | Pourquoi les conseils génériques sur internet sont dangereux |
 |---|---|---|
-| Poussée légère après une baisse | Jours à ~2 semaines | Les symptômes s'estompent, l'énergie et le sommeil reviennent |
-| Poussée modérée, stable | ~2–4 semaines ou plus | Une période nette où vous vous sentez de nouveau vous-même |
-| Poussées répétées à chaque palier | Semaines entre les paliers, indéfiniment | Un niveau de base calme et fiable avant toute nouvelle baisse |
+| Benzodiazépines | Pause/ralentissement/réductions plus faibles ; dose précédente dans certains cas intolérables. [1,2] | Les risques liés aux crises convulsives, au délire, à la sédation, à l’indication et aux associations diffèrent. |
+| Antidépresseurs | Retarder ou réduire moins ; un sevrage sévère peut justifier un retour à la dose précédente puis une diminution plus lente. [2,3] | Non. Elle associait une revue par un praticien, un soutien par internet et un soutien téléphonique. |
+| Opioïdes | Éviter une diminution rapide ou forcée ; réévaluer douleur, fonctionnement, sevrage, surdosage et risque suicidaire. [4] | Revenir à la quantité antérieure après une diminution de la tolérance peut accroître le risque de surdosage. |
+| Gabapentinoïdes | Réduction et évaluation individualisées ; ne copiez pas un protocole de benzodiazepine ou d’antidépresseur. | L’indication liée aux crises, la fonction rénale, la sédation et les prises concomitantes sont importantes. |
+| Corticostéroïdes | Plan endocrinien ou propre à la maladie ; une éventuelle insuffisance surrénalienne est un problème médical. | « Maintenir et observer » peut être dangereux si une crise surrénalienne ou une poussée de la maladie est possible. |
+| médicament antiépileptique | Plan dirigé par la neurologie selon l’indication et le risque de crise. | Une inversion ou un arrêt sans supervision peut déstabiliser le contrôle des crises. |
 
-La règle pratique sur laquelle convergent la plupart des cadres : ne prenez pas la réduction suivante tant que vous vous sentez encore déstabilisé. Empiler une nouvelle baisse sur des symptômes non résolus est ce qui tend à transformer une poussée gérable en une poussée sévère.
+<figure><img src="../../assets/benzodiazepine-symptom-response-pathway.svg" alt="Parcours de réponse aux symptômes pendant la réduction des benzodiazépines" loading="lazy"/><figcaption><strong>Ne pas sauter l’étape d’évaluation.</strong>La réponse appropriée dépend du médicament, de la sévérité des symptômes, de l’indication, de la chronologie et du risque immédiat.</figcaption></figure>
 
-## Qu'est-ce que la réintroduction, et jusqu'où faut-il remonter ?
+## Pourquoi le texte publié précédemment doit être corrigé
 
-La réintroduction signifie augmenter de nouveau la dose après que les symptômes sont devenus trop sévères pour être simplement traversés par une pause. Dans la pratique clinique quotidienne, cela signifie généralement revenir à la dernière dose à laquelle vous vous sentiez bien — votre dernière dose tolérée. La recommandation du RCPsych comme la NICE NG222 décrivent le fait d'augmenter la dose jusqu'à ce que les symptômes de sevrage se résolvent, puis de reprendre la décroissance plus progressivement.
+Une affirmation telle que « le maintien et la réintroduction sont des outils standard pour toutes les diminutions » est trop large. Les données indiquant qu’un sevrage aigu d’antidépresseur peut s’améliorer après une réintroduction ne prouvent pas la même réponse pour les benzodiazepines, opioids, corticosteroids ou médicaments antiépileptiques. L’ancien article donnait aussi des exemples de très petites réintroductions partielles, tirés surtout de l’expérience clinique avec les antidépresseurs ; ces exemples ne doivent pas devenir un pourcentage universel ni un algorithme d’application.
 
-La réintroduction est une étape reconnue et légitime, non une remise à zéro. Le but est de soulager rapidement un sevrage véritable et de protéger votre système nerveux, puis de continuer une fois stable. Une revue de 2022 dans *BJPsych Advances* (Horowitz & Taylor, vol. 28, pp. 297–311) a rapporté que, dans les études d'arrêt, les symptômes de sevrage se résolvaient en une semaine environ après la réintroduction de l'antidépresseur — bien plus vite qu'une vraie rechute dépressive ne tend à se lever — ce qui est l'une des raisons pour lesquelles la vitesse de réponse peut aider à distinguer les deux.
+## séquence décisionnelle plus sûre
 
-La base de preuves compte ici. Le soulagement rapide par réintroduction dans le sevrage *aigu* est soutenu par les études d'arrêt et une longue expérience clinique. Pour le sevrage *prolongé* durant de nombreux mois, le tableau est plus faible : une revue systématique de 2025 du syndrome de sevrage post-aigu (Rennwald et al., *Epidemiology and Psychiatric Sciences*) a trouvé les preuves globales rares et de faible certitude, avec des durées rapportées variant largement (d'environ 1,5 à 166 mois selon les études) et aucune preuve fiable que la réintroduction résolve des symptômes de longue date. Autrement dit : la réintroduction est un outil raisonnable et couramment utilisé, mais ce n'est pas une solution garantie dans tous les cas.
+1. **Identifier le produit exact et la modification.** Noter le nom générique, la formulation, la dose, l’horaire, la dernière dose stable et toute dose omise ou alternée.
+2. **Dépister les risques urgents.** Crise, délire, psychose, déshydratation sévère, atteinte respiratoire, syncope, risque immédiat d’auto-agression ou possible crise surrénalienne exigent des soins urgents.
+3. **Envisager les explications concurrentes.** Sevrage, rebond, rechute, effets indésirables, interactions, consommation de substances, infection, maladie endocrinienne ou autre nouvelle affection peuvent se chevaucher.
+4. **Discuter de l’étape suivante la moins déstabilisante.** Selon la classe, il peut s’agir de maintenir la dose, de ralentir, de réduire davantage la prochaine étape, de revenir à une dose précédente ou d’obtenir un traitement urgent.
+5. **Ne pas cumuler des changements rapides.** Des ajustements répétés sans supervision rendent la causalité plus difficile à interpréter et peuvent ajouter des risques.
 
-## Pourquoi de petites réintroductions partielles sont-elles souvent préférées ?
+## Ce que disent les recommandations actuelles sur les benzodiazepine
 
-Un enseignement clé de la pratique de la déprescription est que vous n'avez peut-être pas besoin de remonter tout en haut. En raison de la façon dont ces médicaments se lient à leurs cibles — la relation hyperbolique et saturante expliquée dans [la décroissance hyperbolique](/fr/guides/hyperbolic-tapering-guide/) — même une petite dose peut occuper une large part des récepteurs et atténuer le sevrage. L'article de 2019 de Horowitz & Taylor dans *Lancet Psychiatry* a construit les calendriers de décroissance autour de cette idée, visant environ une réduction de 10 % de l'occupation des récepteurs par palier plutôt qu'une réduction de 10 % en milligrammes.
+La recommandation multisociété de 2025 indique que des symptômes importants liés à la diminution doivent conduire à ralentir ou à faire une pause et/ou à réduire par paliers plus petits. Elle déconseille généralement de remonter automatiquement la dose, mais autorise une dose antérieure dans certains cas intolérables jusqu’à stabilisation. NICE permet de retarder la réduction suivante, d’essayer une réduction plus petite ou de revenir à la dose précédente lorsque de nouveaux symptômes pénibles apparaissent. Aucune ne définit une formule « dose précédente moins 5–10% ». [1,2]
 
-Framer (2021) le décrit directement pour la réintroduction : plutôt que de revenir d'un bond à une dose pleine, une petite « sonde » initiale — elle donne l'exemple d'environ 1 mg de citalopram après l'arrêt d'une dose de 20 mg — atténue souvent le sevrage, et elle rapporte qu'une très faible dose peut être étonnamment efficace même dans des cas de longue date. Deux raisons motivent la préférence pour remonter du plus petit montant possible :
+## Ce que disent les recommandations actuelles sur les antidépresseurs
 
-- **Le dépassement a son propre coût.** Un grand saut peut ramener des effets secondaires et signifie plus de médicament à décroître de nouveau plus tard.
-- **Éviter le « kindling ».** Framer avertit que des oscillations erratiques et importantes du taux sanguin — surtout en sautant des doses — peuvent entraîner une sensibilité croissante aux futurs changements de dose. Sa règle sans détour : ne sautez jamais de doses pour décroître.
+Les recommandations NICE sur la dépression préconisent de surveiller à la fois le sevrage et le retour de la dépression. Si le sevrage est plus sévère, elles permettent de reprendre l’antidépresseur initial à la dose précédente, puis, après résolution des symptômes, de tenter une diminution progressive plus lente avec des réductions plus petites. Comme l’amélioration peut prendre plusieurs jours même après la reprise, la réponse doit être surveillée plutôt que promise. [3]
 
-Cette approche de « la plus petite augmentation efficace » reflète l'expérience des cliniciens et des communautés de patients plutôt que de grands essais randomisés, elle doit donc être présentée honnêtement comme une pratique raisonnée, non une preuve établie. Votre prescripteur décidera de quoi et de combien, selon votre médicament et votre histoire spécifiques.
+## Pourquoi la temporalité ne constitue pas une garantie
 
-## La réintroduction fonctionne-t-elle mieux si vous la faites tôt ?
+Une intervention plus précoce peut être plus prévisible dans certaines situations aiguës de sevrage, mais il n’existe pas de fenêtre universelle après laquelle la réintroduction fonctionne toujours ou jamais. Les longs délais, les changements répétés, les effets indésirables, la tolérance modifiée et une autre maladie sous-jacente changent l’équilibre bénéfice-risque.
 
-C'est un point réellement débattu, il vaut donc la peine de qualifier soigneusement les preuves. Le thème constant à travers les recommandations et l'observation des communautés est que la réintroduction est la plus fiable quand elle est faite rapidement, peu après l'apparition des symptômes — et devient moins prévisible après un long intervalle sans le médicament.
+## questions à poser au prescripteur
 
-La logique clinique : la réintroduction remplace quelque chose auquel le cerveau s'est adapté. Plus l'intervalle est long, plus le système nerveux a pu déjà se remodeler, donc remettre le médicament peut ne pas correspondre proprement à l'état antérieur. Les recommandations du RCPsych et du NICE présentent toutes deux la réintroduction comme une réponse rapide à un sevrage émergent, et le résultat de la revue de 2022 dans *BJPsych Advances* — des symptômes se résolvant en une semaine environ — décrit une réintroduction utilisée relativement tôt.
+- Quelles recommandations propres à la classe médicamenteuse s’appliquent précisément à ce médicament et à cette indication ?
+- Le profil de symptômes est-il plus compatible avec un sevrage, une rechute, une toxicité ou une autre maladie ?
+- Maintenir la dose actuelle est-il plus sûr que l’augmenter ?
+- Les DORAs chez les personnes âgées : bénéfices sur le sommeil, chutes, conduite et fonctionnement le lendemain
+- Quel est le plan de surveillance et de soins urgents ?
 
-Voici le niveau de preuve honnête :
+## Questions fréquentes
 
-- **Bien soutenu :** la réintroduction rapide soulage typiquement le sevrage *aigu*, souvent en quelques jours à une semaine.
-- **Pratique clinique + observation de communautés de patients (non prouvé par essai randomisé) :** la croyance que « plus tôt vaut mieux » et que la réintroduction après de longs intervalles est moins fiable. Cela est tiré de l'expérience des prescripteurs et de communautés comme celles que décrit Framer, non d'essais comparatifs directs.
-- **Faible / incertain :** que la réintroduction aide un sevrage *prolongé* installé — la revue PAWS de 2025 n'a trouvé aucune preuve fiable dans un sens ou l'autre.
+### Le maintien de la dose est-il identique à une réintroduction ?
 
-Rien de tout cela ne signifie qu'une tentative tardive est inutile ; cela signifie que le résultat est plus difficile à prédire, elle doit donc être une décision réfléchie avec votre prescripteur plutôt qu'une expérience en solo.
+Non. Le maintien conserve la dose actuelle stable ; la réintroduction augmente l’exposition après une réduction ou un arrêt.
 
-## Pause vs réintroduction : une comparaison rapide
+### Une réintroduction partielle est-elle toujours plus sûre que la dose précédente ?
 
-Les deux vous gardent sur une trajectoire guidée par les symptômes ; la différence est la direction.
+Aucune donnée universelle ne soutient cette affirmation. La quantité appropriée, s’il y en a une, dépend du médicament, de l’indication, de la sévérité, du moment et des risques.
 
-| | **Pause** | **Réintroduction** |
-|---|---|---|
-| Ce que vous faites | Rester à la dose actuelle | Augmenter la dose (totalement ou partiellement) |
-| Quand | Les symptômes montent mais restent tolérables | Les symptômes sont sévères ou ne se calment pas |
-| But | Laisser le palier actuel se stabiliser | Soulager le sevrage, puis continuer |
-| Délai typique | Jours à plusieurs semaines | Soulagement souvent en ~1 semaine pour un sevrage aigu |
-| Solidité des preuves | Largement recommandée ; guidée par les symptômes | Solide pour l'aigu ; rare pour le prolongé |
+### Le soulagement après augmentation de dose prouve-t-il un sevrage ?
 
-## Comment décider avec votre prescripteur ?
+Cela peut appuyer l’interprétation sans la prouver, car la sédation, le soulagement de l’anxiété, les effets placebo ou le traitement de l’affection initiale peuvent aussi modifier les symptômes.
 
-La réintroduction et les longues pauses sont des décisions partagées, et elles se passent mieux quand vous arrivez avec des données plutôt qu'un « je me sens mal » général. La chose la plus utile que vous puissiez apporter est une **chronologie des symptômes** : quand chaque changement de dose a eu lieu, quels symptômes sont apparus, quand ils ont commencé et culminé, et comment ils suivent les réductions.
+### RxDown peut-il recommander la dose ?
 
-Choses utiles à avoir prêtes :
+Non. RxDown peut documenter la chronologie et aider à préparer un rapport destiné au clinicien ; il ne doit pas prescrire une quantité de maintien ou de réintroduction.
 
-- **Dates et doses** des changements récents, pour que le schéma s'aligne sur l'apparition des symptômes.
-- **Un journal des symptômes** avec des notes de sévérité — cela aide à séparer le sevrage (commence généralement dans les jours suivant une baisse, s'atténue souvent à la pause) de la rechute (typiquement plus lente, des semaines plus tard, reflétant votre maladie d'origine).
-- **Ce que vous avez déjà essayé** — si la pause a aidé, et pendant combien de temps.
+## Propre au produit et confirmé par un pharmacien
 
-Pour un script plus complet sur la façon d'aborder cela de manière productive, voir [parler de déprescription avec votre médecin](/fr/guides/talking-to-your-doctor-deprescribing/). Apporter un relevé clair fait passer la conversation de la persuasion à la résolution de problème, et rend un plan plus lent et individualisé — le genre que le NICE et le RCPsych approuvent tous deux — plus facile à accepter pour un prescripteur.
 
-C'est là qu'un journal aide. **RxDown** est conçu exactement pour cela : consigner doses, symptômes et sommeil jour après jour, marquer les pauses et les réintroductions, et exporter un rapport prêt pour le médecin afin que votre prescripteur voie la chronologie d'un coup d'œil. Son [calculateur de décroissance](/fr/calculator/) peut aussi modéliser des tailles de paliers plus douces et hyperboliques pour la conversation.
+1. [Brunner E, et al. Joint Clinical Practice Guideline on Benzodiazepine Tapering: Considerations When Risks Outweigh Benefits. 2025.](https://pmc.ncbi.nlm.nih.gov/articles/PMC12463801/) **Evidence type:** Multisociety clinical practice guideline. **Use:** Initial pace, symptom-responsive adjustment, pausing, smaller reductions, and limited circumstances for returning to a previous dose.
+2. [NICE. Medicines associated with dependence or withdrawal symptoms: safe prescribing and withdrawal management for adults (NG215).](https://www.nice.org.uk/guidance/ng215/chapter/Recommendations) **Evidence type:** National guideline. **Use:** Slow stepwise proportional reduction; delay, smaller reduction, or previous dose when distressing symptoms occur.
+3. [U.S. Food and Drug Administration. Boxed Warning updated to improve safe use of benzodiazepines. 2020.](https://www.fda.gov/drugs/drug-safety-and-availability/fda-requiring-boxed-warning-updated-improve-safe-use-benzodiazepine-drug-class) **Evidence type:** Regulatory safety communication. **Use:** Physical dependence, withdrawal, overdose and co-use risks.
+4. [Horowitz MA, et al. Pharmacological principles for safe benzodiazepine and Z-drug dose reduction. 2026.](https://pmc.ncbi.nlm.nih.gov/articles/PMC13280687/) **Evidence type:** Pharmacological analysis and clinical proposal. **Use:** Proportional/hyperbolic rationale and formulation constraints; not treated as a definitive comparative trial.
 
-## Comment reprendre la décroissance après s'être stabilisé ?
+5. [NICE. Depression in adults: treatment and management (NG222), stopping antidepressants.](https://www.nice.org.uk/guidance/ng222/chapter/recommendations) **Evidence type:** National guideline. **Use:** Severe antidepressant withdrawal and previous-dose restart followed by slower reduction.
+6. [CDC. Clinical Practice Guideline for Prescribing Opioids for Pain. 2022.](https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm) **Evidence type:** National guideline. **Use:** Avoid rapid/forced tapering and consider overdose risk after tolerance changes.
 
-Une fois stabilisé — que ce soit par une pause ou une réintroduction — la recommandation est constante : reprenez la décroissance plus lentement et avec des paliers plus petits qu'avant. Une poussée est une information. Elle vous dit que le rythme ou la taille de palier précédents étaient trop pour vous en ce moment, la réponse sensée est donc de rétrécir les paliers, non de les répéter.
-
-Framer (2021) le formule clairement : reprenez « une décroissance plus progressive » seulement une fois que la personne s'est clairement stabilisée. Des ajustements pratiques qui apparaissent dans la littérature sur la déprescription incluent :
-
-- **Des réductions en pourcentage plus petites** (par exemple, réduire d'une fraction plus petite de la dose *actuelle* à chaque fois plutôt qu'un nombre fixe de milligrammes).
-- **Des intervalles plus longs** entre les paliers, pour que chaque réduction se stabilise pleinement avant la suivante.
-- **Un dimensionnement hyperbolique en bas de l'échelle,** où l'occupation des récepteurs change le plus vite et où les baisses semblent disproportionnellement grandes — la queue de la décroissance nécessite souvent les plus petits paliers de tous. Voir [la décroissance hyperbolique](/fr/guides/hyperbolic-tapering-guide/) et, pour ce à quoi le rétablissement peut ressembler dans le temps, la [chronologie du sevrage des antidépresseurs](/fr/guides/antidepressant-withdrawal-timeline/).
-
-Il n'y a pas de récompense à finir vite. Le but est d'atteindre l'arrivée confortablement, et une reprise plus lente est généralement le chemin le plus court pour y parvenir.
-
-## La pause est une correction de trajectoire, pas un échec
-
-Il vaut la peine de nommer le sentiment directement, car il est presque universel : beaucoup de personnes vivent la pause ou la réintroduction comme un échec personnel — « je devrais avoir dépassé ça », « j'ai reculé », « je n'y arriverai jamais ». Ces pensées sont compréhensibles, mais elles interprètent mal ce qui se passe.
-
-Une pause ou une réintroduction est une correction de trajectoire, de la même manière qu'un randonneur qui rencontre le mauvais temps attend à une altitude plus basse au lieu de forcer vers le sommet. La destination n'a pas changé ; l'itinéraire, oui. Les cadres qui respectent le plus l'expérience des patients — les Maudsley Deprescribing Guidelines, la recommandation patient du RCPsych et le récit communautaire de Framer — les traitent tous comme des parts normales et attendues d'une décroissance bien menée. La culpabilité tend à pousser les gens vers les deux choix les plus risqués : forcer à travers des symptômes sévères, ou arrêter brutalement par frustration. Recadrer la poussée comme un retour d'information vous maintient sur la voie médiane sûre.
-
-Si vous ne retenez qu'une chose de ce guide : avoir besoin de faire une pause ou de remonter ne signifie pas que vous ne pouvez pas arrêter votre médicament. Cela signifie généralement que votre corps demande un rythme plus doux — et un rythme plus doux, convenu avec votre prescripteur, est exactement ce qui rend l'arrivée possible. Pour d'autres questions fréquentes, voir la [FAQ](/fr/faq/).
-
-## Sources
-
-1. [Framer A., *What I have learnt from helping thousands of people taper off antidepressants and other psychotropic medications*, Therapeutic Advances in Psychopharmacology (2021)](https://journals.sagepub.com/doi/10.1177/2045125321991274)
-2. [Horowitz M. A. & Taylor D., *Tapering of SSRI treatment to mitigate withdrawal symptoms*, Lancet Psychiatry (2019)](https://pubmed.ncbi.nlm.nih.gov/31230676/)
-3. [Horowitz M. A. & Taylor D., *Distinguishing relapse from antidepressant withdrawal: clinical practice and antidepressant discontinuation studies*, BJPsych Advances (2022)](https://www.cambridge.org/core/journals/bjpsych-advances/article/distinguishing-relapse-from-antidepressant-withdrawal-clinical-practice-and-antidepressant-discontinuation-studies/AE99BDE4435521CE9F3D626AE14D1962)
-4. [Horowitz M. & Taylor D., *The Maudsley Deprescribing Guidelines: Antidepressants, Benzodiazepines, Gabapentinoids and Z-drugs*, Wiley-Blackwell (2024)](https://books.google.com/books/about/The_Maudsley_Deprescribing_Guidelines.html?id=WJLqEAAAQBAJ)
-5. [Royal College of Psychiatrists, *Stopping antidepressants* (patient information)](https://www.rcpsych.ac.uk/mental-health/treatments-and-wellbeing/stopping-antidepressants)
-6. [NICE, *Depression in adults: treatment and management* (NG222) (2022)](https://www.nice.org.uk/guidance/ng222/chapter/recommendations)
-7. [Davies J. & Read J., *A systematic review into the incidence, severity and duration of antidepressant withdrawal effects: Are guidelines evidence-based?*, Addictive Behaviors (2019)](https://pubmed.ncbi.nlm.nih.gov/30292574/)
-8. [Rennwald A. et al., *Post-acute withdrawal syndrome (PAWS) after stopping antidepressants: a systematic review with meta-narrative synthesis*, Epidemiology and Psychiatric Sciences (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12090023/)
-</content>
+<!-- Preserve canonical URL: /fr/guides/hold-and-reinstate-guide/ . Replace, do not create a competing page. -->

@@ -1,0 +1,25 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="transparent", fontname="Arial", pad="0.25", nodesep="0.45", ranksep="0.55"];
+  node [shape=box, style="rounded", fontname="Arial", fontsize=11, margin="0.18,0.10"];
+  edge [fontname="Arial", fontsize=10];
+  change [label="Dose reduced, missed,\nor stopped"];
+  urgent [shape=diamond, label="Urgent warning sign?"];
+  care [label="Urgent clinical assessment"];
+  timing [label="Record timing, dose,\nformulation, and symptoms"];
+  pattern [shape=diamond, label="Pattern closely follows\ndose timing?"];
+  assess [label="Prescriber assessment"];
+  withdrawal [label="Withdrawal\nnew or intensified symptoms"];
+  rebound [label="Rebound\ntreated symptom temporarily\nabove baseline"];
+  relapse [label="Relapse\nunderlying condition returns"];
+  other [label="Other cause\nmedical, sleep, substance,\nor interaction"];
+  change -> urgent;
+  urgent -> care [label="Yes"];
+  urgent -> timing [label="No"];
+  timing -> pattern;
+  pattern -> assess [label="Yes or unclear"];
+  pattern -> assess [label="No"];
+  assess -> withdrawal;
+  assess -> rebound;
+  assess -> relapse;
+  assess -> other;
+}

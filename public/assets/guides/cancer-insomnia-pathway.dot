@@ -1,0 +1,22 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="transparent", fontname="Arial", pad="0.25"];
+  node [shape=box, style="rounded", fontname="Arial", fontsize=11, margin="0.18,0.10"];
+  edge [fontname="Arial", fontsize=10];
+  screen [label="Persistent sleep difficulty\nafter or during cancer care"];
+  urgent [shape=diamond, label="Acute confusion, severe breathing\nproblem, mania, or immediate safety risk?"];
+  urgentcare [label="Urgent medical assessment"];
+  assess [label="Assess insomnia pattern, daytime impact,\npain, hot flashes, mood, substances, medications,\nsleep apnea, restless legs, and cancer status"];
+  cause [shape=diamond, label="Treatable contributor identified?"];
+  treat [label="Address contributor with oncology,\nprimary care, sleep, or mental-health team"];
+  cbti [label="Offer CBT-I or validated behavioral treatment\nas first-line chronic insomnia care"];
+  meds [label="Medication review only when needed:\ninteractions, falls, delirium, breathing, duration,\nand deprescribing plan"];
+  follow [label="Reassess sleep, function, adverse effects,\nand cancer-treatment adherence"];
+  screen -> urgent;
+  urgent -> urgentcare [label="Yes"];
+  urgent -> assess [label="No"];
+  assess -> cause;
+  cause -> treat [label="Yes"];
+  cause -> cbti [label="No or alongside"];
+  treat -> cbti;
+  cbti -> meds -> follow;
+}

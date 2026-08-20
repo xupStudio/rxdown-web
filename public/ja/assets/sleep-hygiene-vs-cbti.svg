@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">睡眠衛生と CBT-I の違い</title><desc id="desc">簡略化した意思決定支援図であり、個別の治療計画ではありません。</desc>
+<rect width="1200" height="700" fill="#fff"/><style>.h{font:700 30px sans-serif;fill:#111827}.th{font:700 26px sans-serif;fill:#111827}.t{font:21px sans-serif;fill:#111827}.box{fill:#f5f7fa;stroke:#1f2937;stroke-width:2}</style>
+<text x="600" y="62" text-anchor="middle" class="h"><tspan x="600" y="62.0">睡眠衛生と CBT-I の違い</tspan></text>
+<rect x="70" y="145" width="490" height="430" rx="24" class="box"/><rect x="640" y="145" width="490" height="430" rx="24" class="box"/>
+<text x="315" y="205" text-anchor="middle" class="th"><tspan x="315" y="205.0">睡眠衛生</tspan></text><text x="315" y="280" text-anchor="middle" class="t"><tspan x="315" y="280.0">支援的な習慣</tspan></text><text x="315" y="365" text-anchor="middle" class="t"><tspan x="315" y="365.0">睡眠を妨げる要因を減らす</tspan></text><text x="315" y="465" text-anchor="middle" class="t"><tspan x="315" y="465.0">慢性不眠の治療として単独では通常不十分</tspan></text>
+<text x="885" y="205" text-anchor="middle" class="th"><tspan x="885" y="205.0">多要素 CBT-I</tspan></text><text x="885" y="315" text-anchor="middle" class="t"><tspan x="885" y="315.0">不眠の仕組みを標的とする第一選択治療</tspan></text>
+<text x="600" y="635" text-anchor="middle" class="t"><tspan x="600" y="635.0">簡略化した意思決定支援図であり、個別の治療計画ではありません。</tspan></text>
+</svg>

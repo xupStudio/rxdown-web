@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">睡眠衛生與 CBT-I 的差異</title><desc id="desc">簡化的決策輔助圖；不是個人化治療計畫。</desc>
+<rect width="1200" height="700" fill="#fff"/><style>.h{font:700 30px sans-serif;fill:#111827}.th{font:700 26px sans-serif;fill:#111827}.t{font:21px sans-serif;fill:#111827}.box{fill:#f5f7fa;stroke:#1f2937;stroke-width:2}</style>
+<text x="600" y="62" text-anchor="middle" class="h"><tspan x="600" y="62.0">睡眠衛生與 CBT-I 的差異</tspan></text>
+<rect x="70" y="145" width="490" height="430" rx="24" class="box"/><rect x="640" y="145" width="490" height="430" rx="24" class="box"/>
+<text x="315" y="205" text-anchor="middle" class="th"><tspan x="315" y="205.0">睡眠衛生</tspan></text><text x="315" y="280" text-anchor="middle" class="t"><tspan x="315" y="280.0">支持性習慣</tspan></text><text x="315" y="365" text-anchor="middle" class="t"><tspan x="315" y="365.0">可減少睡眠障礙因素</tspan></text><text x="315" y="465" text-anchor="middle" class="t"><tspan x="315" y="465.0">單獨使用通常不足以治療慢性失眠</tspan></text>
+<text x="885" y="205" text-anchor="middle" class="th"><tspan x="885" y="205.0">多成分 CBT-I</tspan></text><text x="885" y="315" text-anchor="middle" class="t"><tspan x="885" y="315.0">針對失眠機制的第一線治療</tspan></text>
+<text x="600" y="635" text-anchor="middle" class="t"><tspan x="600" y="635.0">簡化的決策輔助圖；不是個人化治療計畫。</tspan></text>
+</svg>

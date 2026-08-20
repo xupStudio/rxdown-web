@@ -1,0 +1,15 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="transparent", fontname="Arial", pad="0.25"];
+  node [shape=box, style="rounded", fontname="Arial", fontsize=11, margin="0.18,0.10"];
+  edge [fontname="Arial", fontsize=10];
+  q [label="Clinical question"];
+  source [label="Guideline, regulator label,\nreview, or primary study"];
+  design [label="Check design, population,\nduration, outcome, and comparator"];
+  limits [label="Identify bias, exclusions,\nprecision, and conflicts"];
+  answer [label="Plain-English answer with\ncertainty and limitations"];
+  practice [label="What it may change"];
+  no [label="What it does not justify"];
+  q -> source -> design -> limits -> answer;
+  answer -> practice;
+  answer -> no;
+}

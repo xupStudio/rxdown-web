@@ -1,147 +1,133 @@
 ---
-title: "ベンゾジアゼピンからの離脱：アシュトンマニュアルのアプローチ"
-description: "ベンゾジアゼピン減薬に対するアシュトンマニュアルのアプローチは、ゆっくりとした症状主導の減量にジアゼパム置換を組み合わせます。急な中止は絶対に避けてください——けいれん発作の危険があります。"
-pubDate: 2026-07-02
-tags: ["benzodiazepines", "tapering", "ashton manual", "withdrawal", "deprescribing"]
-faq:
-  - q: "ベンゾジアゼピンを急にやめるのは危険ですか？"
-    a: "はい。ベンゾジアゼピンは、アルコールと並んで、身体依存が形成された後に急に中止するとけいれん発作、せん妄、まれに死を引き起こしうる数少ない薬剤クラスの一つです。アシュトンマニュアルと2025年のASAMガイドラインはいずれも急な中止を戒め、代わりに医療管理のもとでのゆるやかな減薬を推奨しています。"
-  - q: "アシュトンマニュアルはなぜジアゼパムへの切り替えを推奨するのですか？"
-    a: "ジアゼパムは半減期が非常に長いため、その血中濃度はアルプラゾラムのような作用時間の短い薬に見られる鋭い山と谷を生じるのではなく、服薬の間になめらかに下がります。また、減薬の終盤にごく小さな減量を可能にする小さな錠剤規格でも販売されています。切り替えは通常、1日量の一部ずつ、少しずつ行われます。"
-  - q: "ベンゾジアゼピンの減薬にはどのくらいかかりますか？"
-    a: "数週間ではなく数か月です。アシュトンマニュアルとNICEはいずれも、その人の体調に合わせてペースを調整しながら、一般的に3〜12か月以上かけて行う減薬を述べています。固定されたスケジュールはなく——用量が低くなるにつれて、ペースは通常さらに遅くなります。"
-sources:
-  - label: "Ashton CH, Benzodiazepines: How They Work and How to Withdraw (The Ashton Manual) (2002)"
-    url: "https://www.benzo.org.uk/manual/"
-  - label: "Brunner E et al., Joint Clinical Practice Guideline on Benzodiazepine Tapering, Journal of General Internal Medicine (2025)"
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12463801/"
-  - label: "American Society of Addiction Medicine, Benzodiazepine Tapering Clinical Practice Guideline (2025)"
-    url: "https://www.asam.org/quality-care/clinical-guidelines/benzodiazepine-tapering"
-  - label: "NICE, Medicines associated with dependence or withdrawal symptoms (NG215) (2022)"
-    url: "https://www.nice.org.uk/guidance/ng215"
-  - label: "Horowitz M & Taylor D, The Maudsley Deprescribing Guidelines (Wiley-Blackwell, 2024)"
-    url: "https://bjgp.org/content/74/745/369"
-  - label: "Davies J & Read J, A systematic review into the incidence, severity and duration of antidepressant withdrawal effects, Addictive Behaviors (2019)"
-    url: "https://pubmed.ncbi.nlm.nih.gov/30292574/"
-  - label: "Chrystal Heather Ashton, obituary, The Lancet (2019)"
-    url: "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)33150-2/fulltext"
-  - label: "ASAM, Pharmacokinetic Properties of Benzodiazepines (2025)"
-    url: "https://downloads.asam.org/sitefinity-production-blobs/docs/default-source/guidelines/benzodiazepine-tapering-2025/pharmacokinetic-properties-of-benzodiazepines.pdf"
+title: Benzodiazepine の漸減と Ashton Manual：今も役立つ点と 2025 ガイダンスの変更
+slug: benzodiazepine-tapering-ashton
+description: Ashton Manual、ASAM 2025、NICE の修正版比較。正確な速度表現と症状に応じた調整を含みます。
+primary_keyword: Ashton Manual に基づく benzodiazepine 漸減
+secondary_keywords: []
+search_intent: 情報提供；エビデンスに基づく意思決定支援と安全教育
+content_hub: benzodiazepines
+priority: P0
+article_type: 継続改訂
+evidence_cutoff: '2026-08-19'
+last_evidence_search: '2026-08-19'
+review_status: 専門家レビューが必要な編集草稿です。指定された査読者が承認するまで公開しないでください。
+required_reviewers: 英語の出典欄に記載された関連臨床専門家および薬剤師
+specialist_review_required: true
+schema_types:
+- MedicalWebPage
+- Article
+- FAQPage
+featured_image: /assets/guides/benzodiazepine-symptom-response-pathway.svg
+app_keyword_theme: Ashton Manual に基づく benzodiazepine 漸減
+terminology_standard: RxDown 臨床用語標準 v1.1
+region_note: 診療経路とプログラムの利用可能性は国や医療制度によって異なります。
+article_action: live-update
+source_locale: en
+required_reviewers_en: benzodiazepine-experienced prescriber and clinical pharmacist
+region_note_en: Care pathways and program availability vary by country and health system.
+locale: ja
+canonical_url: https://rxdown.app/ja/guides/benzodiazepine-tapering-ashton/
+hreflang:
+  en: https://rxdown.app/guides/benzodiazepine-tapering-ashton/
+  x-default: https://rxdown.app/guides/benzodiazepine-tapering-ashton/
+  zh-Hant: https://rxdown.app/zh/guides/benzodiazepine-tapering-ashton/
+  ja: https://rxdown.app/ja/guides/benzodiazepine-tapering-ashton/
+  ko: https://rxdown.app/ko/guides/benzodiazepine-tapering-ashton/
+  de: https://rxdown.app/de/guides/benzodiazepine-tapering-ashton/
+  es: https://rxdown.app/es/guides/benzodiazepine-tapering-ashton/
+  fr: https://rxdown.app/fr/guides/benzodiazepine-tapering-ashton/
+  id: https://rxdown.app/id/guides/benzodiazepine-tapering-ashton/
+  pt-PT: https://rxdown.app/pt/guides/benzodiazepine-tapering-ashton/
+translation_source_sha256: 4733eb9c61ecf240f2d5a0a7887c28060f957b22b26edb7680c6dc4bcfd9f5d7
+translation_model: RxDown locked-terminology multilingual localization (manual + validated translation memory)
+translation_date: '2026-08-20'
+translation_status: machine-localized-clinical-review-required
+translation_review_note: 公開前に、対象言語の臨床専門家と薬剤師による確認が必要です。
+localized_keywords_status: translated-not-local-search-volume-validated
+publication_status: clinical-review-required
 ---
+# Benzodiazepine の漸減と Ashton Manual：今も役立つ点と 2025 ガイダンスの変更
 
-**TL;DR:** Heather Ashton教授によって書かれ、benzo.org.ukで無料公開されているアシュトンマニュアルは、ベンゾジアゼピンからの離脱に関して最も広く使われている患者向けガイドであり続けています。その中核となる方法は、ゆっくりとした症状主導の減量であり、薬物濃度がなめらかに下がるよう、しばしば長時間作用型のジアゼパムに切り替えた後で行われます。ベンゾジアゼピンは、急な中止が医学的に危険となりうる数少ない薬剤クラスの一つです——身体依存の後の急な離脱はけいれん発作を引き起こしうる——ため、あらゆる変更はゆるやかに、処方医の管理のもとで行うべきです。2025年のASAMベンゾジアゼピン減薬ガイドラインは現代的な臨床上の補完であり、一人ひとりに合わせて個別化した、2〜4週間ごとに約5〜10%の初期減量を推奨しています。
+> **既存の RxDown URL を置き換える草稿です。** Ashton Manual の歴史的価値は維持しますが、1–2 weeks ごとに固定で 5–10% 減らすスケジュールを NICE に帰属させないでください。
 
-> **これは教育であり、医療上の助言ではありません。** ベンゾジアゼピンの用量変更は、常にあなたの経過を知る処方医が計画し、管理のもとで行うべきです。自分だけで急に中止したり減量したりしないでください。この記事は公表されたアプローチと用量範囲を紹介するものであり、何を服用すべきかを指示するものではありません。
+## 要点
 
-## Heather Ashtonとは誰で、なぜ彼女のマニュアルが重要なのですか？
+Ashton Manualは、ゆっくりと症状に応じて行うbenzodiazepine離脱とdiazepam置換について、患者向けにまとめた影響力のある資料であり続けている。ただし、現代のエビデンス評価型ガイドラインではなく、そのスケジュールを自動的に転用すべきではない。2025年の多学会ASAMガイドラインは現在の臨床枠組みを示している。一般に2–4週間ごとに5–10%の減量から始め、通常は2週間ごとに25%を超えず、重大な症状が生じた場合は速度を落とす、休止する、または減量幅を小さくする。[1]
 
-Chrystal Heather Ashton（1929–2019）は、英国の臨床精神薬理学者であり、ニューカッスル大学の教授でした。1982年から1994年まで、彼女はニューカッスルのRoyal Victoria Infirmaryでベンゾジアゼピン離脱専門クリニックを運営し、その12年間にわたって数百人の長期使用者と関わり、実際に彼らの中止を助けたものを綿密に追いました。
+NICEは「1–2 weeksごとに5–10%」とは**規定していません**。NICEは現在の用量に比例したゆっくりと段階的な速度を推奨し、用量が低くなるほど減量幅を小さくし、症状と希望に応じて柔軟に変更することを勧めています。[2]
 
-その臨床経験が*Benzodiazepines: How They Work and How to Withdraw*——1999年に初版、2002年に改訂され、世界的に**アシュトンマニュアル**として知られる——になりました。11の言語に翻訳され、[benzo.org.uk](https://www.benzo.org.uk/manual/)で無料公開されています。
+## ひと目でわかる要点
 
-このマニュアルが重要なのには二つの理由があります。第一に、ベンゾジアゼピンの離脱は固定されたクリニックのスケジュールに押し付けられるのではなく、患者のペースで進められるべきだと主張した最も初期の文書の一つでした。第二に、長年にわたり公的なガイダンスが存在しなかった中で、これが真の空白を埋めました——ほとんど他に何も存在しなかったため、臨床医も患者も同様にその離脱スケジュールを使いました。これは正式なエビデンス格付けのガイドラインというよりも、患者の経験に由来し臨床的に裏付けられたリソースであり、2025年のASAMガイドラインやNICEのような現代的なガイダンスと併せて読むのが最善です。
+| 質問 | 現在の回答 |
+|---|---|
+| Ashton Manual は今も役立ちますか？ | 歴史的な臨床・患者向け資料としては有用ですが、現代のエビデンス評価に基づく処方としてではありません。 |
+| diazepamへの置換は必須か？ | いいえ。一部の人には役立つ可能性がありますが、別の人には不適切な場合があります。 |
+| NICEは1～2週間ごとに5–10%減量するよう規定していますか？ | いいえ。NICE は、緩徐で比例的かつ症状に応じた減量を推奨しています。 |
+| ASAM 2025では一般にどこから開始することを勧めていますか？ | 2–4 weeks ごとに 5–10% を目安とし、依存が強い場合は通常さらに遅くします。通常、2 weeks ごとに 25% を超えないようにします。 |
+| 重大な症状が現れた場合はどうしますか？ | 評価したうえで、速度を落とす、一時停止する、または減量幅を小さくします。前の用量に戻すことは限定的な選択肢であり、自動的な規則ではありません。 |
 
-## アシュトンマニュアルのアプローチの中核となる原則は何ですか？
+## Ashton、ASAM、NICEの比較
 
-三つの原則がマニュアル全体を貫いています：
-
-- **ゆるやかな減量。** 減量は小さく、間隔をあけて行われるため、薬の血中および組織中の濃度が着実に下がります。着実な低下は、脳のGABA系が再調整する時間を与え、症状を軽く保ちます。
-- **長い半減期の薬剤への切り替え（ジアゼパム置換）。** 作用時間の短いベンゾジアゼピンを使っている人は、しばしば段階的にジアゼパムへ切り替えられます。その長い半減期が、減薬を難しくする山と谷をならすためです。
-- **症状主導のペース。** 薬をやめていく本人が速度の設定を手伝います。減量が強い症状を引き起こす場合、計画は一時停止または減速します。スケジュール通りに前進を押し進めることはありません。Ashtonはこれを、患者に主導権を渡すことと表現しました。
-
-これらと同じ三つの考えは、より正式な言葉で、NICEのガイダンスと2025年のASAMガイドラインに再び現れます——Ashtonの臨床的な直感が持ちこたえた証拠です。
-
-## なぜ減薬の前にジアゼパムへ切り替えるのですか？
-
-作用時間の短いベンゾジアゼピンは体外へ速く排出されるため、薬物濃度が服薬の間に急に上がったり下がったりします。これが「服薬間（interdose）」の症状を生じ、ごく小さな減量を感じ取ることを難しくします。ジアゼパムは異なる振る舞いをします。消失半減期が長く——およそ20〜48時間で、その活性代謝物によって約100時間まで延長される——ため、その濃度は一日を通して比較的平坦なままです。また、低い錠剤規格（2 mgなど）でも入手でき、分割もできるため、減薬の終盤で重要となるごく小さな減量が可能になります。
-
-切り替えそのものはゆるやかに行われます——すべてを一度に入れ替えるのではなく、おおよその等価用量を用いて、1日量の一部ずつ変換します。2025年のASAMガイドラインも同じ論理に触れ、「非常に長時間作用型の薬剤による減薬」が適切な状況では合理的な戦略であると認めています。用量の比例的な小さな減量が最後の方でより難しくなる背後にある薬理学については、[双曲線減薬（ハイパーボリック減薬）ガイド](/ja/guides/hyperbolic-tapering-guide/)と[受容体占有率の解説](/ja/guides/receptor-occupancy-explained/)をご覧ください。
-
-## あるベンゾジアゼピンは別のベンゾジアゼピンのどれくらいに相当しますか？
-
-ジアゼパムへの切り替えは、いずれもおおよその等価数値に依存します。下の表は、広く引用されるアシュトンマニュアルの近似値を、文脈のためにASAMの薬物動態リファレンスによる消失半減期とともに示しています。**これらの値はおおよそのものであり、情報源によって異なります**——異なるリファレンスや計算ツールはわずかに異なる数値を示し、個人的な要因（年齢、肝機能、耐性）がそれらをさらに動かします。これらは臨床医にとっての出発点であって、正確な換算ではありません。
-
-| ベンゾジアゼピン（ブランド名） | ジアゼパム10 mgにおおよそ相当する用量 | 消失半減期 | 作用時間の分類 |
+| トピック | アシュトン・マニュアル | ASAM 2025 ガイドライン | NICE NG215 ガイドライン |
 |---|---|---|---|
-| ジアゼパム（Valium） | 10 mg（基準） | 約20〜100時間（活性代謝物を含む） | 長時間作用型 |
-| アルプラゾラム（Xanax） | 0.5 mg | 約6〜12時間 | 短〜中間作用型 |
-| ロラゼパム（Ativan） | 1 mg | 約10〜20時間 | 中間作用型 |
-| クロナゼパム（Klonopin） | 0.5 mg | 約20〜80時間 | 長時間作用型 |
-| テマゼパム（Restoril） | 20 mg | 約8〜15時間 | 短時間作用型 |
+| 状態 | 専門家向け臨床マニュアルと患者資料 | 複数学会による診療ガイドライン | 国内ガイドライン |
+| ペース | ゆっくりと個別化したスケジュール。例では1–2週間ごとの段階が多い | 一般的な開始は 2–4 weeks ごとに 5–10%。依存が強ければ遅くする | ゆっくりと段階的に比例減量し、固定の割合や間隔は設けない |
+| Diazepamへの置換 | 多くのスケジュールの中心的要素 | 適切な場合に検討できますが、必須ではありません | 半減期の短い benzodiazepine で検討 |
+| 症状 | 患者主導の柔軟性 | 各減量を監視し、休止／減速／より小さな段階を用います | つらい新規症状には、延期、より小さい減量、または前の用量を検討 |
+| エビデンスの確実性 | 痛みは多方向システムの一部です。睡眠治療は、過覚醒の低下、対処の改善、活動参加の増加、気分改善、破局的思考の低下を通じて痛みを助けることがありますが、痛みの改善は小さいか全くない場合もあります。 | 試験が限られているため、漸減の実務の多くはコンセンサスに基づいています | エビデンスレビューと委員会判断 |
 
-パターンは明白です。アルプラゾラムはこのグループの中でミリグラムあたり最も強力であり、これがしばしば離脱が難しいと名指しされる理由の一つです。等価の推定値は異なるため、ASAMガイドラインとNICEはいずれも、あらゆる換算が個別化され、処方医が扱うべきであると強調しています。
+<figure><img src="../../assets/benzodiazepine-symptom-response-pathway.svg" alt="benzodiazepine 漸減時の症状対応経路" loading="lazy"/><figcaption><strong>スケジュールは出発点となる枠組みにすぎません。</strong>現行ガイドラインは、次の予定日を強制するのではなく、各反応に応じて調整することを重視しています。</figcaption></figure>
 
-## ベンゾジアゼピンの減薬にはどのくらいかかりますか？
+## Ashton から今も役立つこと
 
-数週間ではなく数か月です。これは、アシュトンのアプローチが急いだ処方から最も頻繁に分かれる唯一の点です。
+- 突然の中止が危険になり得るという認識。
+- 患者が報告する症状と、直線的ではない経過を尊重します。
+- 減薬の終盤では減量幅を小さくする。
+- 短い半減期の薬と濃度変動に注意します。
+- 正式なガイダンスが乏しかった時期に、患者が漸減について話し合う助けとなった実用的な例。
 
-- NICEのガイダンス（NG215, 2022）は、離脱が「3〜12か月以上かかることがある」と述べ、およそ1〜2週間ごとに5〜10%の減量（または2週間ごとに用量の約8分の1）を用い、低用量ではさらに減速し、症状に合わせて調整するとしています。
-- 2025年のASAMガイドラインは、一般的に**5〜10%の減量**から始め、2〜4週間ごとの間隔で行い、その後、個人が耐えられる範囲にペースを調整することを推奨しています。また、より速い減薬（2〜4週間ごとに約25%）でうまくいく人もいれば、はるかにゆっくり進める必要がある人もいると指摘しています。
-- アシュトンマニュアル自身のスケジュールも、しばしば数か月にわたり、硬直した処方ではなく、適応させるべきテンプレートとして明示的に提示されています。
+## 現代的な限定が必要な点
 
-長い時間軸の理由は、意志力の問題ではなく生物学的なものです。ミリグラムで見ると小さく見える減量が、減薬の終わり近くでは受容体への効果という点で大きくなりうるのです——これがハイパーボリック減薬の根拠であり——だからこそ最後の区間は通常、最も遅くしなければなりません。
+Diazepam の換算値は推定であり、正確な生物学的等価量ではありません。高齢、肝疾患、相互作用、妊娠、発作の適応、呼吸器疾患、opioid 併用、過去の重度離脱はリスクを変えます。clonazepam または別の benzodiazepine から直接漸減できる人もいますが、置換自体が困難または禁忌の場合があります。[1,2]
 
-## なぜベンゾジアゼピンを急にやめるのは危険なのですか？
+## 症状が現れたときの対応
 
-これは急な中止が医学的に危険となりうる唯一のクラスであり、はっきりと述べる価値があります：**定期的な使用の後にベンゾジアゼピンを急にやめないでください。** アルコールやバルビツール酸系と並んで、ベンゾジアゼピンはGABA系に作用し、身体依存の後に急に取り除くと、脳を危険なほど過剰に興奮した状態に置きます。
+一律に「我慢して乗り切る」という指示は ASAM または NICE と一致しません。漸減に関連する重大な症状があれば、減速、休止、より小さい減量を支持します。NICE は新たな苦痛症状に対して前の用量に戻すことも認めています。ASAM は通常、自動的な増量への逆戻りを避けますが、限られた耐え難い症例では前の用量を認めます。このレビューで確認した現行ガイドラインに「前の用量から 5–10% を引く」との規定はありません。[1,2]
 
-アシュトンマニュアルは、急なまたは急速すぎる離脱、特に高用量からのものが、けいれん、精神病反応、急性不安状態、「そして死さえ」を含む「重度の症状を生じさせうる」と警告しています。2025年のASAMガイドラインはそれを臨床的な言葉で述べています：臨床医は、身体依存している可能性が高い患者においてベンゾジアゼピンを「急に中止することを避けるべきである」。けいれん発作のリスクは、高用量・長期使用、そして作用時間の短い薬剤で最も高くなります。これらは体外へ最も速く排出され、最も鋭い離脱の反跳を生じるためです。
+## 処方医への質問
 
-安心できる対比として、依存は嗜癖（アディクション）と同じではありません。ASAMガイドラインは、**ベンゾジアゼピンで治療された人のうち、ベンゾジアゼピン使用障害を発症するのは約1.5%にすぎない**と推定しています——身体依存と離脱は、処方どおりに正確に薬を服用している人にも起こりうるのです。だからこそ、計画され管理された減薬が重要なのです：予測可能な生理的過程を安全に扱えるからです。減量が速すぎて症状が悪化している場合は、[ホールドと再開](/ja/guides/hold-and-reinstate-guide/)を参照し、処方医に連絡してください。
+- この場合、直接漸減と長時間作用型への置換のどちらが安全ですか？
+- どの用量換算の不確実性が重要ですか？
+- 提案された割合は現在の用量を基準にしていますか？
+- 症状、睡眠、機能、発作リスクをどのように監視しますか？
+- 最初の減量に耐えられなかった場合の計画は何ですか？
 
-## ベンゾジアゼピンの離脱は抗うつ薬の離脱とどう違いますか？
+## よくある質問
 
-この二つは感じ方では重なりますが、危険性という点では鋭く異なります。抗うつ薬の離脱は一般的で、重度になることもあります——2019年の系統的レビュー（Davies & Read, *Addictive Behaviors*, 第97巻）は、**抗うつ薬をやめる人の56%が離脱症状を経験する**ことを見出しました。しかし、抗うつ薬の中止は、どれほど不快であっても（めまい、[ブレインザップ](/ja/guides/brain-zaps/)、気分の変動）、通常はけいれん発作と関連しません。
+### Ashton Manualは時代遅れですか？
 
-ベンゾジアゼピンの離脱は種類として異なります：本物のけいれん発作とせん妄のリスクを伴います。それが中核となる違いです。どちらもゆっくりとしたハイパーボリック減薬から恩恵を受けますが、ベンゾジアゼピンは、やめる際の*速度*が単なる快適さの問題ではなく医学的な緊急事態となりうるクラスなのです。
+いいえ。ただし普遍的な処方ではなく、現在のガイドラインと併読する歴史的に重要な臨床資料として読むべきです。
 
-| | 抗うつ薬（SSRI/SNRI） | ベンゾジアゼピン |
-|---|---|---|
-| 離脱は一般的か？ | はい（Davies & Read, 2019で約56%） | はい、定期的な使用の後 |
-| 急な中止でのけいれん発作リスク？ | 通常はない | はい——生命を脅かしうる |
-| 推奨される減薬 | ゆるやか、ハイパーボリック | ゆるやか、ハイパーボリック、管理下 |
-| 長くゆっくりした残存部分が必要か？ | しばしば | しばしば |
+### NICEは1–2週間ごとに5–10%の減量を推奨していますか？
 
-抗うつ薬側の詳細については、[抗うつ薬の離脱症状タイムライン](/ja/guides/antidepressant-withdrawal-timeline/)をご覧ください。
+いいえ。NICEは定性的で、症状への反応に応じた比例的な表現を用いており、その正確な公式を規定していません。
 
-## 服薬間離脱（interdose withdrawal）とは何で、なぜ起こるのですか？
+### 全員が diazepam に切り替える必要がありますか？
 
-服薬間離脱とは、作用時間の短いベンゾジアゼピンの服薬の*間*に、次の服薬の時刻が来る前に浮かび上がるミニ離脱です。アルプラゾラムやロラゼパムのような薬は速く排出されるため、血中濃度が日中に十分下がり、反跳性の不安、落ち着かなさ、次の錠剤のための時計とにらめっこを引き起こしうるのです——これらの症状は、もとの不安が戻ってきたものと取り違えられることがあります。
+いいえ。ASAMとNICEは、特定の状況で検討できるとしています。患者固有の禁忌と換算の不確実性が重要です。
 
-Maudsley減薬ガイドライン（Horowitz & Taylor, 2024）は、これを管理する二つの方法を述べています。一つは、1日量を2〜4回の小さな用量に分割して、濃度をより安定させ、服薬間の落ち込みを減らすことです。もう一つはアシュトンの戦略です：長時間作用型のジアゼパムに切り替えて、谷がそもそも症状を引き起こすほど深くならないようにすることです。服薬間離脱を、それが本当は何であるか——再発ではなく薬物動態上の落ち込み——として認識することが、計画全体を変えることがあります。[中止症状か再発か](/ja/guides/discontinuation-vs-relapse/)をご覧ください。
+### ゆっくり漸減すれば必ず無症状ですか？
 
-## 2025年のASAMガイドラインはアシュトンのアプローチをどのように更新しますか？
+いいえ。ゆっくり個別化した減量はリスクを下げ得ますが、症状が全く出ないことを保証できません。
 
-アシュトンマニュアルは1990年代の患者経験に由来するガイドです。**2025年のベンゾジアゼピン減薬に関する共同臨床実践ガイドライン**（Brunner et al., *Journal of General Internal Medicine*）はその現代的で、エビデンス格付けされた補完であり、米国嗜癖医学会（American Society of Addiction Medicine）が、家庭医療、内科、精神医学、神経学、老年医学、嗜癖医学、産科婦人科、精神科薬学、医療毒性学にまたがる10の専門学会とともに策定しました。
+## 製品固有で薬剤師が確認
 
-二つが一致する点：
 
-- **ゆるやかで個別化された減薬**が既定であり、身体依存している患者では急な中止を避けるべきである。
-- **症状主導のペース調整**——各減量にその人がどれだけ耐えられるかに速度を合わせること——が両者で明示されている。
+1. [Brunner E, et al. Joint Clinical Practice Guideline on Benzodiazepine Tapering: Considerations When Risks Outweigh Benefits. 2025.](https://pmc.ncbi.nlm.nih.gov/articles/PMC12463801/) **Evidence type:** Multisociety clinical practice guideline. **Use:** Initial pace, symptom-responsive adjustment, pausing, smaller reductions, and limited circumstances for returning to a previous dose.
+2. [NICE. Medicines associated with dependence or withdrawal symptoms: safe prescribing and withdrawal management for adults (NG215).](https://www.nice.org.uk/guidance/ng215/chapter/Recommendations) **Evidence type:** National guideline. **Use:** Slow stepwise proportional reduction; delay, smaller reduction, or previous dose when distressing symptoms occur.
+3. [U.S. Food and Drug Administration. Boxed Warning updated to improve safe use of benzodiazepines. 2020.](https://www.fda.gov/drugs/drug-safety-and-availability/fda-requiring-boxed-warning-updated-improve-safe-use-benzodiazepine-drug-class) **Evidence type:** Regulatory safety communication. **Use:** Physical dependence, withdrawal, overdose and co-use risks.
+4. [Horowitz MA, et al. Pharmacological principles for safe benzodiazepine and Z-drug dose reduction. 2026.](https://pmc.ncbi.nlm.nih.gov/articles/PMC13280687/) **Evidence type:** Pharmacological analysis and clinical proposal. **Use:** Proportional/hyperbolic rationale and formulation constraints; not treated as a definitive comparative trial.
 
-ASAMガイドラインが加えるもの：
+5. [Ashton CH. Benzodiazepines: How They Work and How to Withdraw. Revised 2002.](https://www.benzo.org.uk/manual/) **Evidence type:** Expert clinical manual. **Use:** Historical method and patient-centered observations; not treated as an evidence-graded guideline.
 
-- 具体的な開始速度：一般的に**5〜10%の減量**を、2〜4週間ごとの間隔で。
-- 臨床医が**ベンゾジアゼピンの継続使用のリスクと利益を少なくとも3か月ごとに再評価する**という推奨。
-- 減薬中のCBTや不眠に対するCBTといった補助療法への支持、そして全体を通じた共同意思決定。
-
-NICE NG215やMaudsleyガイドラインと合わせて、これらは臨床医に、Ashtonのもともとの洞察——ゆっくり患者主導が勝つ——を置き換えるのではなく反響させる、最新で引用可能な枠組みを与えます。
-
-## どんな症状を予想すべきで、どのくらい続きますか？
-
-一般的なベンゾジアゼピンの離脱症状には、睡眠障害、不安といらだちの高まり、手の震え、発汗、集中困難、吐き気、動悸、頭痛、筋肉痛やこわばり、そして光や音への過敏さといった知覚の変化が含まれます。高用量では、より深刻な事象——けいれん発作や精神病反応——が起こりうるようになり、だからこそ管理が重要なのです。
-
-急性症状のほとんどは各減量の後の数週間で和らぎますが、少数の人は**数か月、ときにはそれ以上続く遷延性の症状**を経験します——2025年のASAMガイドラインが明示的に認めているパターンです。回復はしばしば[ウィンドウとウェーブ](/ja/guides/windows-and-waves-recovery/)の形で訪れます：良い時期が急な悪化に中断されながら、徐々に安定へと向かっていきます。睡眠はしばしば最後に落ち着くものです。[離脱中の睡眠](/ja/guides/sleep-during-withdrawal/)をご覧ください。あなたのベンゾジアゼピンが不眠のために処方されていた場合、関連する睡眠薬のクラスには独自の考慮事項があります。[Z薬の依存の軽減](/ja/guides/z-drugs-dependence-reduction/)をご覧ください。
-
-シンプルな毎日の記録——用量、症状、睡眠、気分——をつけることで、混乱した経験が、あなたと処方医が行動に移せるデータに変わります。RxDownはまさにこのために作られたプライベートな離脱日記です：減薬の各ステップを記録し、症状を時間とともにグラフ化し、減量を計画するための[減薬計算ツール](/ja/calculator/)を備え、診察に持参する医師向けレポートを生成できます。それは臨床医との会話を支えるものであり、それに取って代わるものではありません。その会話を始める助けとしては、[減薬について医師と話す](/ja/guides/talking-to-your-doctor-deprescribing/)を参照し、よくある質問は[FAQ](/ja/faq/)でご覧ください。
-
-## Sources
-
-1. [Ashton CH, Benzodiazepines: How They Work and How to Withdraw (The Ashton Manual) (2002)](https://www.benzo.org.uk/manual/)
-2. [Brunner E et al., Joint Clinical Practice Guideline on Benzodiazepine Tapering, Journal of General Internal Medicine (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12463801/)
-3. [American Society of Addiction Medicine, Benzodiazepine Tapering Clinical Practice Guideline (2025)](https://www.asam.org/quality-care/clinical-guidelines/benzodiazepine-tapering)
-4. [NICE, Medicines associated with dependence or withdrawal symptoms (NG215) (2022)](https://www.nice.org.uk/guidance/ng215)
-5. [Horowitz M & Taylor D, The Maudsley Deprescribing Guidelines (Wiley-Blackwell, 2024)](https://bjgp.org/content/74/745/369)
-6. [Davies J & Read J, A systematic review into the incidence, severity and duration of antidepressant withdrawal effects, Addictive Behaviors (2019)](https://pubmed.ncbi.nlm.nih.gov/30292574/)
-7. [Chrystal Heather Ashton, obituary, The Lancet (2019)](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)33150-2/fulltext)
-8. [ASAM, Pharmacokinetic Properties of Benzodiazepines (2025)](https://downloads.asam.org/sitefinity-production-blobs/docs/default-source/guidelines/benzodiazepine-tapering-2025/pharmacokinetic-properties-of-benzodiazepines.pdf)
+<!-- Preserve canonical URL: /ja/guides/benzodiazepine-tapering-ashton/ . Correct the NICE attribution in every locale. -->

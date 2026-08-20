@@ -1,70 +1,14 @@
 ---
-import Base from '../../../layouts/Base.astro';
-import { breadcrumbLd } from '../../../i18n/jsonld.js';
-import { LOCALES, LOCALE_CODES, NON_DEFAULT_LOCALES } from '../../../i18n/locales.js';
-import { GUIDES_UI } from '../../../i18n/guides-ui.js';
-import { guidesForLocale, guidePath, guidesIndexPath } from '../../../i18n/guides.js';
-import { getCollection } from 'astro:content';
+import GuideDirectory from '../../../components/GuideDirectory.astro';
+import { NON_DEFAULT_LOCALES } from '../../../i18n/locales.js';
+import { guidesForLocale } from '../../../i18n/guides.js';
 
 export async function getStaticPaths() {
   return NON_DEFAULT_LOCALES.map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;
-const gt = GUIDES_UI[lang];
-
-const guides = (await guidesForLocale(lang)).sort((a, b) =>
-  a.entry.data.title.localeCompare(b.entry.data.title, lang)
-);
-
-const all = await getCollection('guides');
-const localesWithGuides = LOCALE_CODES.filter((l) =>
-  all.some((g) => (l === 'en' ? !g.id.includes('/') : g.id.startsWith(`${l}/`)))
-);
-const alternates = localesWithGuides.map((l) => ({
-  hreflang: LOCALES[l].hreflang,
-  href: guidesIndexPath(l),
-}));
-
-const fmt = (d) =>
-  d.toLocaleDateString(LOCALES[lang].hreflang, { year: 'numeric', month: 'short', day: 'numeric' });
+const guides = await guidesForLocale(lang);
 ---
 
-<Base
-  locale={lang}
-  page="guides"
-  path="/guides/"
-  customAlternates={alternates}
-  titleOverride={gt.metaTitle}
-  descriptionOverride={gt.metaDescription}
-  jsonLd={[breadcrumbLd(lang, guidesIndexPath(lang), gt.crumb)]}
->
-  <section class="section">
-    <div class="wrap">
-      <span class="eyebrow">{gt.eyebrow}</span>
-      <h1>{gt.heading}</h1>
-      <p class="lede" style="max-width:52rem">{gt.lede}</p>
-      <div class="guide-grid">
-        {guides.map(({ entry, slug }) => (
-          <a class="guide-card" href={guidePath(lang, slug)}>
-            <img
-              class="guide-card-img"
-              src={`/guides/${slug}.png`}
-              width="1200"
-              height="630"
-              loading="lazy"
-              decoding="async"
-              alt={`${gt.diagramAlt}: ${entry.data.title}`}
-            />
-            <h3>{entry.data.title}</h3>
-            <p>{entry.data.description}</p>
-            <div class="guide-meta">
-              <span>{fmt(entry.data.updatedDate ?? entry.data.pubDate)}</span>
-              <span class="guide-tags">{entry.data.tags.slice(0, 3).join(' · ')}</span>
-            </div>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-</Base>
+<GuideDirectory locale={lang} guides={guides} />

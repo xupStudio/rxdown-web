@@ -1,5 +1,5 @@
 ---
-title: '**Contexto farmacocinético:** A semivida média de eliminação é de cerca de 11 hours, com variabilidade substancial. As médias farmacocinéticas descrevem grupos, não uma contagem decrescente individual. Idade, função hepática ou renal, metabolismo genético, medicamentos com interação, adesão e formulação podem alterar a exposição.'
+title: 'CBT-I vs. higiene do sono: por que os conselhos, por si só, não são o mesmo tratamento'
 slug: cbt-i-vs-sleep-hygiene-why-advice-alone-is-not-the-same-treatment
 description: Uma comparação clara entre a terapia cognitivo-comportamental para a insónia e a higiene do sono, incluindo componentes ativos, evidência, segurança e quando os conselhos, por si só, são insuficientes.
 primary_keyword: CBT-I versus higiene do sono
@@ -50,7 +50,7 @@ translation_review_note: Antes da publicação, é obrigatória a revisão por p
 localized_keywords_status: translated-not-local-search-volume-validated
 publication_status: clinical-review-required
 ---
-# **Contexto farmacocinético:** A semivida média de eliminação é de cerca de 11 hours, com variabilidade substancial. As médias farmacocinéticas descrevem grupos, não uma contagem decrescente individual. Idade, função hepática ou renal, metabolismo genético, medicamentos com interação, adesão e formulação podem alterar a exposição.
+# CBT-I vs. higiene do sono: por que os conselhos, por si só, não são o mesmo tratamento
 
 > **Estado editorial:** rascunho educativo baseado na evidência. Não diagnostica insónia nem substitui uma avaliação individualizada. Sonolência ao conduzir, suspeita de apneia do sono, mania ou hipomania, convulsões, depressão grave ou risco imediato de autoagressão exigem avaliação clínica, não um programa de sono autodirigido.
 

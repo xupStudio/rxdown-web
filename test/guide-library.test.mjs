@@ -31,6 +31,18 @@ const expectedHubCounts = {
   'Research & Emerging Evidence': 31,
 };
 
+const cbtIComparisonTitles = {
+  en: 'CBT-I vs Sleep Hygiene: Why Advice Alone Is Not the Same Treatment',
+  zh: 'CBT-I 與睡眠衛生：為什麼只有建議不等於治療',
+  ja: 'CBT-Iと睡眠衛生：助言だけでは同じ治療にならない理由',
+  ko: 'CBT-I와 수면 위생: 조언만으로는 같은 치료가 아닌 이유',
+  de: 'CBT-I vs. Schlafhygiene: Warum Ratschläge allein nicht dieselbe Behandlung sind',
+  es: 'CBT-I frente a higiene del sueño: por qué los consejos por sí solos no equivalen al mismo tratamiento',
+  fr: 'CBT-I et hygiène du sommeil : pourquoi de simples conseils ne constituent pas le même traitement',
+  id: 'CBT-I vs higiene tidur: mengapa saran saja bukanlah pengobatan yang sama',
+  pt: 'CBT-I vs. higiene do sono: por que os conselhos, por si só, não são o mesmo tratamento',
+};
+
 function markdownFiles(dir) {
   return readdirSync(dir, { withFileTypes: true })
     .filter((entry) => entry.isFile() && entry.name.endsWith('.md'))
@@ -104,6 +116,32 @@ test('localized imports retain source hashes and mandatory publication review st
         `${locale}/${basename(file)}`
       );
     }
+  }
+});
+
+test('guide card metadata stays plain text in every locale', () => {
+  const markdownSyntax = /\*\*|__|`|\[[^\]]+\]\([^)]+\)|<\/?[a-z][^>]*>/i;
+  for (const [locale, pathLocale] of locales) {
+    for (const file of filesForLocale(pathLocale)) {
+      const source = readFileSync(file, 'utf8');
+      assert.doesNotMatch(scalar(source, 'title') ?? '', markdownSyntax, `${locale}/${basename(file)} title`);
+      assert.doesNotMatch(
+        scalar(source, 'description') ?? '',
+        markdownSyntax,
+        `${locale}/${basename(file)} description`
+      );
+    }
+  }
+});
+
+test('the CBT-I comparison keeps its intended localized topic in metadata and the article heading', () => {
+  const slug = 'cbt-i-vs-sleep-hygiene-why-advice-alone-is-not-the-same-treatment.md';
+  for (const [locale, pathLocale] of locales) {
+    const file = join(contentRoot, pathLocale, slug);
+    const source = readFileSync(file, 'utf8');
+    const heading = source.match(/^#\s+(.+)$/m)?.[1];
+    assert.equal(scalar(source, 'title'), cbtIComparisonTitles[locale], `${locale} metadata title`);
+    assert.equal(heading, cbtIComparisonTitles[locale], `${locale} article heading`);
   }
 });
 

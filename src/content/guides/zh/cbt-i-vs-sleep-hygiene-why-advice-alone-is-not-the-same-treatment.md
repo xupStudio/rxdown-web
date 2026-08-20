@@ -1,5 +1,5 @@
 ---
-title: '**藥物動力學脈絡：** 平均排除半衰期約為 11 hours，但個體差異很大。藥物動力學平均值描述的是群體，不是個人的倒數計時。年齡、肝腎功能、遺傳代謝、交互作用藥物、服藥遵從與劑型都可能改變藥物暴露。'
+title: 'CBT-I 與睡眠衛生：為什麼只有建議不等於治療'
 slug: cbt-i-vs-sleep-hygiene-why-advice-alone-is-not-the-same-treatment
 description: 清楚比較失眠認知行為治療與睡眠衛生，包括主動治療要素、證據、安全性，以及何時只有建議並不足夠。
 primary_keyword: CBT-I 與睡眠衛生的比較
@@ -50,7 +50,7 @@ translation_review_note: 正式發布前，必須由該語言的臨床專業人�
 localized_keywords_status: translated-not-local-search-volume-validated
 publication_status: clinical-review-required
 ---
-# **藥物動力學脈絡：** 平均排除半衰期約為 11 hours，但個體差異很大。藥物動力學平均值描述的是群體，不是個人的倒數計時。年齡、肝腎功能、遺傳代謝、交互作用藥物、服藥遵從與劑型都可能改變藥物暴露。
+# CBT-I 與睡眠衛生：為什麼只有建議不等於治療
 
 > **編輯狀態：**以證據為基礎的教育草稿。本文不診斷失眠，也不能取代個別評估。駕駛時嗜睡、疑似睡眠呼吸中止症、躁症或輕躁症、癲癇發作、嚴重憂鬱或立即自傷風險，都需要臨床評估，而不是自行進行睡眠方案。
 

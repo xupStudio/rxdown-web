@@ -1,5 +1,5 @@
 ---
-title: '**약동학적 맥락:** 평균 제거 반감기는 약 11 hours이지만 변이가 큽니다. 약동학 평균은 집단을 설명할 뿐 개인의 카운트다운이 아닙니다. 연령, 간 또는 신장 기능, 유전적 대사, 상호작용 약물, 복약 순응, 제형이 노출을 바꿀 수 있습니다.'
+title: 'CBT-I와 수면 위생: 조언만으로는 같은 치료가 아닌 이유'
 slug: cbt-i-vs-sleep-hygiene-why-advice-alone-is-not-the-same-treatment
 description: 불면증 인지행동치료와 수면 위생을 능동적 구성 요소, 근거, 안전성, 조언만으로 충분하지 않은 경우까지 포함해 명확히 비교합니다.
 primary_keyword: CBT-I와 수면위생 비교
@@ -50,7 +50,7 @@ translation_review_note: 게시 전 해당 언어의 임상 전문가와 약사�
 localized_keywords_status: translated-not-local-search-volume-validated
 publication_status: clinical-review-required
 ---
-# **약동학적 맥락:** 평균 제거 반감기는 약 11 hours이지만 변이가 큽니다. 약동학 평균은 집단을 설명할 뿐 개인의 카운트다운이 아닙니다. 연령, 간 또는 신장 기능, 유전적 대사, 상호작용 약물, 복약 순응, 제형이 노출을 바꿀 수 있습니다.
+# CBT-I와 수면 위생: 조언만으로는 같은 치료가 아닌 이유
 
 > **편집 상태:** 근거 기반 교육 초안입니다. 불면을 진단하거나 개별 평가를 대신하지 않습니다. 운전 중 졸림, 의심되는 수면무호흡증, 조증이나 경조증, 발작, 심한 우울증 또는 즉각적인 자해 위험은 자가 수면 프로그램이 아니라 임상 평가가 필요합니다.
 

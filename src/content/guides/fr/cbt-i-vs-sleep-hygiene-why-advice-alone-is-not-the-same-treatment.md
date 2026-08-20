@@ -1,5 +1,5 @@
 ---
-title: '**Contexte pharmacocinétique :** La demi-vie moyenne d’élimination est d’environ 11 hours, avec une variabilité importante. Les moyennes pharmacocinétiques décrivent des groupes, pas un compte à rebours individuel. L’âge, la fonction hépatique ou rénale, le métabolisme génétique, les médicaments en interaction, l’adhésion et la formulation peuvent modifier l’exposition.'
+title: 'CBT-I et hygiène du sommeil : pourquoi de simples conseils ne constituent pas le même traitement'
 slug: cbt-i-vs-sleep-hygiene-why-advice-alone-is-not-the-same-treatment
 description: Une comparaison claire entre la thérapie cognitivo-comportementale de l’insomnie et l’hygiène du sommeil, notamment les composantes actives, les données probantes, la sécurité et les situations où de simples conseils ne suffisent pas.
 primary_keyword: CBT-I comparée à l’hygiène du sommeil
@@ -50,7 +50,7 @@ translation_review_note: Avant publication, une relecture par des professionnels
 localized_keywords_status: translated-not-local-search-volume-validated
 publication_status: clinical-review-required
 ---
-# **Contexte pharmacocinétique :** La demi-vie moyenne d’élimination est d’environ 11 hours, avec une variabilité importante. Les moyennes pharmacocinétiques décrivent des groupes, pas un compte à rebours individuel. L’âge, la fonction hépatique ou rénale, le métabolisme génétique, les médicaments en interaction, l’adhésion et la formulation peuvent modifier l’exposition.
+# CBT-I et hygiène du sommeil : pourquoi de simples conseils ne constituent pas le même traitement
 
 > **Statut éditorial :** projet éducatif fondé sur les données probantes. Il ne diagnostique pas l’insomnie et ne remplace pas une évaluation individualisée. La somnolence au volant, une suspicion d’apnée du sommeil, une manie ou hypomanie, des crises convulsives, une dépression sévère ou un risque immédiat d’automutilation nécessitent une évaluation clinique plutôt qu’un programme de sommeil autonome.
 

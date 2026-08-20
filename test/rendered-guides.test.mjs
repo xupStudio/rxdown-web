@@ -35,6 +35,8 @@ test('every localized directory renders all categories, cards, and accessible se
     assert.equal((html.match(/<a[^>]+data-guide-hub-link(?:\s|>)/g) ?? []).length, 9, `${locale} category links`);
     assert.equal((html.match(/data-guide-card(?:\s|>)/g) ?? []).length, 121, `${locale} guide cards`);
     assert.match(html, /<input[^>]+type="search"/);
+    const hero = html.match(/<header class="guide-library-hero">([\s\S]*?)<\/header>/)?.[1] ?? '';
+    assert.match(hero, /class="guide-search"/, `${locale} search belongs in the top hero area`);
   }
 });
 

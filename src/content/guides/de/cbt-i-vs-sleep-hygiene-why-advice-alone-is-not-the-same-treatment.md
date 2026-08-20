@@ -1,5 +1,5 @@
 ---
-title: '**Pharmakokinetischer Kontext:** Die mittlere Eliminationshalbwertszeit beträgt etwa 11 hours und variiert erheblich. Pharmakokinetische Mittelwerte beschreiben Gruppen, keinen persönlichen Countdown. Alter, Leber- oder Nierenfunktion, genetischer Stoffwechsel, interagierende Arzneimittel, Adhärenz und Darreichungsform können die Exposition verändern.'
+title: 'CBT-I vs. Schlafhygiene: Warum Ratschläge allein nicht dieselbe Behandlung sind'
 slug: cbt-i-vs-sleep-hygiene-why-advice-alone-is-not-the-same-treatment
 description: Ein klarer Vergleich der kognitiven Verhaltenstherapie bei Insomnie mit Schlafhygiene, einschließlich aktiver Bestandteile, Evidenz, Sicherheit und der Frage, wann Ratschläge allein nicht ausreichen.
 primary_keyword: CBT-I im Vergleich zu Schlafhygiene
@@ -50,7 +50,7 @@ translation_review_note: Vor der Veröffentlichung ist eine Prüfung durch mutte
 localized_keywords_status: translated-not-local-search-volume-validated
 publication_status: clinical-review-required
 ---
-# **Pharmakokinetischer Kontext:** Die mittlere Eliminationshalbwertszeit beträgt etwa 11 hours und variiert erheblich. Pharmakokinetische Mittelwerte beschreiben Gruppen, keinen persönlichen Countdown. Alter, Leber- oder Nierenfunktion, genetischer Stoffwechsel, interagierende Arzneimittel, Adhärenz und Darreichungsform können die Exposition verändern.
+# CBT-I vs. Schlafhygiene: Warum Ratschläge allein nicht dieselbe Behandlung sind
 
 > **Redaktioneller Status:** Evidenzbasierter Bildungsentwurf. Er diagnostiziert keine Insomnie und ersetzt keine individuelle Beurteilung. Schläfrigkeit beim Fahren, Verdacht auf Schlafapnoe, Manie oder Hypomanie, Krampfanfälle, schwere Depression oder unmittelbare Selbstgefährdung erfordern eine klinische Beurteilung statt eines selbstgesteuerten Schlafprogramms.
 

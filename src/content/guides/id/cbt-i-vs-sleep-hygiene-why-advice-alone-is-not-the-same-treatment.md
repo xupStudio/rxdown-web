@@ -1,5 +1,5 @@
 ---
-title: '**Konteks farmakokinetik:** Waktu paruh eliminasi rata-rata sekitar 11 hours, dengan variasi yang besar. Rata-rata farmakokinetik menggambarkan kelompok, bukan hitung mundur pribadi. Usia, fungsi hati atau ginjal, metabolisme genetik, obat yang berinteraksi, kepatuhan, dan formulasi dapat mengubah paparan.'
+title: 'CBT-I vs higiene tidur: mengapa saran saja bukanlah pengobatan yang sama'
 slug: cbt-i-vs-sleep-hygiene-why-advice-alone-is-not-the-same-treatment
 description: Perbandingan yang jelas antara terapi perilaku kognitif untuk insomnia dan higiene tidur, termasuk komponen aktif, bukti, keamanan, serta kapan saran saja tidak memadai.
 primary_keyword: CBT-I dibandingkan dengan kebersihan tidur
@@ -50,7 +50,7 @@ translation_review_note: Sebelum diterbitkan, diperlukan tinjauan oleh tenaga kl
 localized_keywords_status: translated-not-local-search-volume-validated
 publication_status: clinical-review-required
 ---
-# **Konteks farmakokinetik:** Waktu paruh eliminasi rata-rata sekitar 11 hours, dengan variasi yang besar. Rata-rata farmakokinetik menggambarkan kelompok, bukan hitung mundur pribadi. Usia, fungsi hati atau ginjal, metabolisme genetik, obat yang berinteraksi, kepatuhan, dan formulasi dapat mengubah paparan.
+# CBT-I vs higiene tidur: mengapa saran saja bukanlah pengobatan yang sama
 
 > **Status editorial:** draf edukasi berbasis bukti. Artikel ini tidak mendiagnosis insomnia atau menggantikan penilaian individual. Kantuk saat mengemudi, dugaan apnea tidur, mania atau hipomania, kejang, depresi berat, atau risiko langsung menyakiti diri memerlukan penilaian klinis, bukan program tidur mandiri.
 

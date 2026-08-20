@@ -674,28 +674,25 @@ a:hover { color: var(--mint-bright); }
 
 /* ---------- guides ---------- */
 .guide-library {
-  padding-top: clamp(2.8rem, 6vw, 5rem);
+  padding-top: clamp(2.2rem, 4vw, 3.5rem);
   background:
     radial-gradient(circle at 88% 4%, color-mix(in srgb, var(--amber-wash) 68%, transparent) 0, transparent 25rem),
     linear-gradient(180deg, color-mix(in srgb, var(--mint-wash) 38%, transparent), transparent 34rem);
 }
-.guide-library-hero { max-width: 56rem; }
-.guide-library-hero .lede { max-width: 52rem; color: var(--ink-soft); }
-.guide-finder {
+.guide-library-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
-  gap: 1.5rem;
-  align-items: start;
-  margin-top: clamp(2rem, 5vw, 3.4rem);
+  grid-template-columns: minmax(0, 1.55fr) minmax(18rem, 0.85fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: end;
 }
-.guide-search,
-.guide-hub-nav {
-  background: color-mix(in srgb, var(--paper-raise) 92%, transparent);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-soft);
-  padding: 1.25rem;
+.guide-library-intro h1 {
+  max-width: 14ch;
+  margin-bottom: 0.32em;
+  font-size: clamp(2.25rem, 4.8vw, 3.45rem);
 }
+.guide-library-hero .eyebrow { margin-bottom: 0.6rem; }
+.guide-library-hero .lede { max-width: 46rem; margin-bottom: 0; color: var(--ink-soft); }
+.guide-search { min-width: 0; }
 .guide-search > label,
 .guide-hub-nav h2 {
   display: block;
@@ -743,47 +740,67 @@ a:hover { color: var(--mint-bright); }
 }
 .guide-result-count {
   display: block;
-  margin-top: 0.55rem;
+  margin-top: 0.4rem;
   font-size: 0.88rem;
   color: var(--ink-faint);
 }
-.guide-hub-nav > div {
+.guide-hub-nav {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.8rem 1.1rem;
+  align-items: start;
+  margin-top: clamp(1.4rem, 3vw, 2rem);
+  padding-block: 0.85rem;
+  border-block: 1px solid var(--line);
+}
+.guide-hub-nav h2 {
+  margin: 0.48rem 0 0;
+  white-space: nowrap;
+}
+.guide-hub-nav > div {
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.45rem;
 }
 .guide-hub-nav a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.7rem;
-  min-width: 0;
-  border-radius: 10px;
-  padding: 0.48rem 0.58rem;
+  gap: 0.5rem;
+  min-height: 2.35rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.38rem 0.45rem 0.38rem 0.75rem;
+  background: color-mix(in srgb, var(--paper-raise) 82%, transparent);
   color: var(--ink-soft);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.86rem;
+  font-weight: 650;
   line-height: 1.25;
 }
-.guide-hub-nav a:hover { color: var(--mint); background: var(--mint-wash); }
+.guide-hub-nav a:hover {
+  border-color: color-mix(in srgb, var(--mint) 55%, var(--line));
+  color: var(--mint);
+  background: var(--mint-wash);
+}
 .guide-hub-nav a strong {
   flex: 0 0 auto;
   display: grid;
   place-items: center;
-  min-width: 1.7rem;
-  height: 1.7rem;
+  min-width: 1.55rem;
+  height: 1.55rem;
   border-radius: 999px;
   background: var(--paper-deep);
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   color: var(--ink-faint);
 }
 .guide-no-results { margin-top: 2rem; }
-.guide-hub-sections { margin-top: clamp(3rem, 7vw, 5rem); }
+.guide-hub-sections { margin-top: clamp(0.8rem, 2vw, 1.4rem); }
 .guide-hub-section {
   scroll-margin-top: 6rem;
-  padding-block: clamp(2rem, 5vw, 3.8rem);
+  padding-block: clamp(1.5rem, 4vw, 3rem);
   border-top: 1px solid var(--line);
 }
+.guide-hub-section:first-child { border-top: 0; }
 .guide-hub-section[hidden], .guide-card[hidden] { display: none; }
 .guide-hub-section > header {
   display: flex;
@@ -1053,8 +1070,17 @@ a:hover { color: var(--mint-bright); }
 }
 
 @media (max-width: 760px) {
-  .guide-finder { grid-template-columns: 1fr; }
-  .guide-hub-nav > div { grid-template-columns: 1fr; }
+  .guide-library-hero { grid-template-columns: 1fr; gap: 1.25rem; }
+  .guide-library-intro h1 { max-width: 16ch; }
+  .guide-hub-nav { grid-template-columns: 1fr; gap: 0.55rem; }
+  .guide-hub-nav h2 { margin-top: 0; }
+  .guide-hub-nav > div {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    scrollbar-width: thin;
+  }
+  .guide-hub-nav a { flex: 0 0 auto; }
   .guide-related-grid { grid-template-columns: 1fr; }
   .guide-app-promo { grid-template-columns: 1fr; }
   .guide-app-visual { min-height: 230px; }

@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "test": "node --test test/guide-catalog.test.mjs test/guide-importer.test.mjs test/guide-library.test.mjs test/site-icons.test.mjs",
+    "test": "node --test test/guide-catalog.test.mjs test/guide-importer.test.mjs test/guide-library.test.mjs test/rehype-clean-guide-editorial-copy.test.mjs test/site-icons.test.mjs",
     "test:content": "node --test test/guide-catalog.test.mjs test/guide-importer.test.mjs test/guide-library.test.mjs",
     "test:rendered": "node --test test/rendered-guides.test.mjs test/localized-shots.test.mjs"
   },

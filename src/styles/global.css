@@ -895,7 +895,12 @@ a:hover { color: var(--mint-bright); }
 }
 .guide-byline { margin-top: -0.4rem; margin-bottom: 1.4rem; }
 .guide-evidence-date { margin-top: 0; margin-bottom: 1.2rem; }
-.guide-disclaimer { margin-top: 0; }
+.guide-disclaimer {
+  margin: 0 0 1.1rem;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.87rem;
+  line-height: 1.5;
+}
 .guide-body > :first-child { margin-top: 0; }
 .guide-imported .guide-body > h1:first-child {
   font-size: clamp(2rem, 4.5vw, 2.9rem);

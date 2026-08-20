@@ -99,9 +99,10 @@ if (d.faq?.length) jsonLd.splice(1, 0, faqLd(d.faq));
       </p>
     )}
 
+    <div class="callout guide-disclaimer" data-guide-safety-note><p>⚕️ {gt.disclaimer}</p></div>
+
     {!imported && (
       <>
-        <div class="callout guide-disclaimer"><p>⚕️ {gt.disclaimer}</p></div>
         <img
           class="guide-hero"
           src={heroImage}

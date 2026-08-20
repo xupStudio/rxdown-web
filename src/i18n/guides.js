@@ -1,5 +1,4 @@
 import { getCollection } from 'astro:content';
-import { isPublishedGuideData } from '../lib/guide-publication.js';
 import { LOCALE_CODES } from './locales.js';
 
 /** Guide markdown ids encode locale by directory:
@@ -24,16 +23,11 @@ export function guidesIndexPath(locale) {
   return locale === 'en' ? '/guides/' : `/${locale}/guides/`;
 }
 
-/** Clinical-review drafts remain in the repository but never receive public routes. */
-export function isPublishedGuide(guide) {
-  return isPublishedGuideData(guide.data);
-}
-
 /** All guide entries for one locale, id normalised so callers see clean slugs. */
 export async function guidesForLocale(locale) {
   const all = await getCollection('guides');
   return all
-    .filter((g) => isPublishedGuide(g) && guideLocale(g.id) === locale)
+    .filter((g) => guideLocale(g.id) === locale)
     .map((g) => ({ entry: g, slug: guideSlug(g.id) }));
 }
 
@@ -41,9 +35,7 @@ export async function guidesForLocale(locale) {
 export async function guideAlternates(slug) {
   const all = await getCollection('guides');
   const present = new Set(
-    all
-      .filter((g) => isPublishedGuide(g) && guideSlug(g.id) === slug)
-      .map((g) => guideLocale(g.id))
+    all.filter((g) => guideSlug(g.id) === slug).map((g) => guideLocale(g.id))
   );
   return LOCALE_CODES.filter((l) => present.has(l)).map((l) => ({
     locale: l,

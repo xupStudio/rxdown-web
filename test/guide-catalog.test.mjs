@@ -9,7 +9,6 @@ import {
   guideSort,
 } from '../src/lib/guide-catalog.js';
 import { GUIDE_DIRECTORY_UI, guideHubLabel } from '../src/i18n/guide-directory.js';
-import { isPublishedGuideData } from '../src/lib/guide-publication.js';
 
 const legacyHubCases = {
   'antidepressant-withdrawal-timeline': 'Antidepressants',
@@ -29,19 +28,6 @@ const legacyHubCases = {
 function guide(slug, data = {}) {
   return { slug, entry: { data: { title: slug, description: slug, ...data } } };
 }
-
-test('guide publication requires either legacy metadata or an explicit published status', () => {
-  assert.equal(isPublishedGuideData({}), true);
-  assert.equal(isPublishedGuideData({ review_status: 'editorial draft' }), false);
-  assert.equal(isPublishedGuideData({ publication_status: 'clinical-review-required' }), false);
-  assert.equal(
-    isPublishedGuideData({
-      review_status: 'editorial draft',
-      publication_status: 'published',
-    }),
-    true
-  );
-});
 
 test('all retained legacy URLs receive the approved editorial hub', () => {
   for (const [slug, expected] of Object.entries(legacyHubCases)) {

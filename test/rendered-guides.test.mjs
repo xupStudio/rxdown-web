@@ -2,47 +2,20 @@ import assert from 'node:assert/strict';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import test from 'node:test';
-import { isPublishedGuideData } from '../src/lib/guide-publication.js';
 
 const root = new URL('..', import.meta.url).pathname;
 const contentRoot = join(root, 'src/content/guides');
 const distRoot = join(root, 'dist');
 const locales = ['en', 'zh', 'ja', 'ko', 'de', 'es', 'fr', 'id', 'pt'];
+const hreflang = { en: 'en', zh: 'zh-Hant', ja: 'ja', ko: 'ko', de: 'de', es: 'es', fr: 'fr', id: 'id', pt: 'pt-PT' };
 const appStore = 'https://apps.apple.com/app/id6757333483';
 const playStore = 'https://play.google.com/store/apps/details?id=com.xupstudio.rxtaper';
 
-function frontmatterValue(source, key) {
-  const frontmatter = source.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/)?.[1] ?? '';
-  const value = frontmatter.match(new RegExp(`^${key}:\\s*(.+?)\\s*$`, 'm'))?.[1];
-  return value?.replace(/^['"]|['"]$/g, '');
-}
-
-function guideFiles(locale) {
+function slugs(locale) {
   const dir = locale === 'en' ? contentRoot : join(contentRoot, locale);
   return readdirSync(dir)
     .filter((name) => name.endsWith('.md'))
-    .map((name) => {
-      const source = readFileSync(join(dir, name), 'utf8');
-      return {
-        slug: name.slice(0, -3),
-        published: isPublishedGuideData({
-          review_status: frontmatterValue(source, 'review_status'),
-          publication_status: frontmatterValue(source, 'publication_status'),
-        }),
-      };
-    });
-}
-
-function slugs(locale) {
-  return guideFiles(locale)
-    .filter((guide) => guide.published)
-    .map((guide) => guide.slug);
-}
-
-function draftSlugs(locale) {
-  return guideFiles(locale)
-    .filter((guide) => !guide.published)
-    .map((guide) => guide.slug);
+    .map((name) => name.slice(0, -3));
 }
 
 function routePath(locale, slug = '') {
@@ -61,7 +34,7 @@ test('every localized directory renders all categories, cards, and accessible se
     const html = readFileSync(file, 'utf8');
     assert.match(html, /data-guide-directory/);
     assert.equal((html.match(/<a[^>]+data-guide-hub-link(?:\s|>)/g) ?? []).length, 9, `${locale} category links`);
-    assert.equal((html.match(/data-guide-card(?:\s|>)/g) ?? []).length, 12, `${locale} guide cards`);
+    assert.equal((html.match(/data-guide-card(?:\s|>)/g) ?? []).length, 121, `${locale} guide cards`);
     assert.match(html, /<input[^>]+type="search"/);
     const hero = html.match(/<header class="guide-library-hero">([\s\S]*?)<\/header>/)?.[1] ?? '';
     assert.match(hero, /class="guide-search"/, `${locale} search belongs in the top hero area`);
@@ -78,6 +51,11 @@ test('every guide renders one heading, a category, and the app promotion as its 
       const html = readFileSync(file, 'utf8');
       assert.equal((html.match(/<h1(?:\s|>)/g) ?? []).length, 1, `${locale}/${slug} h1`);
       assert.match(html, /data-guide-category/, `${locale}/${slug} category`);
+      assert.match(html, /data-guide-safety-note/, `${locale}/${slug} safety reminder`);
+      assert.ok(
+        html.indexOf('data-guide-safety-note') < html.indexOf('class="guide-body"'),
+        `${locale}/${slug} safety reminder must appear before article content`
+      );
       assert.match(html, /data-guide-app-promo/, `${locale}/${slug} app promo`);
       assert.match(html, new RegExp(`/shots/${locale}/report\\.webp`), `${locale}/${slug} app image`);
       assert.ok(html.includes(appStore), `${locale}/${slug} App Store link`);
@@ -97,33 +75,87 @@ test('every guide renders one heading, a category, and the app promotion as its 
       );
     }
   }
-  assert.equal(count, 108);
+  assert.equal(count, 1089);
 });
 
-test('clinical-review drafts do not render public guide routes', () => {
+test('a shared guide keeps its full language cluster and related reading', () => {
+  const slug = 'i-stopped-my-medication-and-feel-unwell-what-information-should-i-gather-now';
   for (const locale of locales) {
-    for (const slug of draftSlugs(locale)) {
+    const html = readFileSync(outputFile(routePath(locale, slug)), 'utf8');
+    for (const alternate of locales) {
       assert.ok(
-        !existsSync(outputFile(routePath(locale, slug))),
-        `${locale}/${slug} must stay unpublished until clinical review is complete`
+        html.includes(
+          `<link rel="alternate" hreflang="${hreflang[alternate]}" href="https://rxdown.app${routePath(alternate, slug)}">`
+        ),
+        `${locale}/${slug} ${alternate} alternate`
       );
+    }
+    assert.match(html, /data-guide-related/, `${locale}/${slug} related reading`);
+  }
+});
+
+test('rendered guide pages exclude internal editorial notices', () => {
+  const internalMarkers = [
+    /Editorial status:/i,
+    /Replacement draft for the existing RxDown URL/i,
+    /EDITORIAL IMPLEMENTATION NOTES/i,
+    /Suggested internal links:/i,
+    /Suggested URL:|Preserve canonical URL:|Search record:/i,
+    /Use in this draft:/i,
+    /This draft prioritizes/i,
+    /How it is used in this draft/i,
+    /before publication/i,
+    /Redaktioneller Status/i,
+    /Ersatzentwurf/i,
+    /Dieser Entwurf priorisiert/i,
+    /Verwendung in diesem Entwurf/i,
+    /vor der Veröffentlichung/i,
+    /Estado editorial/i,
+    /Borrador (?:de )?sustituci[oó]n/i,
+    /Este borrador prioriza/i,
+    /Uso en este borrador/i,
+    /antes de publicar/i,
+    /Statut éditorial/i,
+    /(?:Projet|Version) de remplacement/i,
+    /Ce projet(?: d’article)? privilégie/i,
+    /Utilisation dans ce projet/i,
+    /avant publication/i,
+    /Draf pengganti/i,
+    /Draf ini memprioritaskan/i,
+    /Cara digunakan dalam draf ini/i,
+    /sebelum publikasi/i,
+    /編集状況|編集ステータス|編集状態|差し替え原稿|置き換える草稿/,
+    /この草稿では|本草稿での使用方法|公開前/,
+    /편집 상태|기존 RxDown URL.*대체/,
+    /이 초안은|이 초안에서의 활용 방식|게시 전/,
+    /Rascunho de substituição/i,
+    /Este rascunho dá prioridade/i,
+    /Utilização neste rascunho/i,
+    /antes da publicação|antes de publicar/i,
+    /編輯狀態|(?:用於)?取代.*草稿|替換稿|請勿發布|本草稿優先|本草稿如何使用|發布前/,
+  ];
+
+  for (const locale of locales) {
+    for (const slug of slugs(locale)) {
+      const html = readFileSync(outputFile(routePath(locale, slug)), 'utf8');
+      for (const marker of internalMarkers) {
+        assert.doesNotMatch(html, marker, `${locale}/${slug} must not expose ${marker}`);
+      }
     }
   }
 });
 
-test('clinical-review drafts never reach generated crawl surfaces', () => {
-  const crawlableOutput = [
-    readFileSync(join(distRoot, 'llms-full.txt'), 'utf8'),
-    ...readdirSync(distRoot)
-      .filter((name) => /^sitemap.*\.xml$/.test(name))
-      .map((name) => readFileSync(join(distRoot, name), 'utf8')),
-  ].join('\n');
+test('every guide URL appears in the generated sitemap', () => {
+  const sitemap = readdirSync(distRoot)
+    .filter((name) => /^sitemap.*\.xml$/.test(name))
+    .map((name) => readFileSync(join(distRoot, name), 'utf8'))
+    .join('\n');
 
   for (const locale of locales) {
-    for (const slug of draftSlugs(locale)) {
+    for (const slug of slugs(locale)) {
       assert.ok(
-        !crawlableOutput.includes(`https://rxdown.app${routePath(locale, slug)}`),
-        `${locale}/${slug} must stay out of crawlable output until clinical review is complete`
+        sitemap.includes(`https://rxdown.app${routePath(locale, slug)}`),
+        `${locale}/${slug} must appear in the sitemap`
       );
     }
   }
@@ -145,12 +177,12 @@ test('guide pages do not emit broken root-relative links or image sources', () =
   }
 });
 
-test('the English AI-readable guide index contains only the 12 published English routes', () => {
+test('the English AI-readable guide index contains every English guide route', () => {
   const source = readFileSync(join(distRoot, 'llms-full.txt'), 'utf8');
   const guideLines = source
     .split('\n')
     .filter((line) => /^- \[.+\]\(https:\/\/rxdown\.app\/guides\/.+\/\)/.test(line));
-  assert.equal(guideLines.length, 12);
+  assert.equal(guideLines.length, 121);
   assert.ok(!/https:\/\/rxdown\.app\/guides\/(?:zh|ja|ko|de|es|fr|id|pt)\//.test(source));
-  assert.ok(!source.includes('I Stopped My Medication and Feel Unwell'));
+  assert.ok(source.includes('I Stopped My Medication and Feel Unwell'));
 });

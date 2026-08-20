@@ -5,14 +5,14 @@ import { GUIDE_DIRECTORY_UI, guideHubLabel } from '../i18n/guide-directory.js';
 import { GUIDES_UI } from '../i18n/guides-ui.js';
 import { breadcrumbLd } from '../i18n/jsonld.js';
 import { LOCALES, LOCALE_CODES } from '../i18n/locales.js';
-import { guidePath, guidesIndexPath, isPublishedGuide } from '../i18n/guides.js';
+import { guidePath, guidesIndexPath } from '../i18n/guides.js';
 import { guideGroups } from '../lib/guide-catalog.js';
 
 const { locale = 'en', guides } = Astro.props;
 const gt = GUIDES_UI[locale];
 const ui = GUIDE_DIRECTORY_UI[locale];
 const groups = guideGroups(guides, locale);
-const all = (await getCollection('guides')).filter(isPublishedGuide);
+const all = await getCollection('guides');
 const localesWithGuides = LOCALE_CODES.filter((code) =>
   all.some((entry) => (code === 'en' ? !entry.id.includes('/') : entry.id.startsWith(`${code}/`)))
 );

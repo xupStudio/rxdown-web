@@ -4,6 +4,18 @@ const { locale } = Astro.props;
 const t = STRINGS[locale];
 const screenshotVersion = '20260820-3';
 const shotPath = (shot) => `/shots/${locale}/${shot}.webp?v=${screenshotVersion}`;
+const storeShotVersion = '20260820-1';
+const storeShotPath = (shot) => `/store-shots/${locale}/${shot}.webp?v=${storeShotVersion}`;
+const storeShots = [
+  ['01_today', t.hero.eyebrow],
+  ['02_log', t.how.steps[0].title],
+  ['03_voice', t.features.cards[0].title],
+  ['04_journey', t.how.steps[1].title],
+  ['05_ai', t.features.cards[2].title],
+  ['06_report', t.how.steps[2].title],
+  ['07_insights', t.how.steps[1].title],
+  ['08_export', t.features.cards[5].title],
+];
 ---
 
 <section class="hero">
@@ -93,12 +105,9 @@ const shotPath = (shot) => `/shots/${locale}/${shot}.webp?v=${screenshotVersion}
     <h2>{t.gallery.heading}</h2>
   </div>
   <div class="gallery" tabindex="0">
-    <img src={shotPath('journey')} alt={t.how.steps[1].title} width="414" height="900" />
-    <img src={shotPath('insights')} alt={t.features.cards[1].title} width="414" height="900" />
-    <img src={shotPath('ai')} alt={t.features.cards[0].title} width="414" height="900" />
-    <img src={shotPath('report')} alt={t.features.cards[5].title} width="414" height="900" />
-    <img src={shotPath('log')} alt={t.how.steps[0].title} width="414" height="900" />
-    <img src={shotPath('export')} alt={t.features.cards[5].title} width="414" height="900" />
+    {storeShots.map(([shot, alt]) => (
+      <img src={storeShotPath(shot)} alt={alt} width="414" height="900" />
+    ))}
   </div>
 </section>
 

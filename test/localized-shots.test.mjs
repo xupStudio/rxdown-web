@@ -6,10 +6,11 @@ import test from 'node:test';
 const root = new URL('..', import.meta.url).pathname;
 const distRoot = join(root, 'dist');
 const locales = ['en', 'zh', 'ja', 'ko', 'de', 'es', 'fr', 'id', 'pt'];
-const shots = ['today', 'voice', 'journey', 'insights', 'ai', 'report', 'log', 'export'];
-const galleryShots = ['journey', 'insights', 'ai', 'report', 'log', 'export'];
+const heroShots = ['today', 'voice'];
+const storeShots = ['01_today', '02_log', '03_voice', '04_journey', '05_ai', '06_report', '07_insights', '08_export'];
 const phoneFrameShots = ['today', 'journey', 'insights', 'export'];
 const shotVersion = '20260820-3';
+const storeShotVersion = '20260820-1';
 
 function homeFile(locale) {
   return locale === 'en'
@@ -24,7 +25,7 @@ function hasWebpAlpha(source) {
 test('each localized homepage ships and renders its matching app screenshots', () => {
   for (const locale of locales) {
     const html = readFileSync(homeFile(locale), 'utf8');
-    for (const shot of shots) {
+    for (const shot of heroShots) {
       const source = `/shots/${locale}/${shot}.webp`;
       const renderedSource = `${source}?v=${shotVersion}`;
       assert.ok(
@@ -40,13 +41,30 @@ test('each localized homepage ships and renders its matching app screenshots', (
   }
 });
 
-test('visible homepage gallery screenshots are ready without horizontal-scroll lazy loading', () => {
+test('the homepage gallery renders the complete localized iOS store sequence', () => {
   for (const locale of locales) {
     const html = readFileSync(homeFile(locale), 'utf8');
-    for (const shot of galleryShots) {
-      const source = `/shots/${locale}/${shot}.webp`;
-      const image = html.match(new RegExp(`<img(?=[^>]*src="${source}\\?v=${shotVersion}")[^>]*>`))?.[0];
-      assert.ok(image, `${locale}/${shot} gallery image must render`);
+    const gallery = html.match(/<div class="gallery"[^>]*>([\s\S]*?)<\/div>/)?.[1];
+    assert.ok(gallery, `${locale} homepage must render the app gallery`);
+    const expectedSources = storeShots.map(
+      (shot) => `/store-shots/${locale}/${shot}.webp?v=${storeShotVersion}`
+    );
+    const renderedSources = [...gallery.matchAll(/<img[^>]*src="([^"]+)"[^>]*>/g)].map((match) => match[1]);
+    assert.deepEqual(renderedSources, expectedSources, `${locale} gallery must keep the iOS store story order`);
+    const imageTags = gallery.match(/<img[^>]*>/g) ?? [];
+
+    for (const shot of storeShots) {
+      assert.ok(
+        existsSync(join(root, 'public', 'store-shots', locale, `${shot}.webp`)),
+        `${locale}/${shot} source store asset must exist`
+      );
+      assert.ok(
+        existsSync(join(distRoot, 'store-shots', locale, `${shot}.webp`)),
+        `${locale}/${shot} built store asset must exist`
+      );
+      const source = `/store-shots/${locale}/${shot}.webp?v=${storeShotVersion}`;
+      const image = imageTags.find((tag) => tag.includes(`src="${source}"`));
+      assert.ok(image, `${locale}/${shot} store image must render`);
       assert.doesNotMatch(
         image,
         /\sloading="lazy"/,
